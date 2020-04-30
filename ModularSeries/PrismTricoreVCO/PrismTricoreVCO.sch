@@ -14091,7 +14091,8 @@ calibration</text>
 of control pot</text>
 <text x="81.28" y="139.7" size="1.778" layer="97" align="center">Q1 and Q2 are a matched to within 1.5mV Vbe
 and are in physical contact with R16</text>
-<text x="-45.72" y="22.86" size="2.54" layer="97" align="center-left">Triangle Core Voltage Controlled Oscillator
+<text x="-45.72" y="22.86" size="2.54" layer="97" align="center-left">Prism
+Triangle Core Voltage Controlled Oscillator
 Aidan Taylor 2020
 ELECTRIC NOODLE BOX</text>
 <text x="-20.32" y="58.42" size="1.778" layer="97">Supply In</text>
