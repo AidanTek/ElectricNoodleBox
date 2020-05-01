@@ -1320,20 +1320,69 @@ Source:  Data sheet </description>
 </package3d>
 </packages3d>
 </library>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
-This library contains electrically-functional connectors. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<library name="holes" urn="urn:adsk.eagle:library:237">
+<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="3,2" urn="urn:adsk.eagle:footprint:14246/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.2 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="3.2"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="3,2" urn="urn:adsk.eagle:package:14275/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.2 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="transistor-pnp" urn="urn:adsk.eagle:library:399">
+<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO92" urn="urn:adsk.eagle:footprint:29172/1" library_version="5">
+<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.099"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.1"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.2936"/>
+<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
+<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="TO92" urn="urn:adsk.eagle:package:29211/2" type="model" library_version="5">
+<description>TO-92</description>
+<packageinstances>
+<packageinstance name="TO92"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="ElectricNoodleBox">
 <packages>
 <package name="1X01">
 <description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
@@ -1353,9 +1402,35 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.635" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="-0.635" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.27" y="1.397" size="1.016" layer="25" font="vector" ratio="20" align="center-left">&gt;NAME</text>
+<text x="-2.032" y="0" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center">&gt;NAME</text>
 <text x="-1.27" y="-1.524" size="0.8128" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="MOLEX-1X4">
+<description>&lt;h3&gt;Molex 4-Pin Plated Through-Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/2pin_molex_set_19iv10.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.27" y1="3.048" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="8.89" y1="3.048" x2="8.89" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="8.89" y1="3.048" x2="-1.27" y2="3.048" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-2.54" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796"/>
+<text x="3.81" y="1.905" size="0.8128" layer="25" font="vector" ratio="20" align="center">&gt;NAME</text>
+<text x="2.286" y="-3.429" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="1X03">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
@@ -1392,34 +1467,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
-<package name="MOLEX-1X4">
-<description>&lt;h3&gt;Molex 4-Pin Plated Through-Hole&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/2pin_molex_set_19iv10.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-1.27" y1="3.048" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="8.89" y1="3.048" x2="8.89" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="8.89" y1="3.048" x2="-1.27" y2="3.048" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-2.54" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0" y1="-1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-1.27" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796"/>
-<text x="2.286" y="3.302" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="2.286" y="-3.429" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-2.032" y="0" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center">&gt;NAME</text>
+<text x="0.635" y="1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="1X04">
 <description>&lt;h3&gt;Plated Through Hole - 4 Pin&lt;/h3&gt;
@@ -1464,82 +1513,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.905" y="0" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-</packages>
-</library>
-<library name="holes" urn="urn:adsk.eagle:library:237">
-<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="3,2" urn="urn:adsk.eagle:footprint:14246/1" library_version="2">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.2 mm with drill center</description>
-<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
-<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
-<hole x="0" y="0" drill="3.2"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="3,2" urn="urn:adsk.eagle:package:14275/1" type="box" library_version="2">
-<description>MOUNTING HOLE 3.2 mm with drill center</description>
-<packageinstances>
-<packageinstance name="3,2"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
-<library name="ElectricNoodleBox2018">
-<packages>
-<package name="DIP16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="10.16" y1="2.54" x2="-10.16" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="-2.54" x2="10.16" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="2.54" x2="-10.16" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="-1.016" x2="-10.16" y2="1.016" width="0.2032" layer="21" curve="180"/>
-<pad name="1" x="-8.89" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="2" x="-6.35" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="3" x="-3.81" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="4" x="-1.27" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="5" x="1.27" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="6" x="3.81" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="7" x="6.35" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="8" x="8.89" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="9" x="8.89" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="10" x="6.35" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="11" x="3.81" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="12" x="1.27" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="13" x="-1.27" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="14" x="-3.81" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="15" x="-6.35" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="16" x="-8.89" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<text x="-10.795" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="11.43" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
-<polygon width="0.127" layer="21">
-<vertex x="-11.27125" y="-3.175" curve="-90"/>
-<vertex x="-10.795" y="-2.69875" curve="-90"/>
-<vertex x="-10.31875" y="-3.175" curve="-90"/>
-<vertex x="-10.795" y="-3.65125" curve="-90"/>
-</polygon>
-</package>
-</packages>
-</library>
-<library name="linear" urn="urn:adsk.eagle:library:262">
-<description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
-Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DIL14" urn="urn:adsk.eagle:footprint:16136/1" library_version="5">
+<package name="DIL14" urn="urn:adsk.eagle:footprint:16136/1">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
 <wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
@@ -1564,46 +1541,45 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="DIL16" urn="urn:adsk.eagle:footprint:917/1">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
-<package3d name="DIL14" urn="urn:adsk.eagle:package:16407/2" type="model" library_version="5">
+<package3d name="DIL14" urn="urn:adsk.eagle:package:16407/2" type="model">
 <description>Dual In Line Package</description>
 <packageinstances>
 <packageinstance name="DIL14"/>
 </packageinstances>
 </package3d>
-</packages3d>
-</library>
-<library name="transistor-pnp" urn="urn:adsk.eagle:library:399">
-<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TO92" urn="urn:adsk.eagle:footprint:29172/1" library_version="5">
-<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
-<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.099"/>
-<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.1"/>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.2936"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
-<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="TO92" urn="urn:adsk.eagle:package:29211/2" type="model" library_version="5">
-<description>TO-92</description>
+<package3d name="DIL16" urn="urn:adsk.eagle:package:922/2" type="model">
+<description>Dual In Line Package</description>
 <packageinstances>
-<packageinstance name="TO92"/>
+<packageinstance name="DIL16"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1863,19 +1839,19 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="45.72" y="39.87" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="8.001" y="70.096" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="CVI1A" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="20.82" smashed="yes">
+<element name="CVI1A" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="20.82" smashed="yes">
 <attribute name="NAME" x="2.54" y="22.852" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="19.296" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="CVI1B" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="24.63" smashed="yes">
+<element name="CVI1B" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="24.63" smashed="yes">
 <attribute name="NAME" x="2.54" y="26.662" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="23.106" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="CVI2A" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="74.16" smashed="yes">
+<element name="CVI2A" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="74.16" smashed="yes">
 <attribute name="NAME" x="2.54" y="76.192" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="72.636" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="CVI2B" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="70.35" smashed="yes">
+<element name="CVI2B" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="70.35" smashed="yes">
 <attribute name="NAME" x="2.54" y="72.382" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="68.826" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
@@ -1891,40 +1867,28 @@ design rules under a new name.</description>
 <element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,2" package3d_urn="urn:adsk.eagle:package:14275/1" value="MOUNT-HOLE3.2" x="5" y="90" smashed="yes">
 <attribute name="POPULARITY" value="7" x="73.58" y="73.49" size="1.778" layer="27" display="off"/>
 </element>
-<element name="IC1" library="ElectricNoodleBox2018" package="DIP16" value="LM13700_DIP" x="22.86" y="47.49" smashed="yes">
+<element name="IC1" library="ElectricNoodleBox" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="LM13700_DIP" x="22.86" y="47.49" smashed="yes">
 <attribute name="NAME" x="12.065" y="47.49" size="1.016" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="34.29" y="47.49" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
-<element name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL084P" x="25.4" y="19.55" smashed="yes" rot="R270">
+<element name="IC2" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL0X4_DIP" x="25.4" y="19.55" smashed="yes" rot="R270">
 <attribute name="NAME" x="22.352" y="28.821" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="9" x="19.05" y="-3.31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="24.765" y="26.281" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="IC3" library="linear" library_urn="urn:adsk.eagle:library:262" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL084P" x="25.4" y="75.43" smashed="yes" rot="R270">
+<element name="IC3" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL0X4_DIP" x="25.4" y="75.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="22.352" y="84.701" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="9" x="19.05" y="32.25" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="24.765" y="82.161" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="INV1" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="36.06" smashed="yes">
+<element name="INV1" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="36.06" smashed="yes">
 <attribute name="NAME" x="2.54" y="38.092" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="34.536" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="INV2" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="58.92" smashed="yes">
+<element name="INV2" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="58.92" smashed="yes">
 <attribute name="NAME" x="2.54" y="60.952" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="57.396" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="P1" library="SparkFun-Connectors" package="1X03" value="455-1750-1-ND" x="2.54" y="11.93" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.405" y="18.8595" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="XXX-00000" x="34.29" y="66.54" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="P2" library="SparkFun-Connectors" package="1X03" value="455-1750-1-ND" x="2.54" y="83.05" smashed="yes" rot="R270">
-<attribute name="NAME" x="2.3495" y="84.955" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="XXX-00000" x="-29.21" y="19.55" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="POW" library="SparkFun-Connectors" package="MOLEX-1X4" value="" x="43.18" y="43.68" smashed="yes" rot="R90">
+<element name="POW" library="ElectricNoodleBox" package="MOLEX-1X4" value="4XMOLEX" x="43.18" y="43.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.5605" y="43.7435" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="PROD_ID" value="CONN-08186" x="67.31" y="66.54" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SF_ID" value="PRT-08231" x="67.31" y="66.54" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="46.609" y="45.966" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="Q1" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" package="TO92" package3d_urn="urn:adsk.eagle:package:29211/2" value="2N3906" x="11.43" y="38.6" smashed="yes">
@@ -2165,26 +2129,33 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="55.88" y="-26.17" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="9.1694" y="16.375" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SI1" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="32.25" smashed="yes">
+<element name="SI1" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="32.25" smashed="yes">
 <attribute name="NAME" x="2.54" y="34.282" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="30.726" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="SI2" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="62.73" smashed="yes">
+<element name="SI2" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="62.73" smashed="yes">
 <attribute name="NAME" x="2.54" y="64.762" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="61.206" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="SO1" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="28.44" smashed="yes">
+<element name="SO1" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="28.44" smashed="yes">
 <attribute name="NAME" x="2.54" y="30.472" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="26.916" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="SO2" library="SparkFun-Connectors" package="1X01" value="" x="2.54" y="66.54" smashed="yes">
+<element name="SO2" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="2.54" y="66.54" smashed="yes">
 <attribute name="NAME" x="2.54" y="68.572" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="1.27" y="65.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="GNDT" library="SparkFun-Connectors" package="1X04" value="" x="2.54" y="43.68" smashed="yes" rot="R90">
+<element name="GNDT" library="ElectricNoodleBox" package="1X04" value="4XWIREPAD" x="2.54" y="43.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.405" y="53.467" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="CONN-09696" x="2.54" y="43.68" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="4.572" y="42.41" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="BIAS1" library="ElectricNoodleBox" package="1X03" value="3XWIREPAD" x="2.54" y="11.93" smashed="yes" rot="R90">
+<attribute name="NAME" x="2.54" y="18.788" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="0.762" y="12.565" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="BIAS2" library="ElectricNoodleBox" package="1X03" value="3XWIREPAD" x="2.54" y="83.05" smashed="yes" rot="R270">
+<attribute name="NAME" x="2.54" y="85.082" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
+<attribute name="VALUE" x="4.318" y="82.415" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -2316,9 +2287,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="+12V">
 <contactref element="R3" pad="1"/>
-<contactref element="P1" pad="3"/>
 <contactref element="R20" pad="1"/>
-<contactref element="P2" pad="3"/>
 <contactref element="IC1" pad="11"/>
 <contactref element="C9" pad="2"/>
 <contactref element="IC3" pad="4"/>
@@ -2326,7 +2295,6 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="4"/>
 <contactref element="C7" pad="2"/>
 <contactref element="POW" pad="1"/>
-<wire x1="2.54" y1="17.01" x2="3.175" y2="17.3275" width="0.8128" layer="16"/>
 <wire x1="3.175" y1="17.3275" x2="4.445" y2="19.2325" width="0.8128" layer="16" curve="59.489763"/>
 <wire x1="4.445" y1="19.2325" x2="5.715" y2="21.1375" width="0.8128" layer="16" curve="-59.489763"/>
 <wire x1="5.715" y1="21.1375" x2="7.3025" y2="20.82" width="0.8128" layer="16" curve="-75.750047"/>
@@ -2359,13 +2327,17 @@ design rules under a new name.</description>
 <wire x1="13.97" y1="72.89" x2="13.335" y2="72.255" width="0.8128" layer="16"/>
 <wire x1="13.335" y1="72.255" x2="7.3025" y2="71.9375" width="0.8128" layer="16" curve="-83.97445"/>
 <wire x1="7.3025" y1="71.9375" x2="4.7625" y2="74.795" width="0.8128" layer="16" curve="-18.784035"/>
-<wire x1="4.7625" y1="74.795" x2="2.54" y2="77.97" width="0.8128" layer="16" curve="5.501046"/>
 <wire x1="30.48" y1="55.11" x2="29.21" y2="55.745" width="0.8128" layer="1"/>
 <wire x1="29.21" y1="55.745" x2="24.13" y2="64.3175" width="0.8128" layer="1" curve="-65.56857"/>
 <wire x1="24.13" y1="64.3175" x2="24.13" y2="70.6675" width="0.8128" layer="1" curve="4.267229"/>
 <via x="24.13" y="70.6675" extent="1-16" drill="0.35"/>
 <wire x1="24.13" y1="70.6675" x2="24.13" y2="71.62" width="0.8128" layer="16"/>
 <wire x1="24.13" y1="71.62" x2="21.59" y2="75.43" width="0.8128" layer="16" curve="67.380135"/>
+<contactref element="BIAS2" pad="3"/>
+<contactref element="BIAS1" pad="3"/>
+<wire x1="2.54" y1="17.01" x2="3.175" y2="17.3275" width="0.8128" layer="16"/>
+<wire x1="2.54" y1="77.97" x2="2.8575" y2="77.47" width="0.8128" layer="16"/>
+<wire x1="2.8575" y1="77.47" x2="4.7625" y2="74.795" width="0.8128" layer="16" curve="6.082007"/>
 </signal>
 <signal name="N$7">
 <contactref element="IC1" pad="5"/>
@@ -2400,8 +2372,8 @@ design rules under a new name.</description>
 <wire x1="3.4925" y1="28.44" x2="6.35" y2="29.71" width="0.6096" layer="1" curve="47.924978"/>
 </signal>
 <signal name="N$3">
-<contactref element="P1" pad="2"/>
 <contactref element="R8" pad="1"/>
+<contactref element="BIAS1" pad="2"/>
 <wire x1="2.54" y1="14.47" x2="6.35" y2="14.47" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$9">
@@ -2476,9 +2448,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="-12V">
 <contactref element="R15" pad="1"/>
-<contactref element="P1" pad="1"/>
 <contactref element="R32" pad="1"/>
-<contactref element="P2" pad="1"/>
 <contactref element="IC1" pad="6"/>
 <contactref element="C10" pad="1"/>
 <contactref element="IC3" pad="11"/>
@@ -2486,7 +2456,6 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="11"/>
 <contactref element="C6" pad="1"/>
 <contactref element="POW" pad="4"/>
-<wire x1="2.54" y1="11.93" x2="3.4925" y2="11.295" width="0.8128" layer="1"/>
 <wire x1="3.4925" y1="11.295" x2="8.89" y2="10.025" width="0.8128" layer="1" curve="40.8991"/>
 <wire x1="8.89" y1="10.025" x2="13.0175" y2="9.0725" width="0.8128" layer="1" curve="-40.407339"/>
 <wire x1="13.0175" y1="9.0725" x2="22.225" y2="9.39" width="0.8128" layer="1" curve="70.346409"/>
@@ -2513,7 +2482,6 @@ design rules under a new name.</description>
 <wire x1="24.13" y1="84.0025" x2="21.59" y2="85.59" width="0.8128" layer="16" curve="85.61067"/>
 <wire x1="21.59" y1="85.59" x2="13.6525" y2="85.2725" width="0.8128" layer="16" curve="-17.018638"/>
 <wire x1="13.6525" y1="85.2725" x2="6.35" y2="85.2725" width="0.8128" layer="16" curve="12.437417"/>
-<wire x1="6.35" y1="85.2725" x2="2.54" y2="83.05" width="0.8128" layer="16" curve="48.075466"/>
 <wire x1="29.21" y1="75.43" x2="30.1625" y2="75.1125" width="0.8128" layer="16"/>
 <wire x1="30.1625" y1="75.1125" x2="32.385" y2="72.5725" width="0.8128" layer="16" curve="-60.758227"/>
 <wire x1="32.385" y1="72.5725" x2="34.29" y2="69.08" width="0.8128" layer="16" curve="35.607306"/>
@@ -2532,6 +2500,11 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="23.36" x2="37.1475" y2="23.0425" width="0.8128" layer="1"/>
 <wire x1="37.1475" y1="23.0425" x2="42.8625" y2="21.7725" width="0.8128" layer="1" curve="64.942397"/>
 <wire x1="42.8625" y1="21.7725" x2="44.45" y2="25.9" width="0.8128" layer="1" curve="98.040244"/>
+<contactref element="BIAS2" pad="1"/>
+<contactref element="BIAS1" pad="1"/>
+<wire x1="2.54" y1="11.93" x2="3.4925" y2="11.295" width="0.8128" layer="1"/>
+<wire x1="2.54" y1="83.05" x2="2.8575" y2="83.5025" width="0.8128" layer="16"/>
+<wire x1="2.8575" y1="83.5025" x2="6.35" y2="85.2725" width="0.8128" layer="16" curve="-56.136805"/>
 </signal>
 <signal name="N$18">
 <contactref element="C2" pad="2"/>
@@ -2644,8 +2617,8 @@ design rules under a new name.</description>
 <wire x1="3.175" y1="66.54" x2="6.35" y2="65.27" width="0.6096" layer="1" curve="-43.602819"/>
 </signal>
 <signal name="N$28">
-<contactref element="P2" pad="2"/>
 <contactref element="R25" pad="1"/>
+<contactref element="BIAS2" pad="2"/>
 <wire x1="2.54" y1="80.51" x2="6.35" y2="80.51" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$29">
