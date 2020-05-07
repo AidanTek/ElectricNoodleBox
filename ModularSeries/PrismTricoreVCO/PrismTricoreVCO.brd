@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -158,9 +158,9 @@
 </layers>
 <board>
 <plain>
-<text x="22.86" y="5.08" size="1.778" layer="21" font="vector" align="center">3</text>
-<text x="20.32" y="5.08" size="1.778" layer="21" font="vector" align="center">2</text>
-<text x="17.78" y="5.08" size="1.778" layer="21" font="vector" align="center">1</text>
+<text x="21.59" y="5.08" size="1.27" layer="21" font="vector" ratio="12" align="center">3</text>
+<text x="19.05" y="5.08" size="1.27" layer="21" font="vector" ratio="12" align="center">2</text>
+<text x="16.51" y="5.08" size="1.27" layer="21" font="vector" ratio="12" align="center">1</text>
 <text x="38.1" y="5.3975" size="1.778" layer="21" font="vector" align="center">1</text>
 <text x="40.64" y="5.3975" size="1.778" layer="21" font="vector" align="center">2</text>
 <wire x1="5" y1="49" x2="76" y2="49" width="0" layer="20"/>
@@ -1879,20 +1879,20 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="46.99" y="59.69" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="15.494" y="21.971" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="CVINA" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="26.67" y="2.54" smashed="yes">
-<attribute name="NAME" x="24.638" y="2.54" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="VALUE" x="25.4" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
+<element name="CVINA" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="24.13" y="2.54" smashed="yes">
+<attribute name="NAME" x="24.133" y="0.635" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="22.86" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="CVINB" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="30.48" y="2.54" smashed="yes">
-<attribute name="NAME" x="28.448" y="2.54" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="VALUE" x="29.21" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
+<element name="CVINB" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="26.67" y="2.54" smashed="yes">
+<attribute name="NAME" x="26.673" y="4.6355" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="25.4" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
 <element name="D1" library="ElectricNoodleBox" package="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2" value="BAT85" x="41.91" y="39.37" smashed="yes" rot="R90">
 <attribute name="NAME" x="41.91" y="45.5295" size="1.016" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 </element>
-<element name="DIST" library="ElectricNoodleBox" package="1X02" value="100K" x="38.1" y="2.54" smashed="yes">
-<attribute name="NAME" x="36.068" y="2.54" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="VALUE" x="36.83" y="0.508" size="0.6096" layer="27" font="vector" ratio="20"/>
+<element name="DIST" library="ElectricNoodleBox" package="1X02" value="100K" x="31.75" y="2.54" smashed="yes">
+<attribute name="NAME" x="33.023" y="0.635" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="30.48" y="0.508" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="IC1" library="ElectricNoodleBox" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="LM13700_DIP" x="59.69" y="39.37" smashed="yes">
 <attribute name="NAME" x="48.895" y="39.37" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -2070,17 +2070,17 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="82.55" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="33.655" y="9.1694" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="SIN" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="34.29" y="2.54" smashed="yes">
-<attribute name="NAME" x="32.258" y="2.54" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="VALUE" x="33.02" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
+<element name="SIN" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="29.21" y="2.54" smashed="yes">
+<attribute name="NAME" x="29.213" y="0.635" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="27.94" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="SQR" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="48.26" y="2.54" smashed="yes">
-<attribute name="NAME" x="46.228" y="2.54" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="VALUE" x="46.99" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
+<element name="SQR" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="39.37" y="2.54" smashed="yes">
+<attribute name="NAME" x="39.373" y="0.635" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="38.1" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="TRI" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="44.45" y="2.54" smashed="yes">
-<attribute name="NAME" x="42.418" y="2.54" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="VALUE" x="43.18" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
+<element name="TRI" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="36.83" y="2.54" smashed="yes">
+<attribute name="NAME" x="36.833" y="0.635" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="35.56" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
 <element name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,2" package3d_urn="urn:adsk.eagle:package:14275/1" value="MOUNT-HOLE3.2" x="76" y="44" smashed="yes">
 <attribute name="POPULARITY" value="7" x="76" y="44" size="1.778" layer="27" font="vector" display="off"/>
@@ -2107,16 +2107,16 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="18.415" y="9.1694" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="FINE" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="13.97" y="2.54" smashed="yes">
-<attribute name="NAME" x="11.938" y="2.54" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
+<attribute name="NAME" x="14.05" y="0.635" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="12.7" y="1.016" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
 <element name="GNDT" library="ElectricNoodleBox" package="1X02" value="2XWIREPAD" x="66.675" y="2.54" smashed="yes">
-<attribute name="NAME" x="65.405" y="3.937" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="67.945" y="0.635" size="0.8128" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="65.405" y="0.508" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="FREQ" library="ElectricNoodleBox" package="1X03" value="100K" x="17.78" y="2.54" smashed="yes">
-<attribute name="NAME" x="15.748" y="2.54" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="VALUE" x="18.415" y="4.318" size="0.6096" layer="27" font="vector" ratio="20"/>
+<element name="FREQ" library="ElectricNoodleBox" package="1X03" value="100K" x="16.51" y="2.54" smashed="yes">
+<attribute name="NAME" x="19.05" y="0.635" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="17.145" y="4.318" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 </elements>
 <signals>
@@ -2271,12 +2271,14 @@ design rules under a new name.</description>
 <wire x1="48.26" y1="15.24" x2="48.26" y2="14.2875" width="0.508" layer="1"/>
 <wire x1="48.26" y1="14.2875" x2="51.7525" y2="10.4775" width="0.508" layer="1" curve="85.020903"/>
 <wire x1="51.7525" y1="10.4775" x2="53.34" y2="7.62" width="0.508" layer="1" curve="-111.932534"/>
-<wire x1="40.64" y1="2.54" x2="40.9575" y2="3.175" width="0.508" layer="16"/>
-<wire x1="40.9575" y1="3.175" x2="45.72" y2="5.3975" width="0.508" layer="16" curve="-76.836097"/>
 <wire x1="45.72" y1="5.3975" x2="52.07" y2="5.3975" width="0.508" layer="16" curve="26.802372"/>
 <wire x1="52.07" y1="5.3975" x2="53.34" y2="7.62" width="0.508" layer="16" curve="93.707892"/>
 <wire x1="62.23" y1="31.75" x2="61.9125" y2="31.4325" width="0.508" layer="16"/>
 <wire x1="61.9125" y1="31.4325" x2="59.055" y2="28.2575" width="0.508" layer="16" curve="6.025575"/>
+<wire x1="34.29" y1="2.54" x2="34.29" y2="3.175" width="0.508" layer="16"/>
+<wire x1="34.29" y1="3.175" x2="36.195" y2="4.7625" width="0.508" layer="16" curve="-100.388821"/>
+<wire x1="36.195" y1="4.7625" x2="42.545" y2="5.3975" width="0.508" layer="16" curve="32.198904"/>
+<wire x1="42.545" y1="5.3975" x2="45.72" y2="5.3975" width="0.508" layer="16" curve="-43.620125"/>
 </signal>
 <signal name="N$3">
 <contactref element="R1" pad="1"/>
@@ -2409,9 +2411,7 @@ design rules under a new name.</description>
 <signal name="N$13">
 <contactref element="R9" pad="1"/>
 <contactref element="DIST" pad="1"/>
-<wire x1="38.1" y1="2.54" x2="37.465" y2="3.175" width="0.508" layer="1"/>
-<wire x1="37.465" y1="3.175" x2="34.29" y2="5.08" width="0.508" layer="1" curve="28.072487"/>
-<wire x1="34.29" y1="5.08" x2="33.02" y2="6.35" width="0.508" layer="1" curve="-56.144974"/>
+<wire x1="31.75" y1="2.54" x2="33.02" y2="6.35" width="0.508" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="Q1" pad="1"/>
@@ -2577,14 +2577,15 @@ design rules under a new name.</description>
 <contactref element="R22" pad="2"/>
 <contactref element="R22" pad="3"/>
 <wire x1="13.97" y1="8.89" x2="13.97" y2="11.43" width="0.508" layer="1"/>
-<wire x1="17.145" y1="3.4925" x2="13.97" y2="8.89" width="0.508" layer="1" curve="-6.449045"/>
 <contactref element="FREQ" pad="1"/>
-<wire x1="17.78" y1="2.54" x2="17.145" y2="3.4925" width="0.508" layer="1"/>
+<wire x1="13.97" y1="8.89" x2="13.97" y2="8.255" width="0.508" layer="1"/>
+<wire x1="13.97" y1="8.255" x2="16.51" y2="2.54" width="0.508" layer="1" curve="47.924978"/>
 </signal>
 <signal name="N$26">
 <contactref element="R21" pad="2"/>
 <contactref element="FREQ" pad="3"/>
-<wire x1="22.86" y1="6.35" x2="22.86" y2="2.54" width="0.508" layer="1"/>
+<wire x1="21.59" y1="2.54" x2="21.9075" y2="3.175" width="0.508" layer="1"/>
+<wire x1="21.9075" y1="3.175" x2="22.86" y2="6.35" width="0.508" layer="1" curve="19.731614"/>
 </signal>
 <signal name="+10VREF">
 <contactref element="REF" pad="1"/>
@@ -2616,31 +2617,31 @@ design rules under a new name.</description>
 <signal name="N$27">
 <contactref element="R12" pad="1"/>
 <contactref element="CVINA" pad="1"/>
-<wire x1="26.67" y1="2.54" x2="26.67" y2="3.4925" width="0.508" layer="1"/>
-<wire x1="26.67" y1="3.4925" x2="25.4" y2="6.35" width="0.508" layer="1" curve="47.924978"/>
+<wire x1="24.13" y1="2.54" x2="24.4475" y2="3.175" width="0.508" layer="1"/>
+<wire x1="24.4475" y1="3.175" x2="25.4" y2="6.35" width="0.508" layer="1" curve="19.731614"/>
 </signal>
 <signal name="N$28">
 <contactref element="R13" pad="1"/>
 <contactref element="CVINB" pad="1"/>
-<wire x1="30.48" y1="2.54" x2="30.1625" y2="3.175" width="0.508" layer="1"/>
-<wire x1="30.1625" y1="3.175" x2="27.94" y2="6.35" width="0.508" layer="1" curve="16.853938"/>
+<wire x1="26.67" y1="2.54" x2="26.9875" y2="3.175" width="0.508" layer="1"/>
+<wire x1="26.9875" y1="3.175" x2="27.94" y2="6.35" width="0.508" layer="1" curve="19.731614"/>
 </signal>
 <signal name="N$29">
 <contactref element="R3" pad="1"/>
 <contactref element="TRI" pad="1"/>
-<wire x1="39.37" y1="6.35" x2="40.3225" y2="5.3975" width="0.508" layer="1"/>
-<wire x1="40.3225" y1="5.3975" x2="42.545" y2="4.445" width="0.508" layer="1" curve="43.602819"/>
-<wire x1="42.545" y1="4.445" x2="44.45" y2="2.54" width="0.508" layer="1" curve="-87.205638"/>
+<wire x1="36.83" y1="2.54" x2="36.83" y2="3.175" width="0.508" layer="1"/>
+<wire x1="36.83" y1="3.175" x2="39.37" y2="6.35" width="0.508" layer="1" curve="-77.319617"/>
 </signal>
 <signal name="N$30">
 <contactref element="R23" pad="1"/>
 <contactref element="SQR" pad="1"/>
-<wire x1="48.26" y1="2.54" x2="53.34" y2="2.54" width="0.508" layer="1"/>
+<wire x1="39.37" y1="2.54" x2="53.34" y2="2.54" width="0.508" layer="1"/>
 </signal>
 <signal name="N$31">
 <contactref element="R24" pad="1"/>
 <contactref element="SIN" pad="1"/>
-<wire x1="34.29" y1="2.54" x2="30.48" y2="6.35" width="0.508" layer="1"/>
+<wire x1="29.21" y1="2.54" x2="29.5275" y2="3.175" width="0.508" layer="1"/>
+<wire x1="29.5275" y1="3.175" x2="30.48" y2="6.35" width="0.508" layer="1" curve="19.731614"/>
 </signal>
 <signal name="N$10">
 <contactref element="IC1" pad="12"/>
@@ -2673,7 +2674,8 @@ design rules under a new name.</description>
 <signal name="N$24">
 <contactref element="FREQ" pad="2"/>
 <contactref element="R11" pad="1"/>
-<wire x1="20.32" y1="6.35" x2="20.32" y2="2.54" width="0.508" layer="1"/>
+<wire x1="19.05" y1="2.54" x2="19.3675" y2="3.175" width="0.508" layer="1"/>
+<wire x1="19.3675" y1="3.175" x2="20.32" y2="6.35" width="0.508" layer="1" curve="19.731614"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

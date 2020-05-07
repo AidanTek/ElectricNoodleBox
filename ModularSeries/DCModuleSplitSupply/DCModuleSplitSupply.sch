@@ -14020,6 +14020,36 @@ general purpose rectifier, 1 A</description>
 Pin description 
 on flip side</text>
 </package>
+<package name="1X02">
+<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-2.032" y="0" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center">&gt;NAME</text>
+<text x="0" y="1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN_02">
@@ -14163,6 +14193,22 @@ Dual DC</text>
 </device>
 </devices>
 </deviceset>
+<deviceset name="2XWIREPAD" prefix="WP">
+<gates>
+<gate name="G$1" symbol="CONN_02" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -14202,18 +14248,24 @@ Dual DC</text>
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
+<part name="LEDV+" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
+<part name="LEDV-" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="AGND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="AGND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="33.02" y="53.34" size="1.778" layer="97" align="center">V In 
 9 - 12VDC Supply</text>
-<text x="15.24" y="5.08" size="1.778" layer="97" align="center-left">12VDC to +/- 12VDC Supply inc. +/- 10V Precision Reference Voltage
+<text x="15.24" y="2.54" size="1.778" layer="97" align="center-left">12VDC to +/- 12VDC Supply inc. +/- 10V Precision Reference Voltage
 
 Aidan Taylor Spring 2020
 ELECTRIC NOODLE BOX</text>
 <text x="86.36" y="73.66" size="1.778" layer="97" align="center-left">Precision Reference</text>
-<text x="30.48" y="22.86" size="1.778" layer="97" align="center-left">Mount holes</text>
+<text x="22.86" y="20.32" size="1.778" layer="97" align="center-left">Mount holes</text>
 </plain>
 <instances>
 <instance part="DCDC1" gate="G$1" x="66.04" y="40.64" smashed="yes">
@@ -14240,11 +14292,11 @@ ELECTRIC NOODLE BOX</text>
 <attribute name="NAME" x="100.965" y="33.02" size="1.27" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="107.315" y="33.02" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="P+1" gate="1" x="78.74" y="60.96" smashed="yes">
-<attribute name="VALUE" x="76.2" y="55.88" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="1" x="78.74" y="71.12" smashed="yes">
+<attribute name="VALUE" x="76.2" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P-1" gate="1" x="78.74" y="20.32" smashed="yes">
-<attribute name="VALUE" x="76.2" y="17.78" size="1.778" layer="96" rot="R90"/>
+<instance part="P-1" gate="1" x="78.74" y="12.7" smashed="yes">
+<attribute name="VALUE" x="76.2" y="10.16" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R1" gate="G$1" x="93.98" y="55.88" smashed="yes">
 <attribute name="NAME" x="90.17" y="57.3786" size="1.778" layer="95"/>
@@ -14294,17 +14346,37 @@ ELECTRIC NOODLE BOX</text>
 <attribute name="NAME" x="37.6174" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="40.4114" y="35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="H1" gate="G$1" x="25.4" y="17.78" smashed="yes">
-<attribute name="NAME" x="27.432" y="18.3642" size="1.778" layer="95"/>
+<instance part="H1" gate="G$1" x="17.78" y="15.24" smashed="yes">
+<attribute name="NAME" x="19.812" y="15.8242" size="1.778" layer="95"/>
 </instance>
-<instance part="H2" gate="G$1" x="33.02" y="17.78" smashed="yes">
-<attribute name="NAME" x="35.052" y="18.3642" size="1.778" layer="95"/>
+<instance part="H2" gate="G$1" x="25.4" y="15.24" smashed="yes">
+<attribute name="NAME" x="27.432" y="15.8242" size="1.778" layer="95"/>
 </instance>
-<instance part="H3" gate="G$1" x="40.64" y="17.78" smashed="yes">
-<attribute name="NAME" x="42.672" y="18.3642" size="1.778" layer="95"/>
+<instance part="H3" gate="G$1" x="33.02" y="15.24" smashed="yes">
+<attribute name="NAME" x="35.052" y="15.8242" size="1.778" layer="95"/>
 </instance>
-<instance part="H4" gate="G$1" x="48.26" y="17.78" smashed="yes">
-<attribute name="NAME" x="50.292" y="18.3642" size="1.778" layer="95"/>
+<instance part="H4" gate="G$1" x="40.64" y="15.24" smashed="yes">
+<attribute name="NAME" x="42.672" y="15.8242" size="1.778" layer="95"/>
+</instance>
+<instance part="LEDV+" gate="G$1" x="50.8" y="60.96" smashed="yes">
+<attribute name="NAME" x="48.26" y="66.548" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="LEDV-" gate="G$1" x="50.8" y="20.32" smashed="yes">
+<attribute name="NAME" x="48.26" y="25.908" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="R3" gate="G$1" x="66.04" y="63.5" smashed="yes">
+<attribute name="NAME" x="62.23" y="64.9986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="60.198" size="1.778" layer="96"/>
+</instance>
+<instance part="AGND3" gate="VR1" x="60.96" y="55.88" smashed="yes">
+<attribute name="VALUE" x="58.42" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="AGND4" gate="VR1" x="60.96" y="15.24" smashed="yes">
+<attribute name="VALUE" x="58.42" y="10.16" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R4" gate="G$1" x="66.04" y="22.86" smashed="yes">
+<attribute name="NAME" x="62.23" y="24.3586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="19.558" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14317,13 +14389,17 @@ ELECTRIC NOODLE BOX</text>
 <pinref part="P+1" gate="1" pin="+12V"/>
 <wire x1="78.74" y1="45.72" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="55.88" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="55.88" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="63.5" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
 <junction x="78.74" y="55.88"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="83.82" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="55.88" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
 <junction x="83.82" y="55.88"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
+<junction x="78.74" y="63.5"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -14356,12 +14432,16 @@ ELECTRIC NOODLE BOX</text>
 <wire x1="78.74" y1="35.56" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="-"/>
 <wire x1="78.74" y1="25.4" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="22.86" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="30.48" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="25.4" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
 <junction x="78.74" y="25.4"/>
 <junction x="83.82" y="25.4"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="22.86" x2="78.74" y2="22.86" width="0.1524" layer="91"/>
+<junction x="78.74" y="22.86"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
@@ -14522,6 +14602,32 @@ ELECTRIC NOODLE BOX</text>
 <pinref part="AGND2" gate="VR1" pin="AGND"/>
 <wire x1="137.16" y1="10.16" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
 <junction x="137.16" y="10.16"/>
+</segment>
+<segment>
+<pinref part="LEDV+" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="AGND3" gate="VR1" pin="AGND"/>
+<wire x1="60.96" y1="60.96" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LEDV-" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="AGND4" gate="VR1" pin="AGND"/>
+<wire x1="60.96" y1="20.32" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="LEDV+" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LEDV-" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
