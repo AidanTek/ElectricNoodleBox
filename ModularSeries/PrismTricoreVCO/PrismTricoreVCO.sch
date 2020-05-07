@@ -11089,7 +11089,6 @@ Diode with low voltage drop</description>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="1nF"/>
 <part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="22pF"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="22K"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100Ω"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="150K"/>
@@ -11196,19 +11195,15 @@ supply pins on each chip</text>
 </instance>
 <instance part="IC2" gate="B" x="53.34" y="68.58" smashed="yes" rot="MR180">
 <attribute name="NAME" x="55.88" y="65.405" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="55.88" y="73.66" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC2" gate="C" x="76.2" y="83.82" smashed="yes" rot="MR180">
 <attribute name="NAME" x="78.74" y="80.645" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="78.74" y="88.9" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC2" gate="A" x="91.44" y="66.04" smashed="yes">
 <attribute name="NAME" x="93.98" y="69.215" size="1.778" layer="95"/>
-<attribute name="VALUE" x="93.98" y="60.96" size="1.778" layer="96"/>
 </instance>
 <instance part="IC2" gate="D" x="129.54" y="68.58" smashed="yes" rot="MR180">
 <attribute name="NAME" x="132.08" y="65.405" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="132.08" y="73.66" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC2" gate="P" x="2.54" y="116.84" smashed="yes">
 <attribute name="NAME" x="0" y="116.84" size="1.27" layer="97" rot="R90" align="center"/>
@@ -11226,10 +11221,6 @@ supply pins on each chip</text>
 </instance>
 <instance part="AGND3" gate="VR1" x="81.28" y="58.42" smashed="yes">
 <attribute name="VALUE" x="83.82" y="55.88" size="1.778" layer="96"/>
-</instance>
-<instance part="C2" gate="G$1" x="48.26" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="47.879" y="82.804" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="52.959" y="82.804" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R2" gate="G$1" x="88.9" y="76.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="92.71" y="74.7014" size="1.778" layer="95" rot="R180"/>
@@ -11281,19 +11272,15 @@ supply pins on each chip</text>
 </instance>
 <instance part="IC3" gate="D" x="147.32" y="35.56" smashed="yes" rot="MR180">
 <attribute name="NAME" x="149.86" y="32.385" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="149.86" y="40.64" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC3" gate="C" x="134.62" y="116.84" smashed="yes" rot="R180">
 <attribute name="NAME" x="132.08" y="113.665" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="132.08" y="121.92" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="IC3" gate="B" x="96.52" y="114.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="93.98" y="111.125" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="93.98" y="119.38" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="IC3" gate="A" x="48.26" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="45.72" y="116.205" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="45.72" y="124.46" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="IC3" gate="P" x="22.86" y="116.84" smashed="yes">
 <attribute name="NAME" x="20.32" y="116.84" size="1.27" layer="97" rot="R90" align="center"/>
@@ -11616,14 +11603,7 @@ supply pins on each chip</text>
 <pinref part="IC2" gate="B" pin="-IN"/>
 <wire x1="45.72" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="71.12" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="81.28" x2="45.72" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="81.28" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="B" pin="OUT"/>
 <wire x1="66.04" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
