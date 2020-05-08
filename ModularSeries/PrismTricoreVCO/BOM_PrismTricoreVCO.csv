@@ -20,7 +20,7 @@
 1,22pF,C050-025X075,"C3",CAPACITOR,Farnell,1457695
 ,,,,,,
 1,BAT85,DO35-7,D1,BAT85 Schottky Diode,Farnell,2889133
-2,2N3906,TO92,"Q1, Q2",PNP Transistor (Matched to 0.2Vbe),ENB or Farnell,1574372
+2,2N3906,TO92,"Q1, Q2",PNP Transistor (Matched to 1.5mVbe),ENB or Farnell,1574372
 1,LM13700_DIP,DIL16,IC1,LM13700 16 pin DIL,Farnell,3118206
 2,TL0X4_DIP,DIL14,"IC2, IC3",TL084 14 pin DIL,Farnell,3005140
 ,,,,,,

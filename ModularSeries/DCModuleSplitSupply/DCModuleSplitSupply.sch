@@ -14254,6 +14254,8 @@ Dual DC</text>
 <part name="AGND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="LINK" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
+<part name="AGND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14266,6 +14268,8 @@ Aidan Taylor Spring 2020
 ELECTRIC NOODLE BOX</text>
 <text x="86.36" y="73.66" size="1.778" layer="97" align="center-left">Precision Reference</text>
 <text x="22.86" y="20.32" size="1.778" layer="97" align="center-left">Mount holes</text>
+<text x="22.86" y="76.2" size="1.778" layer="91">Ground link
+for Banana systems</text>
 </plain>
 <instances>
 <instance part="DCDC1" gate="G$1" x="66.04" y="40.64" smashed="yes">
@@ -14377,6 +14381,12 @@ ELECTRIC NOODLE BOX</text>
 <instance part="R4" gate="G$1" x="66.04" y="22.86" smashed="yes">
 <attribute name="NAME" x="62.23" y="24.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.77" y="19.558" size="1.778" layer="96"/>
+</instance>
+<instance part="LINK" gate="G$1" x="25.4" y="66.04" smashed="yes">
+<attribute name="NAME" x="22.86" y="71.628" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="AGND5" gate="VR1" x="35.56" y="60.96" smashed="yes">
+<attribute name="VALUE" x="38.1" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -14614,6 +14624,16 @@ ELECTRIC NOODLE BOX</text>
 <wire x1="58.42" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="AGND4" gate="VR1" pin="AGND"/>
 <wire x1="60.96" y1="20.32" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LINK" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="AGND5" gate="VR1" pin="AGND"/>
+<wire x1="35.56" y1="66.04" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="LINK" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="68.58" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<junction x="35.56" y="66.04"/>
 </segment>
 </net>
 <net name="N$2" class="0">

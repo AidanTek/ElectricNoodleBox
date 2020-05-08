@@ -1850,6 +1850,10 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="67.31" y="11.43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="66.675" y="13.6906" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
+<element name="LINK" library="ElectricNoodleBox" package="1X02" value="2XWIREPAD" x="13.6525" y="2.8575" smashed="yes">
+<attribute name="NAME" x="11.6205" y="2.8575" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
+<attribute name="VALUE" x="13.6525" y="4.6355" size="0.6096" layer="27" font="vector" ratio="20"/>
+</element>
 </elements>
 <signals>
 <signal name="+12V">
@@ -2043,6 +2047,12 @@ design rules under a new name.</description>
 <wire x1="62.865" y1="13.335" x2="65.405" y2="12.3825" width="1.016" layer="1" curve="48.88791"/>
 <wire x1="65.405" y1="12.3825" x2="80.01" y2="12.7" width="1.016" layer="1" curve="-5.285115"/>
 <wire x1="80.01" y1="15.24" x2="80.01" y2="12.7" width="1.016" layer="16"/>
+<contactref element="LINK" pad="1"/>
+<contactref element="LINK" pad="2"/>
+<wire x1="16.1925" y1="2.8575" x2="18.0975" y2="2.54" width="1.016" layer="1"/>
+<wire x1="18.0975" y1="2.54" x2="28.2575" y2="1.905" width="1.016" layer="1" curve="11.771976"/>
+<wire x1="28.2575" y1="1.905" x2="43.18" y2="3.81" width="1.016" layer="1" curve="9.930721"/>
+<wire x1="16.1925" y1="2.8575" x2="13.6525" y2="2.8575" width="1.016" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="LEDV+" pad="2"/>

@@ -11077,15 +11077,18 @@ R2 3 2 {val-val*var/100}
 <sheets>
 <sheet>
 <plain>
-<text x="241.3" y="12.7" size="2.54" layer="91">Dual Exponential VCA
+<text x="241.3" y="12.7" size="2.54" layer="91">Portals: Dual Exponential VCA
 Aidan Taylor Spring 2020
 ELECTRIC NOODLE BOX
 
 Adapted from Ray Wilson's Design:
 http://musicfromouterspace.com</text>
-<text x="114.3" y="43.18" size="2.54" layer="97">Mounting Holes</text>
+<text x="109.22" y="43.18" size="2.54" layer="97">Mounting Holes</text>
 <text x="15.24" y="40.64" size="2.54" layer="97">Power Decoupling</text>
-<text x="154.94" y="40.64" size="2.54" layer="97">Supply In</text>
+<text x="132.08" y="10.16" size="2.54" layer="97">Supply In</text>
+<text x="73.66" y="17.78" size="1.778" layer="91">Unused LM13700 Darlingtons</text>
+<text x="177.8" y="22.86" size="1.778" layer="91">Ground terminals
+for jacks / pots</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A1" x="63.5" y="66.04" smashed="yes">
@@ -11097,8 +11100,8 @@ http://musicfromouterspace.com</text>
 <instance part="IC1" gate="A2" x="78.74" y="27.94" smashed="yes">
 <attribute name="NAME" x="81.28" y="25.4" size="0.6096" layer="95" align="center"/>
 </instance>
-<instance part="IC1" gate="B2" x="99.06" y="27.94" smashed="yes">
-<attribute name="NAME" x="101.6" y="25.4" size="0.6096" layer="95" align="center"/>
+<instance part="IC1" gate="B2" x="93.98" y="27.94" smashed="yes">
+<attribute name="NAME" x="96.52" y="25.4" size="0.6096" layer="95" align="center"/>
 </instance>
 <instance part="IC1" gate="P" x="5.08" y="22.86" smashed="yes">
 <attribute name="NAME" x="7.62" y="17.78" size="1.778" layer="95" rot="R90" align="center"/>
@@ -11168,7 +11171,6 @@ http://musicfromouterspace.com</text>
 <attribute name="VALUE" x="78.74" y="40.64" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SO1" gate="G$1" x="129.54" y="63.5" smashed="yes" rot="R180">
-<attribute name="VALUE" x="132.08" y="68.326" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="132.08" y="60.452" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="R7" gate="G$1" x="114.3" y="63.5" smashed="yes" rot="R180">
@@ -11428,26 +11430,26 @@ http://musicfromouterspace.com</text>
 <instance part="H1" gate="G$1" x="111.76" y="38.1" smashed="yes">
 <attribute name="NAME" x="113.792" y="38.6842" size="1.778" layer="95"/>
 </instance>
-<instance part="H2" gate="G$1" x="119.38" y="38.1" smashed="yes">
-<attribute name="NAME" x="121.412" y="38.6842" size="1.778" layer="95"/>
+<instance part="H2" gate="G$1" x="111.76" y="33.02" smashed="yes">
+<attribute name="NAME" x="113.792" y="33.6042" size="1.778" layer="95"/>
 </instance>
-<instance part="H3" gate="G$1" x="127" y="38.1" smashed="yes">
-<attribute name="NAME" x="129.032" y="38.6842" size="1.778" layer="95"/>
+<instance part="H3" gate="G$1" x="111.76" y="27.94" smashed="yes">
+<attribute name="NAME" x="113.792" y="28.5242" size="1.778" layer="95"/>
 </instance>
-<instance part="H4" gate="G$1" x="134.62" y="38.1" smashed="yes">
-<attribute name="NAME" x="136.652" y="38.6842" size="1.778" layer="95"/>
+<instance part="H4" gate="G$1" x="111.76" y="22.86" smashed="yes">
+<attribute name="NAME" x="113.792" y="23.4442" size="1.778" layer="95"/>
 </instance>
-<instance part="POW" gate="G$1" x="157.48" y="27.94" smashed="yes" rot="MR180">
-<attribute name="NAME" x="152.4" y="19.812" size="1.778" layer="95" font="vector" rot="MR180"/>
+<instance part="POW" gate="G$1" x="134.62" y="27.94" smashed="yes" rot="MR180">
+<attribute name="NAME" x="129.54" y="19.812" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="P+6" gate="1" x="165.1" y="35.56" smashed="yes">
-<attribute name="VALUE" x="162.56" y="30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="P+6" gate="1" x="142.24" y="35.56" smashed="yes">
+<attribute name="VALUE" x="139.7" y="30.48" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P-6" gate="1" x="165.1" y="17.78" smashed="yes">
-<attribute name="VALUE" x="162.56" y="15.24" size="1.778" layer="96" rot="R90"/>
+<instance part="P-6" gate="1" x="142.24" y="17.78" smashed="yes">
+<attribute name="VALUE" x="139.7" y="15.24" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="AGND17" gate="VR1" x="172.72" y="20.32" smashed="yes">
-<attribute name="VALUE" x="170.18" y="15.24" size="1.778" layer="96" rot="R90"/>
+<instance part="AGND17" gate="VR1" x="149.86" y="20.32" smashed="yes">
+<attribute name="VALUE" x="147.32" y="15.24" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="INV1" gate="G$1" x="7.62" y="73.66" smashed="yes">
 <attribute name="NAME" x="5.08" y="76.708" size="1.778" layer="95" font="vector"/>
@@ -11463,11 +11465,11 @@ http://musicfromouterspace.com</text>
 <attribute name="NAME" x="171.45" y="75.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.45" y="70.358" size="1.778" layer="96"/>
 </instance>
-<instance part="GNDT" gate="G$1" x="190.5" y="25.4" smashed="yes">
-<attribute name="NAME" x="185.42" y="33.528" size="1.778" layer="95" font="vector"/>
+<instance part="GNDT" gate="G$1" x="165.1" y="25.4" smashed="yes">
+<attribute name="NAME" x="160.02" y="33.528" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="AGND16" gate="VR1" x="198.12" y="17.78" smashed="yes">
-<attribute name="VALUE" x="195.58" y="12.7" size="1.778" layer="96" rot="R90"/>
+<instance part="AGND16" gate="VR1" x="172.72" y="17.78" smashed="yes">
+<attribute name="VALUE" x="170.18" y="12.7" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="BIAS1" gate="G$1" x="7.62" y="111.76" smashed="yes">
 <attribute name="NAME" x="5.08" y="117.348" size="1.778" layer="95" font="vector"/>
@@ -11627,31 +11629,31 @@ http://musicfromouterspace.com</text>
 </segment>
 <segment>
 <pinref part="AGND17" gate="VR1" pin="AGND"/>
-<wire x1="172.72" y1="27.94" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="27.94" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="POW" gate="G$1" pin="3"/>
-<wire x1="172.72" y1="25.4" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
-<junction x="172.72" y="25.4"/>
+<wire x1="149.86" y1="25.4" x2="149.86" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="25.4" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
+<junction x="149.86" y="25.4"/>
 <pinref part="POW" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="27.94" x2="172.72" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="27.94" x2="149.86" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GNDT" gate="G$1" pin="4"/>
-<wire x1="195.58" y1="30.48" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="30.48" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="AGND16" gate="VR1" pin="AGND"/>
-<wire x1="198.12" y1="30.48" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="30.48" x2="172.72" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GNDT" gate="G$1" pin="3"/>
-<wire x1="198.12" y1="27.94" x2="198.12" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="25.4" x2="198.12" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="22.86" x2="198.12" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="27.94" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
-<junction x="198.12" y="27.94"/>
+<wire x1="172.72" y1="27.94" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="25.4" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="22.86" x2="172.72" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="27.94" x2="172.72" y2="27.94" width="0.1524" layer="91"/>
+<junction x="172.72" y="27.94"/>
 <pinref part="GNDT" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="25.4" x2="198.12" y2="25.4" width="0.1524" layer="91"/>
-<junction x="198.12" y="25.4"/>
+<wire x1="170.18" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
+<junction x="172.72" y="25.4"/>
 <pinref part="GNDT" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="22.86" x2="198.12" y2="22.86" width="0.1524" layer="91"/>
-<junction x="198.12" y="22.86"/>
+<wire x1="170.18" y1="22.86" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
+<junction x="172.72" y="22.86"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -11714,9 +11716,9 @@ http://musicfromouterspace.com</text>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="+12V"/>
-<wire x1="165.1" y1="30.48" x2="165.1" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="30.48" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="POW" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="30.48" x2="162.56" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -11909,9 +11911,9 @@ http://musicfromouterspace.com</text>
 </segment>
 <segment>
 <pinref part="P-6" gate="1" pin="-12V"/>
-<wire x1="165.1" y1="22.86" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="22.86" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="POW" gate="G$1" pin="4"/>
-<wire x1="165.1" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
