@@ -14050,6 +14050,22 @@ on flip side</text>
 <text x="-2.032" y="0" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center">&gt;NAME</text>
 <text x="0" y="1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="SOT23-3">
+<description>SOT23-3</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-1.651" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN_02">
@@ -14083,8 +14099,8 @@ on flip side</text>
 <pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="PRECISION_REF">
-<pin name="V+" x="0" y="5.08" visible="off" length="short" direction="pwr" rot="R270"/>
-<pin name="V-" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
+<pin name="CATHODE" x="0" y="5.08" visible="off" length="short" direction="pwr" rot="R270"/>
+<pin name="ANODE" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 <text x="-3.175" y="0" size="1.27" layer="95" rot="R90" align="center">&gt;NAME</text>
 <text x="3.175" y="0" size="1.27" layer="96" rot="R90" align="center">&gt;VALUE</text>
 <wire x1="-0.635" y1="-0.635" x2="0" y2="-0.635" width="0.254" layer="94"/>
@@ -14158,15 +14174,24 @@ Dual DC</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM4040_TO92" prefix="PREF" uservalue="yes">
+<deviceset name="LM4040" prefix="PREF" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="PRECISION_REF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO-92">
+<device name="TH" package="TO-92">
 <connects>
-<connect gate="G$1" pin="V+" pad="2"/>
-<connect gate="G$1" pin="V-" pad="3"/>
+<connect gate="G$1" pin="ANODE" pad="3"/>
+<connect gate="G$1" pin="CATHODE" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="2"/>
+<connect gate="G$1" pin="CATHODE" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14225,8 +14250,8 @@ Dual DC</text>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2.5-6" package3d_urn="urn:adsk.eagle:package:23349/1" value="100µF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="10µF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="10µF"/>
-<part name="PREF1" library="ElectricNoodleBox" deviceset="LM4040_TO92" device="" value="LM4040 10V"/>
-<part name="PREF2" library="ElectricNoodleBox" deviceset="LM4040_TO92" device="" value="LM4040 10V"/>
+<part name="PREF1" library="ElectricNoodleBox" deviceset="LM4040" device="TH" value="LM4040 10V"/>
+<part name="PREF2" library="ElectricNoodleBox" deviceset="LM4040" device="TH" value="LM4040 10V"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P-1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4K7"/>
@@ -14514,7 +14539,7 @@ for Banana systems</text>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="PREF1" gate="G$1" pin="V+"/>
+<pinref part="PREF1" gate="G$1" pin="CATHODE"/>
 <wire x1="104.14" y1="55.88" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="55.88" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 <junction x="104.14" y="55.88"/>
@@ -14535,7 +14560,7 @@ for Banana systems</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="PREF2" gate="G$1" pin="V-"/>
+<pinref part="PREF2" gate="G$1" pin="ANODE"/>
 <wire x1="104.14" y1="25.4" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="25.4" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
 <junction x="104.14" y="25.4"/>
@@ -14562,9 +14587,9 @@ for Banana systems</text>
 <wire x1="83.82" y1="40.64" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
 <junction x="83.82" y="40.64"/>
 <wire x1="83.82" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="PREF1" gate="G$1" pin="V-"/>
+<pinref part="PREF1" gate="G$1" pin="ANODE"/>
 <wire x1="104.14" y1="40.64" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="PREF2" gate="G$1" pin="V+"/>
+<pinref part="PREF2" gate="G$1" pin="CATHODE"/>
 <wire x1="104.14" y1="40.64" x2="104.14" y2="38.1" width="0.1524" layer="91"/>
 <junction x="104.14" y="40.64"/>
 <wire x1="104.14" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>

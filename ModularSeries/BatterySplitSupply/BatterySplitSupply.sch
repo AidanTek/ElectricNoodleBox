@@ -17270,6 +17270,47 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="1.905" y1="-10.414" x2="3.175" y2="-7.62" layer="21"/>
 <hole x="0" y="4.826" drill="3.302"/>
 </package>
+<package name="SOT23-3">
+<description>SOT23-3</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-1.651" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOIC8">
+<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
+<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
+<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
+<circle x="-2.667" y="-2.032" radius="0.1436" width="0.2032" layer="21"/>
+<smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="4" x="1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="5" x="1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="6" x="0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="7" x="-0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<text x="-1.27" y="-0.635" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="0" size="0.4064" layer="25">&gt;NAME</text>
+<rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
+<rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
+<rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
+<rectangle x1="1.7272" y1="-2.8702" x2="2.0828" y2="-1.8542" layer="51"/>
+<rectangle x1="-2.0828" y1="1.8542" x2="-1.7272" y2="2.8702" layer="51"/>
+<rectangle x1="-0.8128" y1="1.8542" x2="-0.4572" y2="2.8702" layer="51"/>
+<rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
+<rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL08" urn="urn:adsk.eagle:package:29519/2" type="model">
@@ -17335,8 +17376,8 @@ Source: AVX .. aphvc.pdf</description>
 <text x="0" y="3.81" size="1.27" layer="97" align="center">TLE2426</text>
 </symbol>
 <symbol name="PRECISION_REF">
-<pin name="V+" x="0" y="5.08" visible="off" length="short" direction="pwr" rot="R270"/>
-<pin name="V-" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
+<pin name="CATHODE" x="0" y="5.08" visible="off" length="short" direction="pwr" rot="R270"/>
+<pin name="ANODE" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 <text x="-3.175" y="0" size="1.27" layer="95" rot="R90" align="center">&gt;NAME</text>
 <text x="3.175" y="0" size="1.27" layer="96" rot="R90" align="center">&gt;VALUE</text>
 <wire x1="-0.635" y1="-0.635" x2="0" y2="-0.635" width="0.254" layer="94"/>
@@ -17405,12 +17446,12 @@ Source: AVX .. aphvc.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TLE2426_DIP" prefix="VREF">
+<deviceset name="TLE2426" prefix="VREF" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TLE2426" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="DIL" package="DIL08">
 <connects>
 <connect gate="G$1" pin="COM" pad="2"/>
 <connect gate="G$1" pin="INPUT" pad="3"/>
@@ -17424,17 +17465,37 @@ Source: AVX .. aphvc.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SMD" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="COM" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="3"/>
+<connect gate="G$1" pin="NR" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
-<deviceset name="LM4040_TO92" prefix="PREF" uservalue="yes">
+<deviceset name="LM4040" prefix="PREF" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="PRECISION_REF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO-92">
+<device name="TH" package="TO-92">
 <connects>
-<connect gate="G$1" pin="V+" pad="2"/>
-<connect gate="G$1" pin="V-" pad="3"/>
+<connect gate="G$1" pin="ANODE" pad="3"/>
+<connect gate="G$1" pin="CATHODE" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="2"/>
+<connect gate="G$1" pin="CATHODE" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17471,13 +17532,13 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="VREF1" library="ElectricNoodleBox" deviceset="TLE2426_DIP" device="" package3d_urn="urn:adsk.eagle:package:29519/2"/>
+<part name="VREF1" library="ElectricNoodleBox" deviceset="TLE2426" device="DIL" package3d_urn="urn:adsk.eagle:package:29519/2"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="10µF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="1µF"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100Ω"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100Ω"/>
-<part name="PREF1" library="ElectricNoodleBox" deviceset="LM4040_TO92" device=""/>
-<part name="PREF2" library="ElectricNoodleBox" deviceset="LM4040_TO92" device=""/>
+<part name="PREF1" library="ElectricNoodleBox" deviceset="LM4040" device="TH"/>
+<part name="PREF2" library="ElectricNoodleBox" deviceset="LM4040" device="TH"/>
 <part name="J1" library="ElectricNoodleBox" deviceset="2XMOLEX" device=""/>
 <part name="J2" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
 <part name="J3" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
@@ -17626,7 +17687,7 @@ ELECTRIC NOODLE BOX
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="66.04" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="PREF1" gate="G$1" pin="V+"/>
+<pinref part="PREF1" gate="G$1" pin="CATHODE"/>
 <wire x1="63.5" y1="66.04" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="66.04" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
 <junction x="63.5" y="66.04"/>
@@ -17645,7 +17706,7 @@ ELECTRIC NOODLE BOX
 </net>
 <net name="-2.048REF" class="0">
 <segment>
-<pinref part="PREF2" gate="G$1" pin="V-"/>
+<pinref part="PREF2" gate="G$1" pin="ANODE"/>
 <wire x1="63.5" y1="38.1" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
@@ -17768,9 +17829,9 @@ ELECTRIC NOODLE BOX
 <segment>
 <pinref part="VREF1" gate="G$1" pin="OUTPUT"/>
 <wire x1="45.72" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="PREF1" gate="G$1" pin="V-"/>
+<pinref part="PREF1" gate="G$1" pin="ANODE"/>
 <wire x1="63.5" y1="50.8" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="PREF2" gate="G$1" pin="V+"/>
+<pinref part="PREF2" gate="G$1" pin="CATHODE"/>
 <wire x1="63.5" y1="50.8" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
 <junction x="63.5" y="50.8"/>
 <wire x1="63.5" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>

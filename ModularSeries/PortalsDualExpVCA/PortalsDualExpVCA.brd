@@ -1872,15 +1872,15 @@ design rules under a new name.</description>
 <element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,2" package3d_urn="urn:adsk.eagle:package:14275/1" value="MOUNT-HOLE3.2" x="5" y="90" smashed="yes">
 <attribute name="POPULARITY" value="7" x="73.58" y="73.49" size="1.778" layer="27" display="off"/>
 </element>
-<element name="IC1" library="ElectricNoodleBox" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="LM13700_DIP" x="22.86" y="47.49" smashed="yes">
+<element name="IC1" library="ElectricNoodleBox" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="" x="22.86" y="47.49" smashed="yes">
 <attribute name="NAME" x="12.065" y="47.49" size="1.016" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="34.29" y="47.49" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
-<element name="IC2" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL0X4_DIP" x="25.4" y="19.55" smashed="yes" rot="R270">
+<element name="IC2" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="" x="25.4" y="19.55" smashed="yes" rot="R270">
 <attribute name="NAME" x="22.352" y="28.821" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="24.765" y="26.281" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="IC3" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL0X4_DIP" x="25.4" y="75.43" smashed="yes" rot="R270">
+<element name="IC3" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="" x="25.4" y="75.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="22.352" y="84.701" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="24.765" y="82.161" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>

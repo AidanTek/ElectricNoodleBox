@@ -1796,7 +1796,7 @@ design rules under a new name.</description>
 <element name="D2" library="ElectricNoodleBox" package="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2" value="BAT85" x="36.83" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.973" y="17.145" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
-<element name="IC2" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL0X4_DIP" x="29.21" y="24.13" smashed="yes">
+<element name="IC2" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="" x="29.21" y="24.13" smashed="yes">
 <attribute name="NAME" x="19.939" y="21.082" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="22.479" y="23.495" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -2038,7 +2038,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="47.752" y="45.72" size="0.8128" layer="25" font="vector" ratio="20" rot="R270" align="center"/>
 <attribute name="VALUE" x="53.34" y="47.752" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="IC1" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL0X4_DIP" x="66.04" y="24.13" smashed="yes">
+<element name="IC1" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="" x="66.04" y="24.13" smashed="yes">
 <attribute name="NAME" x="56.769" y="21.082" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="59.309" y="23.495" size="1.27" layer="27" ratio="10"/>
 </element>

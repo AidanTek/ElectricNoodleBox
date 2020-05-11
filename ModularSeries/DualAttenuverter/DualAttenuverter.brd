@@ -1734,7 +1734,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="16.51" y="37.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="45.339" y="17.534" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="IC1" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="TL0X4_DIP" x="19.05" y="23.63" smashed="yes" rot="R180">
+<element name="IC1" library="ElectricNoodleBox" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="" x="19.05" y="23.63" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.321" y="27.948" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="25.781" y="24.265" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -1858,7 +1858,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="14.478" y="45.22" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
 <attribute name="VALUE" x="17.145" y="46.998" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="IC2" library="ElectricNoodleBox" package="DIL08" package3d_urn="urn:adsk.eagle:package:29519/2" value="LM358_DIP" x="41.91" y="23.63" smashed="yes" rot="R270">
+<element name="IC2" library="ElectricNoodleBox" package="DIL08" package3d_urn="urn:adsk.eagle:package:29519/2" value="LM358" x="41.91" y="23.63" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.989" y="28.964" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="41.275" y="27.186" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
