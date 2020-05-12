@@ -2844,6 +2844,32 @@ ADC1</text>
 <text x="8.89" y="1.27" size="1.27" layer="95" align="center-right">2</text>
 <text x="-6.35" y="11.43" size="0.8128" layer="95" align="center-left">Arduino pins (outside)</text>
 </symbol>
+<symbol name="CD4024">
+<pin name="CLK" x="-10.16" y="5.08" visible="off" length="middle" direction="in"/>
+<pin name="RESET" x="-10.16" y="-5.08" visible="off" length="middle" direction="in"/>
+<pin name="Q5" x="10.16" y="-5.08" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="Q7" x="10.16" y="-15.24" visible="off" length="middle" rot="R180"/>
+<pin name="Q1" x="10.16" y="15.24" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="Q4" x="10.16" y="0" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="Q3" x="10.16" y="5.08" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="Q6" x="10.16" y="-10.16" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="10.16" y="10.16" visible="off" length="middle" direction="out" rot="R180"/>
+<wire x1="-7.62" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
+<text x="-6.35" y="6.35" size="1.778" layer="97" align="center-left">Clk</text>
+<text x="-6.35" y="-3.81" size="1.778" layer="97" align="center-left">RES</text>
+<text x="6.35" y="16.51" size="1.778" layer="97" align="center-right">Q1</text>
+<text x="6.35" y="11.43" size="1.778" layer="97" align="center-right">Q2</text>
+<text x="6.35" y="6.35" size="1.778" layer="97" align="center-right">Q3</text>
+<text x="6.35" y="1.27" size="1.778" layer="97" align="center-right">Q4</text>
+<text x="6.35" y="-3.81" size="1.778" layer="97" align="center-right">Q5</text>
+<text x="6.35" y="-8.89" size="1.778" layer="97" align="center-right">Q6</text>
+<text x="6.35" y="-13.97" size="1.778" layer="97" align="center-right">Q7</text>
+<text x="0" y="0" size="1.778" layer="97" rot="R90" align="center">CD4024</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TOUCHPAD10X20" prefix="TP">
@@ -3935,6 +3961,35 @@ ADC1</text>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:29519/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CD4024B" prefix="IC" uservalue="yes">
+<gates>
+<gate name="A" symbol="CD4024" x="0" y="0"/>
+<gate name="P" symbol="SUPPLYPINS" x="22.86" y="0"/>
+</gates>
+<devices>
+<device name="DIL" package="DIL14">
+<connects>
+<connect gate="A" pin="CLK" pad="1"/>
+<connect gate="A" pin="Q1" pad="12"/>
+<connect gate="A" pin="Q2" pad="11"/>
+<connect gate="A" pin="Q3" pad="9"/>
+<connect gate="A" pin="Q4" pad="6"/>
+<connect gate="A" pin="Q5" pad="5"/>
+<connect gate="A" pin="Q6" pad="4"/>
+<connect gate="A" pin="Q7" pad="3"/>
+<connect gate="A" pin="RESET" pad="2"/>
+<connect gate="P" pin="V+" pad="14"/>
+<connect gate="P" pin="V-" pad="7"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16407/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>

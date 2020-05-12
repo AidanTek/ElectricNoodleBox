@@ -159,8 +159,8 @@ direction, length and random. Random is complex, the single control has four
 states: off, stutter, pattern and pseudorandom. Stutter will increase the 
 likelyhood that a note is repeated, pattern will repeatedly step through a 
 randomly generated pattern (dependent on length setting) and pseudorandom will 
-pick a random-seeded number every step. This function will write to the encoders
-before before iterating the sequence and exiting in each case. */
+pick a random-seeded number every step. This function will write to the decoders
+before iterating the sequence and exiting in each case. */
 uint8_t sequenceModifiers() {
   bool dir = digitalRead(dirPin); // 0 for forwards, 1 for backwards
   uint16_t seqLength = map(analogRead(seqLenPin), 0, 1023, 0, 15);
