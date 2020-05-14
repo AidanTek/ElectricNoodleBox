@@ -964,7 +964,7 @@ on flip side</text>
 <text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO92" urn="urn:adsk.eagle:footprint:28459/1">
+<package name="TO92" urn="urn:adsk.eagle:footprint:28459/1" locally_modified="yes">
 <description>&lt;b&gt;TO 92&lt;/b&gt;</description>
 <wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.781"/>
 <wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.3185"/>
@@ -976,14 +976,11 @@ on flip side</text>
 <wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
 <wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
 <wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.2936"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
 <pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
-<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
-<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
 </package>
 <package name="1X01">
 <description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
@@ -3373,7 +3370,7 @@ ADC1</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="L7805_TO-220" prefix="VREG">
+<deviceset name="L7805" prefix="VREG">
 <gates>
 <gate name="G$1" symbol="STANDARD_REGULATOR" x="0" y="0"/>
 </gates>
@@ -3509,8 +3506,8 @@ ADC1</text>
 </deviceset>
 <deviceset name="LM358" prefix="IC">
 <gates>
-<gate name="A" symbol="OPAMP" x="0" y="2.54"/>
-<gate name="B" symbol="OPAMP" x="0" y="-12.7"/>
+<gate name="A" symbol="OPAMP" x="0" y="2.54" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="0" y="-12.7" swaplevel="1"/>
 <gate name="P" symbol="SUPPLYPINS" x="17.78" y="-2.54"/>
 </gates>
 <devices>
@@ -3828,10 +3825,10 @@ ADC1</text>
 </deviceset>
 <deviceset name="LM324" prefix="IC" uservalue="yes">
 <gates>
-<gate name="A" symbol="OPAMP" x="0" y="15.24"/>
-<gate name="B" symbol="OPAMP" x="0" y="2.54"/>
-<gate name="C" symbol="OPAMP" x="0" y="-10.16"/>
-<gate name="D" symbol="OPAMP" x="0" y="-22.86"/>
+<gate name="A" symbol="OPAMP" x="0" y="15.24" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="0" y="2.54" swaplevel="1"/>
+<gate name="C" symbol="OPAMP" x="0" y="-10.16" swaplevel="1"/>
+<gate name="D" symbol="OPAMP" x="0" y="-22.86" swaplevel="1"/>
 <gate name="P" symbol="SUPPLYPINS" x="20.32" y="-2.54"/>
 </gates>
 <devices>
@@ -3990,6 +3987,26 @@ ADC1</text>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:16407/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L78L05" prefix="VREG" uservalue="yes">
+<gates>
+<gate name="A" symbol="STANDARD_REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO92" package="TO92">
+<connects>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="VIN" pad="3"/>
+<connect gate="A" pin="VOUT" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28523/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
