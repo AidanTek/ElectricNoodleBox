@@ -14257,14 +14257,14 @@ Dual DC</text>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4K7"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4K7"/>
 <part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="J1" library="ElectricNoodleBox" deviceset="2XMOLEX" device=""/>
-<part name="J2" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
-<part name="J3" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
-<part name="J4" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
-<part name="J5" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
-<part name="J6" library="ElectricNoodleBox" deviceset="2XMOLEX" device=""/>
-<part name="J7" library="ElectricNoodleBox" deviceset="2XMOLEX" device=""/>
-<part name="J8" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
+<part name="VIN" library="ElectricNoodleBox" deviceset="2XMOLEX" device=""/>
+<part name="P1" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
+<part name="P2" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
+<part name="P3" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
+<part name="P4" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
+<part name="VREF1" library="ElectricNoodleBox" deviceset="2XMOLEX" device=""/>
+<part name="VREF2" library="ElectricNoodleBox" deviceset="2XMOLEX" device=""/>
+<part name="P5" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
 <part name="P-2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="AGND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
@@ -14281,6 +14281,7 @@ Dual DC</text>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
 <part name="LINK" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
 <part name="AGND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="P6" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14338,38 +14339,38 @@ for Banana systems</text>
 <instance part="AGND1" gate="VR1" x="111.76" y="35.56" smashed="yes">
 <attribute name="VALUE" x="114.3" y="38.1" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J1" gate="G$1" x="25.4" y="45.72" smashed="yes" rot="MR180">
+<instance part="VIN" gate="G$1" x="25.4" y="45.72" smashed="yes" rot="MR180">
 <attribute name="NAME" x="22.86" y="40.132" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="J2" gate="G$1" x="121.92" y="73.66" smashed="yes" rot="MR180">
+<instance part="P1" gate="G$1" x="121.92" y="73.66" smashed="yes" rot="MR180">
 <attribute name="NAME" x="116.84" y="65.532" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="J3" gate="G$1" x="121.92" y="58.42" smashed="yes" rot="MR180">
+<instance part="P2" gate="G$1" x="121.92" y="58.42" smashed="yes" rot="MR180">
 <attribute name="NAME" x="116.84" y="50.292" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="J4" gate="G$1" x="121.92" y="43.18" smashed="yes" rot="MR180">
+<instance part="P3" gate="G$1" x="121.92" y="43.18" smashed="yes" rot="MR180">
 <attribute name="NAME" x="116.84" y="35.052" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="J5" gate="G$1" x="121.92" y="27.94" smashed="yes" rot="MR180">
+<instance part="P4" gate="G$1" x="121.92" y="27.94" smashed="yes" rot="MR180">
 <attribute name="NAME" x="116.84" y="19.812" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="J6" gate="G$1" x="154.94" y="48.26" smashed="yes" rot="R180">
+<instance part="VREF1" gate="G$1" x="154.94" y="48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="157.48" y="42.672" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J7" gate="G$1" x="154.94" y="35.56" smashed="yes" rot="R180">
+<instance part="VREF2" gate="G$1" x="154.94" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="157.48" y="29.972" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="J8" gate="G$1" x="121.92" y="12.7" smashed="yes" rot="MR180">
+<instance part="P5" gate="G$1" x="121.92" y="12.7" smashed="yes" rot="MR180">
 <attribute name="NAME" x="116.84" y="4.572" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="P-2" gate="1" x="132.08" y="2.54" smashed="yes">
-<attribute name="VALUE" x="129.54" y="0" size="1.778" layer="96" rot="R90"/>
+<instance part="P-2" gate="1" x="132.08" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="129.54" y="-15.24" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+2" gate="1" x="129.54" y="81.28" smashed="yes">
 <attribute name="VALUE" x="127" y="76.2" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="AGND2" gate="VR1" x="137.16" y="5.08" smashed="yes">
-<attribute name="VALUE" x="139.7" y="7.62" size="1.778" layer="96" rot="R90"/>
+<instance part="AGND2" gate="VR1" x="137.16" y="-10.16" smashed="yes">
+<attribute name="VALUE" x="139.7" y="-7.62" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D1" gate="1" x="43.18" y="38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="37.6174" y="35.56" size="1.778" layer="95" rot="R90"/>
@@ -14413,6 +14414,9 @@ for Banana systems</text>
 <instance part="AGND5" gate="VR1" x="35.56" y="60.96" smashed="yes">
 <attribute name="VALUE" x="38.1" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="P6" gate="G$1" x="121.92" y="-2.54" smashed="yes" rot="MR180">
+<attribute name="NAME" x="116.84" y="-10.668" size="1.778" layer="95" font="vector" rot="MR180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14437,26 +14441,30 @@ for Banana systems</text>
 <junction x="78.74" y="63.5"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="P1" gate="G$1" pin="1"/>
 <wire x1="127" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="76.2" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="J8" gate="G$1" pin="1"/>
+<pinref part="P5" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="60.96" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="45.72" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="30.48" x2="129.54" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="15.24" x2="127" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="P2" gate="G$1" pin="1"/>
 <wire x1="127" y1="60.96" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
 <junction x="129.54" y="60.96"/>
-<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="P3" gate="G$1" pin="1"/>
 <wire x1="127" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
 <junction x="129.54" y="45.72"/>
-<pinref part="J5" gate="G$1" pin="1"/>
+<pinref part="P4" gate="G$1" pin="1"/>
 <wire x1="127" y1="30.48" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
 <junction x="129.54" y="30.48"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="129.54" y1="76.2" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
 <junction x="129.54" y="76.2"/>
+<pinref part="P6" gate="G$1" pin="1"/>
+<wire x1="127" y1="0" x2="129.54" y2="0" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="0" x2="129.54" y2="15.24" width="0.1524" layer="91"/>
+<junction x="129.54" y="15.24"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -14479,26 +14487,30 @@ for Banana systems</text>
 <junction x="78.74" y="22.86"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="4"/>
+<pinref part="P1" gate="G$1" pin="4"/>
 <wire x1="127" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="68.58" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="J8" gate="G$1" pin="4"/>
+<pinref part="P5" gate="G$1" pin="4"/>
 <wire x1="132.08" y1="53.34" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="38.1" x2="132.08" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="22.86" x2="132.08" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="7.62" x2="127" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="4"/>
+<pinref part="P2" gate="G$1" pin="4"/>
 <wire x1="127" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
 <junction x="132.08" y="53.34"/>
-<pinref part="J5" gate="G$1" pin="4"/>
+<pinref part="P4" gate="G$1" pin="4"/>
 <wire x1="127" y1="22.86" x2="132.08" y2="22.86" width="0.1524" layer="91"/>
 <junction x="132.08" y="22.86"/>
 <pinref part="P-2" gate="1" pin="-12V"/>
-<wire x1="132.08" y1="7.62" x2="132.08" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="7.62" x2="132.08" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="132.08" y="7.62"/>
-<pinref part="J4" gate="G$1" pin="4"/>
+<pinref part="P3" gate="G$1" pin="4"/>
+<wire x1="132.08" y1="-7.62" x2="132.08" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="127" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
 <junction x="132.08" y="38.1"/>
+<pinref part="P6" gate="G$1" pin="4"/>
+<wire x1="127" y1="-7.62" x2="132.08" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="132.08" y="-7.62"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -14507,7 +14519,7 @@ for Banana systems</text>
 <wire x1="55.88" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="48.26" y1="45.72" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="VIN" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
 <junction x="48.26" y="45.72"/>
 <pinref part="D1" gate="1" pin="C"/>
@@ -14525,7 +14537,7 @@ for Banana systems</text>
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="48.26" y1="33.02" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
 <junction x="48.26" y="33.02"/>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="VIN" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="43.18" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
@@ -14546,10 +14558,10 @@ for Banana systems</text>
 <label x="104.14" y="58.42" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="1"/>
+<pinref part="VREF1" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="48.26" x2="144.78" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="48.26" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="J7" gate="G$1" pin="1"/>
+<pinref part="VREF2" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="35.56" x2="147.32" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="48.26" x2="144.78" y2="50.8" width="0.1524" layer="91"/>
 <junction x="144.78" y="48.26"/>
@@ -14567,10 +14579,10 @@ for Banana systems</text>
 <label x="104.14" y="22.86" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="2"/>
+<pinref part="VREF1" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="45.72" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="45.72" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="J7" gate="G$1" pin="2"/>
+<pinref part="VREF2" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="33.02" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="33.02" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
 <junction x="142.24" y="33.02"/>
@@ -14597,10 +14609,10 @@ for Banana systems</text>
 <wire x1="111.76" y1="40.64" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="P1" gate="G$1" pin="2"/>
 <wire x1="127" y1="73.66" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="73.66" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="J8" gate="G$1" pin="3"/>
+<pinref part="P5" gate="G$1" pin="3"/>
 <wire x1="137.16" y1="71.12" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="58.42" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
@@ -14610,33 +14622,41 @@ for Banana systems</text>
 <wire x1="137.16" y1="25.4" x2="137.16" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="12.7" x2="137.16" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="J8" gate="G$1" pin="2"/>
+<pinref part="P5" gate="G$1" pin="2"/>
 <wire x1="127" y1="12.7" x2="137.16" y2="12.7" width="0.1524" layer="91"/>
 <junction x="137.16" y="12.7"/>
-<pinref part="J5" gate="G$1" pin="3"/>
+<pinref part="P4" gate="G$1" pin="3"/>
 <wire x1="127" y1="25.4" x2="137.16" y2="25.4" width="0.1524" layer="91"/>
 <junction x="137.16" y="25.4"/>
-<pinref part="J5" gate="G$1" pin="2"/>
+<pinref part="P4" gate="G$1" pin="2"/>
 <wire x1="127" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
 <junction x="137.16" y="27.94"/>
-<pinref part="J4" gate="G$1" pin="3"/>
+<pinref part="P3" gate="G$1" pin="3"/>
 <wire x1="127" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
 <junction x="137.16" y="40.64"/>
-<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="P3" gate="G$1" pin="2"/>
 <wire x1="127" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
 <junction x="137.16" y="43.18"/>
-<pinref part="J3" gate="G$1" pin="3"/>
+<pinref part="P2" gate="G$1" pin="3"/>
 <wire x1="127" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
 <junction x="137.16" y="55.88"/>
-<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="P2" gate="G$1" pin="2"/>
 <wire x1="127" y1="58.42" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
 <junction x="137.16" y="58.42"/>
-<pinref part="J2" gate="G$1" pin="3"/>
+<pinref part="P1" gate="G$1" pin="3"/>
 <wire x1="127" y1="71.12" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
 <junction x="137.16" y="71.12"/>
 <pinref part="AGND2" gate="VR1" pin="AGND"/>
-<wire x1="137.16" y1="10.16" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="10.16" x2="137.16" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="137.16" y="10.16"/>
+<pinref part="P6" gate="G$1" pin="3"/>
+<wire x1="137.16" y1="-2.54" x2="137.16" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-5.08" x2="137.16" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="127" y1="-5.08" x2="137.16" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="137.16" y="-5.08"/>
+<pinref part="P6" gate="G$1" pin="2"/>
+<wire x1="127" y1="-2.54" x2="137.16" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="137.16" y="-2.54"/>
 </segment>
 <segment>
 <pinref part="LEDV+" gate="G$1" pin="1"/>
