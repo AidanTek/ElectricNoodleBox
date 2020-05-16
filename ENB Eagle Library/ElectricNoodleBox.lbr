@@ -3450,10 +3450,10 @@ ADC1</text>
 </deviceset>
 <deviceset name="TL0X4" prefix="IC" uservalue="yes">
 <gates>
-<gate name="A" symbol="OPAMP" x="-2.54" y="17.78"/>
-<gate name="B" symbol="OPAMP" x="-2.54" y="5.08"/>
-<gate name="C" symbol="OPAMP" x="-2.54" y="-7.62"/>
-<gate name="D" symbol="OPAMP" x="-2.54" y="-20.32"/>
+<gate name="A" symbol="OPAMP" x="-2.54" y="17.78" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="-2.54" y="5.08" swaplevel="1"/>
+<gate name="C" symbol="OPAMP" x="-2.54" y="-7.62" swaplevel="1"/>
+<gate name="D" symbol="OPAMP" x="-2.54" y="-20.32" swaplevel="1"/>
 <gate name="P" symbol="SUPPLYPINS" x="15.24" y="-2.54"/>
 </gates>
 <devices>
