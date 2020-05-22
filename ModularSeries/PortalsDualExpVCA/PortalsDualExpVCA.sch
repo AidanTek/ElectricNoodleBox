@@ -10513,32 +10513,6 @@ R2 3 2 {val-val*var/100}
 <text x="-1.27" y="-1.524" size="0.8128" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
-<package name="MOLEX-1X4">
-<description>&lt;h3&gt;Molex 4-Pin Plated Through-Hole&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/2pin_molex_set_19iv10.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-1.27" y1="3.048" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="8.89" y1="3.048" x2="8.89" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="8.89" y1="3.048" x2="-1.27" y2="3.048" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-2.54" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0" y1="-1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-1.27" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796"/>
-<text x="3.81" y="1.905" size="0.8128" layer="25" font="vector" ratio="20" align="center">&gt;NAME</text>
-<text x="2.286" y="-3.429" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
 <package name="1X03">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -10783,6 +10757,41 @@ R2 3 2 {val-val*var/100}
 <vertex x="-5.55625" y="-2.69875" curve="90"/>
 </polygon>
 </package>
+<package name="COMBINED_POWER">
+<pad name="V+1" x="-5.94" y="0" drill="1.78"/>
+<pad name="GND1" x="-1.98" y="0" drill="1.78"/>
+<pad name="GND2" x="1.98" y="0" drill="1.78"/>
+<pad name="V-1" x="5.94" y="0" drill="1.78"/>
+<pad name="V+2" x="-5.08" y="1.27" drill="1.016"/>
+<pad name="V+3" x="-5.08" y="-1.27" drill="1.016"/>
+<pad name="GND3" x="-2.54" y="1.27" drill="1.016"/>
+<pad name="GND6" x="-2.54" y="-1.27" drill="1.016"/>
+<pad name="GND4" x="0" y="1.27" drill="1.016" diameter="2.1844"/>
+<pad name="GND7" x="0" y="-1.27" drill="1.016" diameter="2.1844"/>
+<pad name="GND5" x="2.54" y="1.27" drill="1.016"/>
+<pad name="GND8" x="2.54" y="-1.27" drill="1.016"/>
+<pad name="V-2" x="5.08" y="1.27" drill="1.016"/>
+<pad name="V-3" x="5.08" y="-1.27" drill="1.016"/>
+<wire x1="-10" y1="-4.25" x2="10" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="10" y1="-4.25" x2="10" y2="4.25" width="0.127" layer="21"/>
+<wire x1="10" y1="4.25" x2="1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="4.25" x2="-10" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-10" y1="4.25" x2="-10" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.75" x2="1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="4.25" x2="-1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="4.25" x2="-1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-9.5" y1="-3.75" x2="9.5" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="9.5" y1="-3.75" x2="9.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="9.5" y1="3.75" x2="1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.75" x2="1.98" y2="3.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.25" x2="-1.98" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="3.25" x2="-1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="3.75" x2="-9.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-9.5" y1="3.75" x2="-9.5" y2="-3.75" width="0.127" layer="21"/>
+<text x="-8.255" y="0" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center">V+</text>
+<text x="8.255" y="0" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center">V-</text>
+<text x="0" y="-5.08" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL14" urn="urn:adsk.eagle:package:16407/2" type="model">
@@ -10927,6 +10936,19 @@ R2 3 2 {val-val*var/100}
 <text x="-2.54" y="-7.62" size="1.778" layer="97" align="center">V-</text>
 <text x="2.54" y="-5.08" size="1.778" layer="95" rot="R90" align="center">&gt;NAME</text>
 </symbol>
+<symbol name="COMBINED_POWER">
+<pin name="V++" x="-7.62" y="5.08" visible="off" length="middle" direction="pwr"/>
+<pin name="AGND" x="-7.62" y="0" visible="off" length="middle" direction="pwr"/>
+<pin name="V--" x="-7.62" y="-5.08" visible="off" length="middle" direction="pwr"/>
+<text x="-2.54" y="5.08" size="1.778" layer="97" align="center-left">+12V</text>
+<text x="-2.54" y="0" size="1.778" layer="97" align="center-left">GND</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="97" align="center-left">-12V</text>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="7.62" y="0" size="1.778" layer="97" rot="R90" align="center">SUPPLY</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1XWIREPAD" prefix="WP">
@@ -10937,24 +10959,6 @@ R2 3 2 {val-val*var/100}
 <device name="" package="1X01">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="4XMOLEX" prefix="MP">
-<gates>
-<gate name="G$1" symbol="CONN_04" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="MOLEX-1X4">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11113,6 +11117,23 @@ R2 3 2 {val-val*var/100}
 </device>
 </devices>
 </deviceset>
+<deviceset name="COMBO_SUPPLY_HEADER" prefix="WP">
+<gates>
+<gate name="G$1" symbol="COMBINED_POWER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="COMBINED_POWER">
+<connects>
+<connect gate="G$1" pin="AGND" pad="GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8"/>
+<connect gate="G$1" pin="V++" pad="V+1 V+2 V+3"/>
+<connect gate="G$1" pin="V--" pad="V-1 V-2 V-3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -11213,7 +11234,6 @@ R2 3 2 {val-val*var/100}
 <part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
-<part name="POW" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P-6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="AGND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
@@ -11225,6 +11245,7 @@ R2 3 2 {val-val*var/100}
 <part name="AGND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="BIAS1" library="ElectricNoodleBox" deviceset="3XWIREPAD" device=""/>
 <part name="BIAS2" library="ElectricNoodleBox" deviceset="3XWIREPAD" device=""/>
+<part name="WP1" library="ElectricNoodleBox" deviceset="COMBO_SUPPLY_HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11237,7 +11258,7 @@ Adapted from Ray Wilson's Design:
 http://musicfromouterspace.com</text>
 <text x="109.22" y="43.18" size="2.54" layer="97">Mounting Holes</text>
 <text x="15.24" y="40.64" size="2.54" layer="97">Power Decoupling</text>
-<text x="132.08" y="10.16" size="2.54" layer="97">Supply In</text>
+<text x="119.38" y="10.16" size="2.54" layer="97">Supply In</text>
 <text x="73.66" y="17.78" size="1.778" layer="91">Unused LM13700 Darlingtons</text>
 <text x="177.8" y="22.86" size="1.778" layer="91">Ground terminals
 for jacks / pots</text>
@@ -11591,14 +11612,11 @@ for jacks / pots</text>
 <instance part="H4" gate="G$1" x="111.76" y="22.86" smashed="yes">
 <attribute name="NAME" x="113.792" y="23.4442" size="1.778" layer="95"/>
 </instance>
-<instance part="POW" gate="G$1" x="134.62" y="27.94" smashed="yes" rot="MR180">
-<attribute name="NAME" x="129.54" y="19.812" size="1.778" layer="95" font="vector" rot="MR180"/>
-</instance>
 <instance part="P+6" gate="1" x="142.24" y="35.56" smashed="yes">
 <attribute name="VALUE" x="139.7" y="30.48" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P-6" gate="1" x="142.24" y="17.78" smashed="yes">
-<attribute name="VALUE" x="139.7" y="15.24" size="1.778" layer="96" rot="R90"/>
+<instance part="P-6" gate="1" x="142.24" y="15.24" smashed="yes">
+<attribute name="VALUE" x="139.7" y="12.7" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="AGND17" gate="VR1" x="149.86" y="20.32" smashed="yes">
 <attribute name="VALUE" x="147.32" y="15.24" size="1.778" layer="96" rot="R90"/>
@@ -11629,6 +11647,7 @@ for jacks / pots</text>
 <instance part="BIAS2" gate="G$1" x="160.02" y="111.76" smashed="yes">
 <attribute name="NAME" x="157.48" y="117.348" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="WP1" gate="G$1" x="129.54" y="25.4" smashed="yes" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -11781,13 +11800,9 @@ for jacks / pots</text>
 </segment>
 <segment>
 <pinref part="AGND17" gate="VR1" pin="AGND"/>
-<wire x1="149.86" y1="27.94" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="POW" gate="G$1" pin="3"/>
 <wire x1="149.86" y1="25.4" x2="149.86" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="25.4" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
-<junction x="149.86" y="25.4"/>
-<pinref part="POW" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="27.94" x2="149.86" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="25.4" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="WP1" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="GNDT" gate="G$1" pin="4"/>
@@ -11869,8 +11884,8 @@ for jacks / pots</text>
 <segment>
 <pinref part="P+6" gate="1" pin="+12V"/>
 <wire x1="142.24" y1="30.48" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="POW" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="WP1" gate="G$1" pin="V++"/>
+<wire x1="137.16" y1="30.48" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -12063,9 +12078,9 @@ for jacks / pots</text>
 </segment>
 <segment>
 <pinref part="P-6" gate="1" pin="-12V"/>
-<wire x1="142.24" y1="22.86" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="POW" gate="G$1" pin="4"/>
-<wire x1="142.24" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="20.32" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="WP1" gate="G$1" pin="V--"/>
+<wire x1="137.16" y1="20.32" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">

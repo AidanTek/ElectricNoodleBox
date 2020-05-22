@@ -506,32 +506,6 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="MOLEX-1X4">
-<description>&lt;h3&gt;Molex 4-Pin Plated Through-Hole&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/2pin_molex_set_19iv10.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-1.27" y1="3.048" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="8.89" y1="3.048" x2="8.89" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="8.89" y1="3.048" x2="-1.27" y2="3.048" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-2.54" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0" y1="-1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-1.27" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796"/>
-<text x="3.81" y="1.905" size="0.8128" layer="25" font="vector" ratio="20" align="center">&gt;NAME</text>
-<text x="2.286" y="-3.429" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
 <package name="1X03">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -779,6 +753,41 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="2.286" y1="2.286" x2="2.794" y2="3.302" layer="51"/>
 <rectangle x1="3.556" y1="2.286" x2="4.064" y2="3.302" layer="51"/>
 <circle x="-4.572" y="-2.3114" radius="0.218496875" width="0" layer="21"/>
+</package>
+<package name="COMBINED_POWER">
+<pad name="V+1" x="-5.94" y="0" drill="1.78"/>
+<pad name="GND1" x="-1.98" y="0" drill="1.78"/>
+<pad name="GND2" x="1.98" y="0" drill="1.78"/>
+<pad name="V-1" x="5.94" y="0" drill="1.78"/>
+<pad name="V+2" x="-5.08" y="1.27" drill="1.016"/>
+<pad name="V+3" x="-5.08" y="-1.27" drill="1.016"/>
+<pad name="GND3" x="-2.54" y="1.27" drill="1.016"/>
+<pad name="GND6" x="-2.54" y="-1.27" drill="1.016"/>
+<pad name="GND4" x="0" y="1.27" drill="1.016" diameter="2.1844"/>
+<pad name="GND7" x="0" y="-1.27" drill="1.016" diameter="2.1844"/>
+<pad name="GND5" x="2.54" y="1.27" drill="1.016"/>
+<pad name="GND8" x="2.54" y="-1.27" drill="1.016"/>
+<pad name="V-2" x="5.08" y="1.27" drill="1.016"/>
+<pad name="V-3" x="5.08" y="-1.27" drill="1.016"/>
+<wire x1="-10" y1="-4.25" x2="10" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="10" y1="-4.25" x2="10" y2="4.25" width="0.127" layer="21"/>
+<wire x1="10" y1="4.25" x2="1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="4.25" x2="-10" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-10" y1="4.25" x2="-10" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.75" x2="1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="4.25" x2="-1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="4.25" x2="-1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-9.5" y1="-3.75" x2="9.5" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="9.5" y1="-3.75" x2="9.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="9.5" y1="3.75" x2="1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.75" x2="1.98" y2="3.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.25" x2="-1.98" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="3.25" x2="-1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="3.75" x2="-9.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-9.5" y1="3.75" x2="-9.5" y2="-3.75" width="0.127" layer="21"/>
+<text x="-8.255" y="0" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center">V+</text>
+<text x="8.255" y="0" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center">V-</text>
+<text x="0" y="-5.08" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -1209,6 +1218,19 @@ Diode with low voltage drop</description>
 <text x="2.54" y="7.62" size="1.778" layer="97">COM</text>
 <text x="2.54" y="-7.62" size="1.778" layer="97">GND</text>
 </symbol>
+<symbol name="COMBINED_POWER">
+<pin name="V++" x="-7.62" y="5.08" visible="off" length="middle" direction="pwr"/>
+<pin name="AGND" x="-7.62" y="0" visible="off" length="middle" direction="pwr"/>
+<pin name="V--" x="-7.62" y="-5.08" visible="off" length="middle" direction="pwr"/>
+<text x="-2.54" y="5.08" size="1.778" layer="97" align="center-left">+12V</text>
+<text x="-2.54" y="0" size="1.778" layer="97" align="center-left">GND</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="97" align="center-left">-12V</text>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="7.62" y="0" size="1.778" layer="97" rot="R90" align="center">SUPPLY</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATTINY861" prefix="IC">
@@ -1387,24 +1409,6 @@ Diode with low voltage drop</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="4XMOLEX" prefix="MP">
-<gates>
-<gate name="G$1" symbol="CONN_04" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="MOLEX-1X4">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="3XWIREPAD" prefix="WP">
 <gates>
 <gate name="G$1" symbol="CONN_03" x="0" y="0"/>
@@ -1571,6 +1575,23 @@ Diode with low voltage drop</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="COMBO_SUPPLY_HEADER" prefix="WP">
+<gates>
+<gate name="G$1" symbol="COMBINED_POWER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="COMBINED_POWER">
+<connects>
+<connect gate="G$1" pin="AGND" pad="GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8"/>
+<connect gate="G$1" pin="V++" pad="V+1 V+2 V+3"/>
+<connect gate="G$1" pin="V--" pad="V-1 V-2 V-3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9914,7 +9935,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="14K"/>
 <part name="R49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
 <part name="AGND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="POW" library="ElectricNoodleBox" deviceset="4XMOLEX" device=""/>
 <part name="P-1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="AGND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
@@ -9984,6 +10004,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="AGND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="WP1" library="ElectricNoodleBox" deviceset="COMBO_SUPPLY_HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10159,11 +10180,8 @@ PA6 enables/disables both</text>
 <instance part="AGND8" gate="VR1" x="38.1" y="63.5" smashed="yes">
 <attribute name="VALUE" x="43.18" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="POW" gate="G$1" x="160.02" y="27.94" smashed="yes" rot="MR180">
-<attribute name="NAME" x="154.94" y="19.812" size="1.778" layer="95" font="vector" rot="MR180"/>
-</instance>
-<instance part="P-1" gate="1" x="167.64" y="17.78" smashed="yes">
-<attribute name="VALUE" x="165.1" y="15.24" size="1.778" layer="96" rot="R90"/>
+<instance part="P-1" gate="1" x="167.64" y="15.24" smashed="yes">
+<attribute name="VALUE" x="165.1" y="12.7" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+5" gate="1" x="167.64" y="35.56" smashed="yes">
 <attribute name="VALUE" x="165.1" y="30.48" size="1.778" layer="96" rot="R90"/>
@@ -10374,6 +10392,7 @@ PA6 enables/disables both</text>
 <attribute name="NAME" x="54.61" y="39.5986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="42.418" size="1.778" layer="96"/>
 </instance>
+<instance part="WP1" gate="G$1" x="154.94" y="25.4" smashed="yes" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -10536,15 +10555,10 @@ PA6 enables/disables both</text>
 <junction x="38.1" y="68.58"/>
 </segment>
 <segment>
-<pinref part="POW" gate="G$1" pin="3"/>
-<wire x1="165.1" y1="25.4" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="AGND9" gate="VR1" pin="AGND"/>
-<wire x1="167.64" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="25.4" x2="175.26" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="POW" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="27.94" x2="167.64" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="27.94" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
-<junction x="167.64" y="25.4"/>
+<pinref part="WP1" gate="G$1" pin="AGND"/>
+<wire x1="175.26" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GNDT" gate="G$1" pin="1"/>
@@ -11129,10 +11143,10 @@ PA6 enables/disables both</text>
 <wire x1="116.84" y1="45.72" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="POW" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="30.48" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 <wire x1="167.64" y1="30.48" x2="167.64" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="WP1" gate="G$1" pin="V++"/>
+<wire x1="167.64" y1="30.48" x2="162.56" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LNPOT" gate="G$1" pin="3"/>
@@ -11161,10 +11175,10 @@ PA6 enables/disables both</text>
 </net>
 <net name="-12V" class="0">
 <segment>
-<pinref part="POW" gate="G$1" pin="4"/>
-<wire x1="165.1" y1="22.86" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="P-1" gate="1" pin="-12V"/>
-<wire x1="167.64" y1="22.86" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="20.32" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="WP1" gate="G$1" pin="V--"/>
+<wire x1="162.56" y1="20.32" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>

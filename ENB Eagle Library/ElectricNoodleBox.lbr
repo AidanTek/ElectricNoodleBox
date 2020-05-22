@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1830,6 +1830,41 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <text x="5.08" y="33.02" size="1.016" layer="21" rot="R90" align="center">+12V</text>
 <text x="5.08" y="38.1" size="1.016" layer="21" rot="R90" align="center">+5V</text>
 </package>
+<package name="COMBINED_POWER">
+<pad name="V+1" x="-5.94" y="0" drill="1.78"/>
+<pad name="GND1" x="-1.98" y="0" drill="1.78"/>
+<pad name="GND2" x="1.98" y="0" drill="1.78"/>
+<pad name="V-1" x="5.94" y="0" drill="1.78"/>
+<pad name="V+2" x="-5.08" y="1.27" drill="1.016"/>
+<pad name="V+3" x="-5.08" y="-1.27" drill="1.016"/>
+<pad name="GND3" x="-2.54" y="1.27" drill="1.016"/>
+<pad name="GND6" x="-2.54" y="-1.27" drill="1.016"/>
+<pad name="GND4" x="0" y="1.27" drill="1.016" diameter="2.1844"/>
+<pad name="GND7" x="0" y="-1.27" drill="1.016" diameter="2.1844"/>
+<pad name="GND5" x="2.54" y="1.27" drill="1.016"/>
+<pad name="GND8" x="2.54" y="-1.27" drill="1.016"/>
+<pad name="V-2" x="5.08" y="1.27" drill="1.016"/>
+<pad name="V-3" x="5.08" y="-1.27" drill="1.016"/>
+<wire x1="-10" y1="-4.25" x2="10" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="10" y1="-4.25" x2="10" y2="4.25" width="0.127" layer="21"/>
+<wire x1="10" y1="4.25" x2="1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="4.25" x2="-10" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-10" y1="4.25" x2="-10" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.75" x2="1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="4.25" x2="-1.98" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="4.25" x2="-1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-9.5" y1="-3.75" x2="9.5" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="9.5" y1="-3.75" x2="9.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="9.5" y1="3.75" x2="1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.75" x2="1.98" y2="3.25" width="0.127" layer="21"/>
+<wire x1="1.98" y1="3.25" x2="-1.98" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="3.25" x2="-1.98" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-1.98" y1="3.75" x2="-9.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-9.5" y1="3.75" x2="-9.5" y2="-3.75" width="0.127" layer="21"/>
+<text x="-8.255" y="0" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center">V+</text>
+<text x="8.255" y="0" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center">V-</text>
+<text x="0" y="-5.08" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL08" urn="urn:adsk.eagle:package:29519/2" type="model">
@@ -3171,6 +3206,19 @@ ADC1</text>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="2"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="COMBINED_POWER">
+<pin name="V++" x="-7.62" y="5.08" visible="off" length="middle" direction="pwr"/>
+<pin name="AGND" x="-7.62" y="0" visible="off" length="middle" direction="pwr"/>
+<pin name="V--" x="-7.62" y="-5.08" visible="off" length="middle" direction="pwr"/>
+<text x="-2.54" y="5.08" size="1.778" layer="97" align="center-left">+12V</text>
+<text x="-2.54" y="0" size="1.778" layer="97" align="center-left">GND</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="97" align="center-left">-12V</text>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="7.62" y="0" size="1.778" layer="97" rot="R90" align="center">SUPPLY</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TOUCHPAD10X20" prefix="TP">
@@ -4507,6 +4555,23 @@ ADC1</text>
 <connect gate="PSEL" pin="1" pad="PSEL"/>
 <connect gate="PTNOUT" pin="1" pad="PTRNOUT"/>
 <connect gate="RUN" pin="1" pad="RUN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="COMBO_SUPPLY_HEADER" prefix="WP">
+<gates>
+<gate name="G$1" symbol="COMBINED_POWER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="COMBINED_POWER">
+<connects>
+<connect gate="G$1" pin="AGND" pad="GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8"/>
+<connect gate="G$1" pin="V++" pad="V+1 V+2 V+3"/>
+<connect gate="G$1" pin="V--" pad="V-1 V-2 V-3"/>
 </connects>
 <technologies>
 <technology name=""/>
