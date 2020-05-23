@@ -17837,6 +17837,10 @@ Diode with low voltage drop</description>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="D6" library="ElectricNoodleBox" deviceset="SCHOTTKY_DO35" device="" package3d_urn="urn:adsk.eagle:package:43339/2" value="BAT85"/>
 <part name="WP1" library="ElectricNoodleBox" deviceset="COMBO_SUPPLY_HEADER" device=""/>
+<part name="GND" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -18277,6 +18281,12 @@ Out</text>
 <attribute name="VALUE" x="152.4" y="78.74" size="1.778" layer="96" font="vector" rot="R90" align="center"/>
 </instance>
 <instance part="WP1" gate="G$1" x="22.86" y="38.1" smashed="yes"/>
+<instance part="GND" gate="G$1" x="25.4" y="20.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="27.94" y="14.732" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="GND16" gate="1" x="15.24" y="12.7" smashed="yes">
+<attribute name="VALUE" x="12.7" y="20.32" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18399,6 +18409,16 @@ Out</text>
 <junction x="157.48" y="71.12"/>
 <pinref part="D6" gate="G$1" pin="A"/>
 <wire x1="149.86" y1="71.12" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GNDA"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="GND" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
+<junction x="15.24" y="17.78"/>
 </segment>
 </net>
 <net name="N$1" class="0">

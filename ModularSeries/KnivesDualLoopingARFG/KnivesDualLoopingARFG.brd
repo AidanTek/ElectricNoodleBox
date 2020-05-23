@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1.27" unitdist="mm" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2148,6 +2148,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="31.115" y="9.1694" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="WP1" library="ElectricNoodleBox" package="COMBINED_POWER" value="COMBO_SUPPLY_HEADER" x="88.265" y="22.225" smashed="yes" rot="R90"/>
+<element name="GND" library="ElectricNoodleBox" package="1X02" value="2XWIREPAD" x="46.99" y="2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.99" y="0.508" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="45.212" y="2.54" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="GNDA">
@@ -2231,7 +2235,8 @@ design rules under a new name.</description>
 <wire x1="81.28" y1="22.86" x2="80.01" y2="21.59" width="0.6096" layer="1"/>
 <wire x1="62.23" y1="31.75" x2="62.23" y2="39.37" width="0.6096" layer="1"/>
 <wire x1="62.23" y1="39.37" x2="59.69" y2="41.91" width="0.6096" layer="1"/>
-<wire x1="41.91" y1="21.59" x2="52.07" y2="21.59" width="0.6096" layer="16"/>
+<wire x1="41.91" y1="21.59" x2="45.72" y2="21.59" width="0.6096" layer="16"/>
+<wire x1="45.72" y1="21.59" x2="52.07" y2="21.59" width="0.6096" layer="16"/>
 <wire x1="52.07" y1="21.59" x2="53.34" y2="20.32" width="0.6096" layer="16"/>
 <wire x1="53.34" y1="20.32" x2="56.515" y2="20.32" width="0.6096" layer="16"/>
 <wire x1="56.515" y1="20.32" x2="58.42" y2="22.225" width="0.6096" layer="16"/>
@@ -2255,7 +2260,14 @@ design rules under a new name.</description>
 <wire x1="88.265" y1="20.245" x2="88.975" y2="20.245" width="0.6096" layer="16"/>
 <wire x1="88.975" y1="20.245" x2="89.535" y2="19.685" width="0.6096" layer="16"/>
 <wire x1="88.265" y1="20.245" x2="88.265" y2="24.205" width="0.6096" layer="16"/>
-<wire x1="89.535" y1="22.225" x2="88.265" y2="24.205" width="0" layer="19" extent="1-1"/>
+<contactref element="GND" pad="1"/>
+<contactref element="GND" pad="2"/>
+<wire x1="46.99" y1="2.54" x2="46.99" y2="5.08" width="0.6096" layer="1"/>
+<wire x1="46.99" y1="20.32" x2="45.72" y2="21.59" width="0.6096" layer="1"/>
+<via x="45.72" y="21.59" extent="1-16" drill="0.35"/>
+<wire x1="46.99" y1="5.08" x2="46.99" y2="20.32" width="0.6096" layer="1"/>
+<wire x1="89.535" y1="22.225" x2="88.265" y2="23.495" width="0.6096" layer="16"/>
+<wire x1="88.265" y1="23.495" x2="88.265" y2="24.205" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="2"/>
