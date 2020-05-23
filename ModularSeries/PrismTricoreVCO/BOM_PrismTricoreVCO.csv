@@ -17,16 +17,16 @@
 ,,,,,,
 6,100nF,C050-025X075,"C4, C5, C6, C7, C8, C9",CAPACITOR,Farnell,2797801
 1,1nF,C050-025X075,C1,CAPACITOR PET recommended,Farnell,1685470
-1,22pF,C050-025X075,"C3",CAPACITOR,Farnell,1457695
+1,22pF,C050-025X075,C3,CAPACITOR,Farnell,1457695
 ,,,,,,
 1,BAT85,DO35-7,D1,BAT85 Schottky Diode,Farnell,2889133
 2,2N3906,TO92,"Q1, Q2",PNP Transistor (Matched to 1.5mVbe),ENB or Farnell,1574372
 1,LM13700_DIP,DIL16,IC1,LM13700 16 pin DIL,Farnell,3118206
 2,TL084_DIP,DIL14,"IC2, IC3",TL084 14 pin DIL,Farnell,3005140
+2,LM4040,TO92,"PREF1, PREF2",LM4040 10V TO-92 Package,Farnell,3124410
 ,,,,,,
-1,4XMOLEX,MOLEX-1X4,POW,Molex 4 pin KK 254 6373 series,Farnell,1462920
-1,2XMOLEX,MOLEX-1X2,REF,Molex 2 pin KK 254 6373 series,Farnell,2751315
+1,Power Header,,WP1,4 way MTA156 or 10 way IDC,Farnell,589068
 ,,,,,,
 5,Banana Connector,,"CVINA, CVINB, SIN, SQR, TRI",Banana or Jack patch point (panel part),Farnell,1698951
 3,B100K,,"FREQ, FINE, DIST",Taiwan Alpha 16mm (panel part),Rapid,65-0756
-1,B10K,,"CVINB",Taiwan Alpha 16mm (panel part),Rapid,65-0753
+1,B10K,,CVINB,Taiwan Alpha 16mm (panel part),Rapid,65-0753
