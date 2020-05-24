@@ -9419,7 +9419,7 @@ Header</text>
 <text x="10.16" y="104.14" size="1.778" layer="91">C2 and C3 decouple
 IC2 and IC3</text>
 <text x="190.5" y="40.64" size="1.778" layer="91">Clock divisions</text>
-<text x="-33.02" y="-2.54" size="2.54" layer="91">Time Seeds
+<text x="-33.02" y="-2.54" size="2.54" layer="91">TimeSeed:
 Voltage Programmable Clock
 
 Aidan Taylor 2020

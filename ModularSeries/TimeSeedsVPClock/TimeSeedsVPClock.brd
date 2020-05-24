@@ -166,7 +166,7 @@
 <wire x1="87" y1="0" x2="5" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="5" x2="0" y2="42" width="0" layer="20"/>
 <wire x1="0" y1="42" x2="5" y2="47" width="0" layer="20" curve="-90"/>
-<text x="1.9375" y="31.4325" size="1.9304" layer="21" font="vector" ratio="16">Time Seeds: Voltage Programmable Clock</text>
+<text x="1.9375" y="31.4325" size="1.9304" layer="21" font="vector" ratio="16">TimeSeed: Voltage Programmable Clock</text>
 <text x="79.0575" y="38.4175" size="1.9304" layer="21" font="vector" ratio="16" rot="R90" align="center">ELECTRIC
 NOODLE
 BOX</text>
@@ -183,6 +183,12 @@ Taylor
 <dimension x1="0" y1="0" x2="92" y2="0" x3="46" y3="-6" textsize="1.778" layer="49"/>
 <dimension x1="5" y1="5" x2="5" y2="42" x3="-1" y3="23.5" textsize="1.778" layer="49"/>
 <dimension x1="0" y1="0" x2="0" y2="47" x3="-4" y3="23.5" textsize="1.778" layer="49"/>
+<text x="77.47" y="20.955" size="1.016" layer="21" font="vector" rot="R270" align="center-left">/Reset</text>
+<text x="80.01" y="20.955" size="1.016" layer="21" font="vector" rot="R270" align="center-left">GND</text>
+<text x="75.565" y="25.4" size="1.016" layer="21" font="vector" rot="R180" align="center-left">SCK</text>
+<text x="75.565" y="27.94" size="1.016" layer="21" font="vector" rot="R180" align="center-left">MISO</text>
+<text x="80.01" y="29.845" size="1.016" layer="21" font="vector" rot="R90" align="center-left">5V</text>
+<text x="82.55" y="25.4" size="1.016" layer="21" font="vector" rot="R90" align="center">MOSI</text>
 </plain>
 <libraries>
 <library name="ElectricNoodleBox">
@@ -2007,7 +2013,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="21.971" y="26.035" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="ICSP1" library="ElectricNoodleBox" package="2X3" value="ICSP_2.54" x="77.47" y="27.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="81.534" y="29.21" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="81.534" y="29.845" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="75.057" y="29.21" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="LEDS-" library="ElectricNoodleBox" package="1X04" value="4XWIREPAD" x="2.54" y="11.43" smashed="yes" rot="R90">

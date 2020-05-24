@@ -198,6 +198,12 @@ Card</text>
 <dimension x1="0" y1="0" x2="0" y2="83" x3="-3" y3="41.5" textsize="1.27" textratio="16" layer="21"/>
 <dimension x1="5" y1="5" x2="71" y2="5" x3="38" y3="-2" textsize="1.27" textratio="16" layer="21"/>
 <dimension x1="0" y1="0" x2="76" y2="0" x3="38" y3="-4" textsize="1.27" textratio="16" layer="21"/>
+<text x="66.675" y="38.735" size="1.016" layer="21" font="vector" rot="R270" align="center-left">MISO</text>
+<text x="71.12" y="36.83" size="1.016" layer="21" font="vector" align="center">SCK</text>
+<text x="73.66" y="36.195" size="1.016" layer="21" font="vector" rot="R90" align="center">/Res</text>
+<text x="66.675" y="41.91" size="1.016" layer="21" font="vector" rot="R90" align="center">5V</text>
+<text x="71.12" y="43.815" size="1.016" layer="21" font="vector" rot="R180" align="center">MOSI</text>
+<text x="74.93" y="44.45" size="1.016" layer="21" font="vector" rot="R90" align="center">GND</text>
 </plain>
 <libraries>
 <library name="ElectricNoodleBox">
@@ -2310,7 +2316,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="49.53" y="67.6275" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="ICSP1" library="ElectricNoodleBox" package="2X3" value="ICSP_2.54" x="68.58" y="39.0525" smashed="yes">
-<attribute name="NAME" x="67.31" y="43.1165" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="66.675" y="43.1165" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="67.31" y="36.6395" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="INTCLK" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="40.64" y="2.2225" smashed="yes">
