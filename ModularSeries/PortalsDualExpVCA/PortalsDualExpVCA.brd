@@ -2294,13 +2294,20 @@ design rules under a new name.</description>
 <wire x1="35.8775" y1="51.7525" x2="36.83" y2="50.03" width="0.8128" layer="16" curve="-55.555614"/>
 <wire x1="36.83" y1="50.03" x2="37.7825" y2="51.1175" width="0.8128" layer="16"/>
 <wire x1="37.7825" y1="51.1175" x2="44.45" y2="51.3" width="0.8128" layer="16" curve="-94.43648"/>
-<wire x1="4.445" y1="49.605" x2="5.715" y2="50.165" width="0" layer="19" extent="1-1"/>
-<wire x1="3.175" y1="50.165" x2="4.445" y2="49.605" width="0" layer="19" extent="1-1"/>
-<wire x1="5.715" y1="47.625" x2="4.445" y2="49.605" width="0" layer="19" extent="1-1"/>
-<wire x1="3.175" y1="47.625" x2="4.445" y2="49.605" width="0" layer="19" extent="1-1"/>
-<wire x1="4.445" y1="45.645" x2="5.715" y2="47.625" width="0" layer="19" extent="1-1"/>
-<wire x1="3.175" y1="45.085" x2="4.445" y2="45.645" width="0" layer="19" extent="1-1"/>
-<wire x1="5.715" y1="45.085" x2="4.445" y2="45.645" width="0" layer="19" extent="1-1"/>
+<wire x1="4.445" y1="49.605" x2="3.735" y2="49.605" width="0.6096" layer="1"/>
+<wire x1="3.735" y1="49.605" x2="3.175" y2="50.165" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="49.605" x2="5.005" y2="50.165" width="0.6096" layer="1"/>
+<wire x1="5.005" y1="50.165" x2="5.715" y2="50.165" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="45.645" x2="3.885" y2="45.085" width="0.6096" layer="1"/>
+<wire x1="3.885" y1="45.085" x2="3.175" y2="45.085" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="45.645" x2="5.155" y2="45.645" width="0.6096" layer="1"/>
+<wire x1="5.155" y1="45.645" x2="5.715" y2="45.085" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="46.355" x2="5.715" y2="47.625" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="45.645" x2="4.445" y2="46.355" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="46.355" x2="3.175" y2="47.625" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="48.895" x2="3.175" y2="47.625" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="49.605" x2="4.445" y2="48.895" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="48.895" x2="5.715" y2="47.625" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="IC1" pad="2"/>
@@ -2362,8 +2369,10 @@ design rules under a new name.</description>
 <wire x1="30.48" y1="39.87" x2="30.48" y2="44.7675" width="0.8128" layer="1"/>
 <wire x1="30.48" y1="44.7675" x2="27.94" y2="49.2125" width="0.8128" layer="1" curve="59.489763"/>
 <wire x1="27.94" y1="49.2125" x2="26.67" y2="51.3" width="0.8128" layer="1" curve="-56.348262"/>
-<wire x1="3.175" y1="52.705" x2="4.445" y2="53.565" width="0" layer="19" extent="1-1"/>
-<wire x1="5.715" y1="52.705" x2="4.445" y2="53.565" width="0" layer="19" extent="1-1"/>
+<wire x1="3.175" y1="52.705" x2="4.035" y2="53.565" width="0.6096" layer="1"/>
+<wire x1="4.035" y1="53.565" x2="4.445" y2="53.565" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="53.565" x2="4.855" y2="53.565" width="0.6096" layer="1"/>
+<wire x1="4.855" y1="53.565" x2="5.715" y2="52.705" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="IC1" pad="5"/>
@@ -2538,8 +2547,10 @@ design rules under a new name.</description>
 <wire x1="32.7025" y1="54.475" x2="34.29" y2="52.07" width="0.8128" layer="1" curve="20.253828"/>
 <wire x1="34.29" y1="52.07" x2="34.925" y2="49.2125" width="0.8128" layer="1" curve="-62.052463"/>
 <wire x1="34.925" y1="49.2125" x2="36.83" y2="44.95" width="0.8128" layer="1" curve="85.156551"/>
-<wire x1="4.445" y1="41.685" x2="3.175" y2="42.545" width="0" layer="19" extent="1-1"/>
-<wire x1="5.715" y1="42.545" x2="4.445" y2="41.685" width="0" layer="19" extent="1-1"/>
+<wire x1="4.445" y1="41.685" x2="4.035" y2="41.685" width="0.6096" layer="1"/>
+<wire x1="4.035" y1="41.685" x2="3.175" y2="42.545" width="0.6096" layer="1"/>
+<wire x1="4.445" y1="41.685" x2="5.305" y2="42.545" width="0.6096" layer="1"/>
+<wire x1="5.305" y1="42.545" x2="5.715" y2="42.545" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="C2" pad="2"/>
@@ -2806,6 +2817,16 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="2,20,318a48c5bd358f5a"/>
+<approved hash="2,20,6debc97dce44087e"/>
+<approved hash="2,20,317b0474a7216578"/>
+<approved hash="2,20,d3180181e020f46f"/>
+<approved hash="2,20,ce26b5b0cda1ead6"/>
+<approved hash="2,20,87d4fcb366f73a26"/>
+<approved hash="2,20,8491d5c108e4578e"/>
+<approved hash="2,20,c6d66dfeb062762b"/>
+</errors>
 </board>
 </drawing>
 <compatibility>

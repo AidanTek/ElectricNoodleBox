@@ -594,7 +594,6 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="56.515" x2="40" y2="58.5" width="0.6096" layer="16" curve="54.660944"/>
 <wire x1="33" y1="56.7" x2="33.02" y2="57.785" width="0.6096" layer="1"/>
 <wire x1="33.02" y1="57.785" x2="33" y2="65.3" width="0.6096" layer="1" curve="2.417014"/>
-<wire x1="33" y1="65.3" x2="33.02" y2="66.04" width="0.6096" layer="1"/>
 <contactref element="R2" pad="LUGR"/>
 <wire x1="33" y1="65.3" x2="33.02" y2="66.675" width="0.6096" layer="1"/>
 <wire x1="33.02" y1="66.675" x2="37" y2="78.7" width="0.6096" layer="1" curve="-34.960058"/>

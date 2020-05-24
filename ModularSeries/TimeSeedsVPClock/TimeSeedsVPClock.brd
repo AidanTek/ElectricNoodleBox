@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2383,7 +2383,8 @@ design rules under a new name.</description>
 <wire x1="86.36" y1="22.86" x2="80.01" y2="22.86" width="0.6096" layer="16"/>
 <wire x1="2.54" y1="11.43" x2="4.6012" y2="9.3688" width="0.6096" layer="16"/>
 <wire x1="4.6012" y1="9.3688" x2="9.6812" y2="9.3688" width="0.6096" layer="16"/>
-<wire x1="87.63" y1="27.38" x2="88.9" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="25.4" x2="87.63" y2="26.67" width="0.6096" layer="16"/>
+<wire x1="87.63" y1="26.67" x2="87.63" y2="27.38" width="0.6096" layer="16"/>
 </signal>
 <signal name="MOSI">
 <contactref element="IC1" pad="5"/>
@@ -2620,7 +2621,7 @@ design rules under a new name.</description>
 <via x="8.89" y="33.02" extent="1-16" drill="0.35"/>
 <wire x1="8.89" y1="33.02" x2="8.89" y2="17.78" width="0.6096" layer="1"/>
 <wire x1="8.89" y1="17.78" x2="5.08" y2="13.97" width="0.6096" layer="1"/>
-<wire x1="20.32" y1="39.37" x2="24.13" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="39.37" x2="24.13" y2="39.37" width="0.6096" layer="1"/>
 </signal>
 <signal name="SCK">
 <contactref element="R22" pad="2"/>
@@ -2895,6 +2896,16 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="2,20,850d54201d0238e0"/>
+<approved hash="2,20,a026ae869c32a0a5"/>
+<approved hash="2,20,5313c17ac2435fac"/>
+<approved hash="2,20,f40effe15e9706fb"/>
+<approved hash="2,20,4d63f1a0fdc3963d"/>
+<approved hash="2,20,5aa879c9cde865b1"/>
+<approved hash="2,20,1c33566686243886"/>
+<approved hash="2,20,9f1cacffa110a0fc"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
