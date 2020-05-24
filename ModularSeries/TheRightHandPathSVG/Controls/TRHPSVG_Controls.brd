@@ -181,6 +181,16 @@ NOODLE
 BOX</text>
 <text x="95.25" y="3.175" size="1.778" layer="21" font="vector" ratio="16" align="center-left">Aidan Taylor
 2020</text>
+<wire x1="0" y1="-14.25" x2="202" y2="-14.25" width="0.6096" layer="49"/>
+<wire x1="202" y1="-14.25" x2="202" y2="-8.25" width="0.6096" layer="49"/>
+<wire x1="202" y1="108.25" x2="202" y2="114.25" width="0.6096" layer="49"/>
+<wire x1="202" y1="114.25" x2="0" y2="114.25" width="0.6096" layer="49"/>
+<wire x1="0" y1="114.25" x2="0" y2="108.25" width="0.6096" layer="49"/>
+<wire x1="0" y1="-8.25" x2="0" y2="-14.25" width="0.6096" layer="49"/>
+<wire x1="0" y1="-8.25" x2="202" y2="-8.25" width="0.6096" layer="49"/>
+<wire x1="202" y1="-8.25" x2="202" y2="108.25" width="0.6096" layer="49"/>
+<wire x1="202" y1="108.25" x2="0" y2="108.25" width="0.6096" layer="49"/>
+<wire x1="0" y1="108.25" x2="0" y2="-8.25" width="0.6096" layer="49"/>
 </plain>
 <libraries>
 <library name="ElectricNoodleBox">
