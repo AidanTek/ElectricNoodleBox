@@ -1,24 +1,25 @@
-"Qty";"Value";"Device";"Package";"Parts";"Description";"POPULARITY";"SPICEPREFIX";
-"1";"";"ATTINY2/4/85";"DIL08";"IC1";"";"";"";
-"1";"";"C-EU050-025X075";"C050-025X075";"C1";"CAPACITOR, European symbol";"29";"C";
-"1";"";"CD4024BDIL";"DIL14";"IC3";"";"";"";
-"1";"";"L78L05TO92";"TO92";"VR1";"";"";"";
-"1";"";"LM324";"DIL14";"IC2";"";"";"";
-"4";"100K";"R-EU_0207/10";"0207/10";"R20, R21, R24, R26";"RESISTOR, European symbol";"81";"R";
-"4";"100nF";"C-EU050-025X075";"C050-025X075";"C2, C3, C5, C6";"CAPACITOR, European symbol";"29";"C";
-"7";"100Ω";"R-EU_0207/10";"0207/10";"R11, R12, R13, R14, R15, R16, R32";"RESISTOR, European symbol";"81";"R";
-"10";"10K";"R-EU_0207/10";"0207/10";"R4, R5, R6, R8, R10, R17, R18, R27, R28, R33";"RESISTOR, European symbol";"81";"R";
-"3";"14K";"R-EU_0207/10";"0207/10";"R2, R22, R23";"RESISTOR, European symbol";"81";"R";
-"2";"1K";"R-EU_0207/10";"0207/10";"R1, R34";"RESISTOR, European symbol";"81";"R";
-"15";"1XWIREPAD";"1XWIREPAD";"1X01";"/2, /4, /8, /16, CLK, CVI, EXT, L+2, L+4, L+8, L+16, PLED, PSEL, PTRN, RUN";"";"";"";
-"2";"20K";"R-EU_0207/10";"0207/10";"R3, R7";"RESISTOR, European symbol";"81";"R";
-"1";"2N3904";"2N3904";"TO92";"T1";"NPN TRANSISTOR";"27";"";
-"3";"2XWIREPAD";"2XWIREPAD";"1X02";"5VT, 12VT, CLKLED";"";"";"";
-"1";"330nF";"C-EU050-025X075";"C050-025X075";"C4";"CAPACITOR, European symbol";"29";"C";
-"1";"3XWIREPAD";"3XWIREPAD";"1X03";"FREQ";"";"";"";
-"6";"470Ω";"R-EU_0207/10";"0207/10";"R9, R19, R25, R29, R30, R31";"RESISTOR, European symbol";"81";"R";
-"1";"4XWIREPAD";"4XWIREPAD";"1X04";"LEDS-";"";"";"";
-"4";"BAT85";"SCHOTTKY_DO35";"DO35-7";"D1, D2, D3, D4";"";"";"";
-"1";"COMBO_SUPPLY_HEADER";"COMBO_SUPPLY_HEADER";"COMBINED_POWER";"WP1";"";"";"";
-"1";"ICSP_2.54";"ICSP_2.54";"2X3";"ICSP1";"";"";"";
-"4";"MOUNT-HOLE3.2";"MOUNT-HOLE3.2";"3,2";"H1, H2, H3, H4";"MOUNTING HOLE with drill center marker";"7";"";
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+,,,,,,
+4,100K,0207/10,"R20, R21, R24, R26",RESISTOR 1/4W,Farnell,2329853
+7,100Ω,0207/10,"R11, R12, R13, R14, R15, R16, R32",RESISTOR 1/4W,Farnell,2329854
+10,10K,0207/10,"R4, R5, R6, R8, R10, R17, R18, R27, R28, R33",RESISTOR 1/4W,Farnell,2329855
+3,14K,0207/10,"R2, R22, R23",RESISTOR 1/4W,Farnell,1563095
+2,1K,0207/10,"R1, R34",RESISTOR 1/4W,Farnell,2329885
+2,20K,0207/10,"R3, R7",RESISTOR 1/4W,Farnell,2329897
+6,470Ω,0207/10,"R9, R19, R25, R29, R30, R31",RESISTOR 1/4W,Farnell,2329942
+,,,,,,
+5,100nF,C050-025X075,"C1, C2, C3, C5, C6",CAPACITOR,Farnell,2797801
+1,330nF,C050-025X075,C4,CAPACITOR,Farnell,2990808
+,,,,,,
+4,BAT85,DO35-7,"D1, D2, D3, D4",BAT85 Schottky Diode,Farnell,2889133
+1,2N3904,TO92,T1,NPN TRANSISTOR TO-92 package,Farnell,1574370
+1,L78L05,TO92,VR1,L78L05 TO-92 package,Farnell,3335816
+1,ATTiny85,DIL08,IC1,ATTiny85 8 pin DIL,Farnell,1455162
+1,CD4024,DIL14,IC3,CD4024 14 pin DIL,Farnell,1470783
+1,TL084_DIP,DIL14,IC2,TL084 14 pin DIL,Farnell,3005140
+,,,,,,
+6,LED,5mm LED,"CLKLED, L+2, L+4, L+8, L+16, PLED",LED (panel part),Farnell,1581143
+8,Banana Connector,,"/2, /4, /8, /16, CLK, CVI, EXT, PTRN",Banana or Jack patch point (panel part),Farnell,1698951
+2,B100K,,"CVI, FREQ",Taiwan Alpha 16mm (panel part),Rapid,65-0756
+2,Push button,,"RUN, PSEL",Momentary push button (panel part),Farnell,1634691
+1,Power Header,,WP1,4 way MTA156 or 10 way IDC,Farnell,589068
