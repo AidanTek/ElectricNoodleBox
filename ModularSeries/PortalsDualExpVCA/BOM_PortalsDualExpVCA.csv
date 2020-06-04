@@ -19,6 +19,7 @@
 2,TL084_DIP,DIL14,"IC2, IC3",TL084 14 pin DIL,Farnell,3005140
 ,,,,,,
 1,Power Header,,WP1,4 way MTA156 or 10 way IDC,Farnell,589068
+1,(Alt) Power Header,,WP1,10 way Shrouded IDC,Farnell,2843527
 ,,,,,,
 10,Banana Connector,,"CVI1A, CVI1B, CVI2A, CVI2B, INV1, INV2, SI1, SI2, SO1, SO2",Banana or Jack patch point (panel part),Farnell,1698951
 2,B100K,,"BIAS1, BIAS2",Taiwan Alpha 16mm (panel part),Rapid,65-0756

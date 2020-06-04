@@ -26,6 +26,7 @@
 2,LM4040,TO92,"PREF1, PREF2",LM4040 10V TO-92 Package,Farnell,3124410
 ,,,,,,
 1,Power Header,,WP1,4 way MTA156 or 10 way IDC,Farnell,589068
+1,(Alt) Power Header,,WP1,10 way Shrouded IDC,Farnell,2843527
 ,,,,,,
 5,Banana Connector,,"CVINA, CVINB, SIN, SQR, TRI",Banana or Jack patch point (panel part),Farnell,1698951
 3,B100K,,"FREQ, FINE, DIST",Taiwan Alpha 16mm (panel part),Rapid,65-0756
