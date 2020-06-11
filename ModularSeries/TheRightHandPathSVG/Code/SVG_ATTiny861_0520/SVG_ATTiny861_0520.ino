@@ -1,3 +1,33 @@
+/*
+The Right Hand Path Sequential Voltage Generator 
+Firmware for ATTiny861
+
+Copyright (C) 2020 Aidan Taylor
+
+This project is released under the CERN-OHL-W license, please see
+https://github.com/AidanTek/ElectricNoodleBox/blob/master/LICENSE
+for details. 
+
+The firmware has the requisite of the ATTinyCore by SpenceKonde,
+which can be found here: https://github.com/SpenceKonde/ATTinyCore
+
+ATTinyCore is unmodified in this instance and released under the 
+GNU Lesser GPL license as described below:
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
 // Hardware pin reference - THESE NEED UPDATING
 const uint8_t encPin[3] = {1,2,14}; // encoded output, MCU pins 19,18,17
 const uint8_t decSelPin = 10; // Decoder select, MCU pin 4 
