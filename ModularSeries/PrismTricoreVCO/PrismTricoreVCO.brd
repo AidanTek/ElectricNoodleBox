@@ -172,7 +172,7 @@
 <wire x1="88" y1="44" x2="88" y2="5" width="0" layer="20"/>
 <wire x1="88" y1="5" x2="83" y2="0" width="0" layer="20" curve="-90"/>
 <text x="83.835" y="24.4475" size="1.4224" layer="21" font="vector" ratio="15" rot="R90" align="center">Prism: Triangle Core VCO
-Aidan Taylor 2020
+v1.2 Aidan Taylor 2020
 ELECTRIC NOODLE BOX</text>
 <dimension x1="5" y1="5" x2="83" y2="5" x3="44" y3="-3" textsize="1.778" layer="49"/>
 <dimension x1="0" y1="0" x2="88" y2="0" x3="44" y3="-6" textsize="1.778" layer="49"/>
