@@ -163,11 +163,11 @@
 <package name="TS-VPC">
 <hole x="5" y="5" drill="3.2"/>
 <hole x="5" y="42" drill="3.2"/>
-<hole x="82" y="5" drill="3.2"/>
-<hole x="82" y="42" drill="3.2"/>
+<hole x="87" y="5" drill="3.2"/>
+<hole x="87" y="42" drill="3.2"/>
 <circle x="5" y="5" radius="2.5" width="0.6096" layer="49"/>
-<circle x="82" y="5" radius="2.5" width="0.6096" layer="49"/>
-<circle x="82" y="42" radius="2.5" width="0.6096" layer="49"/>
+<circle x="87" y="5" radius="2.5" width="0.6096" layer="49"/>
+<circle x="87" y="42" radius="2.5" width="0.6096" layer="49"/>
 <circle x="5" y="42" radius="2.5" width="0.6096" layer="49"/>
 <pad name="L8" x="11.43" y="2.54" drill="1.016"/>
 <pad name="L16" x="13.97" y="2.54" drill="1.016"/>
@@ -225,14 +225,14 @@
 <wire x1="6.35" y1="19.05" x2="6.35" y2="16.51" width="0.6096" layer="21"/>
 <text x="7.62" y="12.7" size="1.016" layer="21" rot="R90" align="center">+12V</text>
 <text x="7.62" y="17.78" size="1.016" layer="21" rot="R90" align="center">+5V</text>
-<wire x1="0" y1="42" x2="0" y2="5" width="0.127" layer="21"/>
-<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="5" y1="0" x2="82" y2="0" width="0.127" layer="21"/>
-<wire x1="82" y1="0" x2="87" y2="5" width="0.127" layer="21" curve="90"/>
-<wire x1="87" y1="5" x2="87" y2="42" width="0.127" layer="21"/>
-<wire x1="87" y1="42" x2="82" y2="47" width="0.127" layer="21" curve="90"/>
-<wire x1="82" y1="47" x2="5" y2="47" width="0.127" layer="21"/>
-<wire x1="5" y1="47" x2="0" y2="42" width="0.127" layer="21" curve="90"/>
+<wire x1="0" y1="42" x2="0" y2="5" width="0.127" layer="49"/>
+<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
+<wire x1="5" y1="0" x2="87" y2="0" width="0.127" layer="49"/>
+<wire x1="87" y1="0" x2="92" y2="5" width="0.127" layer="49" curve="90"/>
+<wire x1="92" y1="5" x2="92" y2="42" width="0.127" layer="49"/>
+<wire x1="92" y1="42" x2="87" y2="47" width="0.127" layer="49" curve="90"/>
+<wire x1="87" y1="47" x2="5" y2="47" width="0.127" layer="49"/>
+<wire x1="5" y1="47" x2="0" y2="42" width="0.127" layer="49" curve="90"/>
 </package>
 <package name="BANANA_PANEL">
 <pad name="CONN" x="0" y="0" drill="6.5" diameter="8"/>
