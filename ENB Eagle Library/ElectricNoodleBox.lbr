@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1981,8 +1981,8 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="MODE2-3" x="80.01" y="2.54" drill="1.016"/>
 <pad name="P2" x="82.55" y="2.54" drill="1.016"/>
 <hole x="5" y="5" drill="3.2"/>
-<hole x="87" y="5" drill="3.2"/>
-<hole x="87" y="39" drill="3.2"/>
+<hole x="88" y="5" drill="3.2"/>
+<hole x="88" y="39" drill="3.2"/>
 <hole x="5" y="39" drill="3.2"/>
 <wire x1="5" y1="0" x2="88" y2="0" width="0.127" layer="21"/>
 <wire x1="88" y1="0" x2="93" y2="5" width="0.127" layer="21" curve="90"/>
@@ -2290,6 +2290,27 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <wire x1="1" y1="6" x2="-1" y2="6" width="0.2" layer="21"/>
 <wire x1="-1" y1="6" x2="-1" y2="4.5" width="0.2" layer="21"/>
 <wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
+</package>
+<package name="CINCH_BANANA_CUTOUT">
+<wire x1="-3.175" y1="2.7" x2="3.175" y2="2.7" width="0" layer="20" curve="-100"/>
+<wire x1="3.175" y1="2.7" x2="3.175" y2="-2.7" width="0" layer="20"/>
+<wire x1="-3.175" y1="2.7" x2="-3.175" y2="-2.7" width="0" layer="20"/>
+<wire x1="3.175" y1="-2.7" x2="-3.175" y2="-2.7" width="0" layer="20" curve="-100"/>
+<circle x="0" y="0" radius="5.5515" width="0.2" layer="49"/>
+</package>
+<package name="DW1_SWITCH_CUTOUT">
+<hole x="0" y="0" drill="4.95"/>
+<circle x="0" y="0" radius="4" width="0.2" layer="49"/>
+</package>
+<package name="ALPHA9MM_POT_CUTOUT">
+<hole x="0" y="0" drill="7.2"/>
+<circle x="0" y="0" radius="6" width="0.2" layer="49"/>
+</package>
+<package name="3MMLED_CUTOUT">
+<hole x="0" y="0" drill="3.2"/>
+</package>
+<package name="MCDTS_BUTTON_ROUND_CUTOUT">
+<hole x="0" y="0" drill="11.9"/>
 </package>
 </packages>
 <packages3d>
@@ -3694,6 +3715,10 @@ ADC1</text>
 <pin name="S" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
 <pin name="R" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
 <pin name="T" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="HOLE">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5339,6 +5364,33 @@ ADC1</text>
 <connect gate="G$1" pin="S" pad="S"/>
 <connect gate="G$1" pin="T" pad="T"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PANEL_HOLES">
+<gates>
+<gate name="G$1" symbol="HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3MMLED" package="3MMLED_CUTOUT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CINCH_BANANA" package="CINCH_BANANA_CUTOUT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALPHA_9MM" package="ALPHA9MM_POT_CUTOUT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DW1_MINISWITCH" package="DW1_SWITCH_CUTOUT">
 <technologies>
 <technology name=""/>
 </technologies>
