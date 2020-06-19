@@ -9369,7 +9369,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470Ω"/>
 <part name="D3" library="ElectricNoodleBox" deviceset="SCHOTTKY_DO35" device="" package3d_urn="urn:adsk.eagle:package:43339/2" value="BAT85"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470Ω"/>
 <part name="AGND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="D4" library="ElectricNoodleBox" deviceset="SCHOTTKY_DO35" device="" package3d_urn="urn:adsk.eagle:package:43339/2" value="BAT85"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -9392,7 +9392,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
 <part name="LEDS-" library="ElectricNoodleBox" deviceset="4XWIREPAD" device=""/>
 <part name="AGND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
+<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
 <part name="AGND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="L+2" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
 <part name="L+4" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
@@ -9424,9 +9424,9 @@ Voltage Programmable Clock
 
 Aidan Taylor 2020
 ELECTRIC NOODLE BOX</text>
-<text x="83.82" y="73.66" size="1.778" layer="91">IC2A saturates 
+<text x="83.82" y="73.66" size="1.778" layer="91">IC2B saturates 
 near 12V</text>
-<text x="134.62" y="-7.62" size="1.778" layer="91">Ripple is unstable without 
+<text x="134.62" y="-10.16" size="1.778" layer="91">Ripple is unstable without 
 pulldown on reset</text>
 <text x="83.82" y="40.64" size="1.778" layer="91">N.B CD4024 iterates count on falling edge
 so output from MCU should go HIGH to LOW</text>

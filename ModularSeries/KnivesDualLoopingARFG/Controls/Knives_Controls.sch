@@ -191,17 +191,17 @@
 <pad name="MODE2-3" x="80.01" y="2.54" drill="1.016"/>
 <pad name="P2" x="82.55" y="2.54" drill="1.016"/>
 <hole x="5" y="5" drill="3.2"/>
-<hole x="88" y="5" drill="3.2"/>
-<hole x="88" y="39" drill="3.2"/>
+<hole x="90" y="5" drill="3.2"/>
+<hole x="90" y="39" drill="3.2"/>
 <hole x="5" y="39" drill="3.2"/>
-<wire x1="5" y1="0" x2="88" y2="0" width="0.127" layer="21"/>
-<wire x1="88" y1="0" x2="93" y2="5" width="0.127" layer="21" curve="90"/>
-<wire x1="93" y1="5" x2="93" y2="39" width="0.127" layer="21"/>
-<wire x1="93" y1="39" x2="88" y2="44" width="0.127" layer="21" curve="90"/>
-<wire x1="88" y1="44" x2="5" y2="44" width="0.127" layer="21"/>
-<wire x1="5" y1="44" x2="0" y2="39" width="0.127" layer="21" curve="90"/>
-<wire x1="0" y1="39" x2="0" y2="5" width="0.127" layer="21"/>
-<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="95" y1="39" x2="95" y2="5" width="0.127" layer="49"/>
+<wire x1="95" y1="5" x2="90" y2="0" width="0.127" layer="49" curve="-90"/>
+<wire x1="90" y1="0" x2="5" y2="0" width="0.127" layer="49"/>
+<wire x1="5" y1="44" x2="90" y2="44" width="0.127" layer="49"/>
+<wire x1="90" y1="44" x2="95" y2="39" width="0.127" layer="49" curve="-90"/>
+<wire x1="5" y1="44" x2="0" y2="39" width="0.127" layer="49" curve="90"/>
+<wire x1="0" y1="39" x2="0" y2="5" width="0.127" layer="49"/>
+<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
 <text x="11.43" y="4.445" size="1.016" layer="21" font="vector" rot="R90" align="center-left">Gate1</text>
 <text x="15.24" y="4.445" size="1.016" layer="21" font="vector" rot="R90" align="center-left">Manual1</text>
 <text x="20.32" y="4.445" size="1.016" layer="21" font="vector" rot="R90" align="center-left">LED1</text>

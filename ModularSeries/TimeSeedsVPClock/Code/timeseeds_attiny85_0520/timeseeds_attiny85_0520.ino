@@ -28,120 +28,104 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Hardware pins on ATTiny85:
-uint8_t runStopPin = 4; // 3 Run/Stop the clock
-uint8_t pttrnSelPin = 5; // 4 Pattern Select
-uint8_t clkModPin = A0; // 2 ADC input for clock modulation
-uint8_t mstClkPin = 2; // 1 Master clock output
-uint8_t pttrnOutPin = 3; // 0 Pattern Output
+const uint8_t runStopPin = 3; // 3 Run/Stop the clock
+const uint8_t pttrnSelPin = 4; // 4 Pattern Select
+const uint8_t clkModPin = A1; // A1 ADC input for clock modulation
+const uint8_t clockPin = 1; // 1 Main Clock output
+const uint8_t pttrnOutPin = 0; // 0 Pattern Output
 
-// Global software variables:
-bool runstop = 0; // 0 = stop, 1 = run
-bool softClkState = 0; // software clock state
-bool halfClk = 0; // master clock is every other soft clock
-bool mstClkState = 1; // master clock n.b. this is inverted in hardware
-bool nPattern = 1; // Flag to generate new pattern
-uint8_t pttrnPos = 0; // Pattern step 1 of 16 
-bool pttrnAdv = 0; // soft clock advance pattern step
+// Global Variables
+bool active = 0; // 0 stop, 1 run
+uint32_t clkInterval = 83333; // Default is 90bpm in quavers, as microseconds
+const uint16_t ADCLimit = 877; // Approximate upper voltage in 10bit received by ADC
 
 void setup() {
-  pinMode(runStopPin, INPUT); // R28 will pull input LOW
+  // Hardware Pin Setup
+  pinMode(runStopPin, INPUT);
   pinMode(pttrnSelPin, INPUT_PULLUP);
-  pinMode(mstClkPin, OUTPUT);
+  pinMode(clockPin, OUTPUT);
   pinMode(pttrnOutPin, OUTPUT);
 }
 
 void loop() {
   runStop();
-  patternSelect();
-  runstop = 1; // for testing
-  // If the clock is active:
-  if(runstop) {
-    softwareClock();
-    if(softClkState) {
-      halfClk = !halfClk;
-      // When halfClk = 1 (every other soft clock);
-      if(halfClk) {
-        mstClkState = !mstClkState;
-        digitalWrite(mstClkPin, mstClkState);
-      }
-    }
-    //patternClock();
+
+  // 'active' controls the rest of the loop:
+  if(active) {
+    clockTime(); // Main clock modulation and output
+    pattern(); // Gate pattern generator and output
   }
 }
 
-bool runStop() {
-  // Variable and transition to detect pulse on Run/Stop pin
-  bool active = digitalRead(runStopPin);
-  static bool l_active = 0;
-  static uint32_t rsDebounceMS = millis();
+void runStop() {
+  bool runStop = digitalRead(runStopPin); // runStop button boolean 
+  static bool l_runStop = 0; // transition for runStop
+  static uint32_t rsTimer = millis(); // Debounce timer
 
-  // 50ms debounce to avoid button repeat readings
-  if((millis() - rsDebounceMS) > 50) {
-    // On transition:
-    if(active != l_active) {
-      l_active = active;
-      // Debounce timer reset
-      rsDebounceMS = millis();
-      
-      // If pin went HIGH then flip logic of runstop variable:
-      if(active) {
-        runstop = !runstop;
-        softClkState = 0;
-        mstClkState = 1;
-      }
+  // If debounce has timed out, check if the button state has changed:
+  if((millis() - rsTimer) >= 50) {
+    if(runStop != l_runStop) {
+      l_runStop = runStop;
+      rsTimer = millis();
+
+      // If the button was pressed, change active state:
+      if(runStop) active = !active;
     }
   }
 }
 
-void softwareClock() {
-  static uint32_t softClkMs = 0; // software clock interval timer
-  
-  if((millis() - softClkMs) > 1000) {
-    softClkMs = millis();
-    softClkState = !softClkState;
-    if(softClkState) {
-      pttrnAdv = 1;
-    }
+void clockTime() {
+  static uint32_t clkTimer = micros(); // main clock state timer (this is half a step)
+  uint16_t clkMod = analogRead(clkModPin); // Read from the ADC (potentiometer+CV)
+  static uint16_t l_clkMod = 0; // Used for pot noise reduction
+  static bool clkState = 0; // 0 low clock, 1 high clock
+
+  // Reduce noise from the ADC by only registering changes greater than 3.
+  if(clkMod > (l_clkMod+3) || clkMod < (l_clkMod-3)) {
+    l_clkMod = clkMod;
+    clkInterval = map(clkMod, 0, ADCLimit, 750000, 7813); 
+  }
+
+  if((micros()-clkTimer) >= clkInterval) {
+    clkTimer = micros();
+    clkState = !clkState;
+
+    digitalWrite(clockPin, clkState);
   }
 }
 
-void patternSelect() {
-  // Variable and transition to detect button press on pattern pin
-  bool pttrnState = digitalRead(pttrnSelPin);
-  static bool l_pttrnState = 0;
-  static uint32_t psDebounceMS = millis();
+// Generate Gate Patterns over 4 beats 
+void pattern() {
+  static bool pattern[32];
+  static uint32_t pttnTimer = micros();
+  bool pttBtn = digitalRead(pttrnSelPin); // Pattern button boolean 
+  static bool l_pttBtn = 0; // transition for pattern button
+  static uint32_t btnTimer = millis(); // Debounce timer
+  static uint32_t pttnStep = 0; // counter to iterate pattern step
+ 
 
-  // 50ms debounce to avoid button repeat readings
-  if((millis() - psDebounceMS) > 50) {
-    // On transition:
-    if(pttrnState != l_pttrnState) {
-      l_pttrnState = pttrnState;
-      // Debounce timer reset
-      psDebounceMS = millis();
-      
-      // If pin went HIGH then set new pattern flag:
-      if(pttrnState) {
-        nPattern = 1;
+  // If button pressed, generate a new pattern sequence 
+  // Check for button pin transition if debounce timer expires:
+  if((millis()-btnTimer) >= 50) {
+    if(pttBtn != l_pttBtn) {
+      l_pttBtn = pttBtn;
+      btnTimer = millis();
+
+      // If the button was pressed
+      if(pttBtn) {
+        for(uint8_t n = 0; n < 32; n++) {
+          pattern[n] = random(2); // Write a bit (or not) into pattern[n]
+        }
       }
     }
   }
-}
 
-void patternClock() {
-  static bool pattern[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-  
-  // If new pattern flag set:
-  if(nPattern) {
-    nPattern = 0;
-    for(uint8_t n = 0; n < 16; n++) {
-      pattern[n] = random(2);
-    }
-  }
-
-  if(pttrnAdv) {
-    pttrnAdv = 0;
-    digitalWrite(pttrnOutPin, pattern[pttrnPos]);
-    pttrnPos++;
-    if(pttrnPos == 16) pttrnPos = 0;
+  // Iterate through the pattern:
+  if((micros()-pttnTimer) >= clkInterval) {
+    pttnTimer = micros();
+    
+    digitalWrite(pttrnOutPin, pattern[pttnStep]);
+    pttnStep++;
+    if(pttnStep >= 32) pttnStep = 0;
   }
 }

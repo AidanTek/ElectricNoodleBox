@@ -181,8 +181,8 @@
 <text x="34" y="19" size="1.778" layer="21" font="vector" ratio="12" align="center">FM</text>
 <text x="25" y="-1" size="1.778" layer="21" font="vector" ratio="12" align="center">Sine
 Shape</text>
-<text x="25.25" y="-11" size="3.81" layer="1" font="vector" ratio="12" align="center">P R I S M</text>
-<text x="25.25" y="-11" size="3.81" layer="29" font="vector" ratio="12" align="center">P R I S M</text>
+<text x="25.25" y="-11" size="3.81" layer="1" font="vector" ratio="16" align="center">P R I S M</text>
+<text x="25.25" y="-11" size="3.81" layer="29" font="vector" ratio="16" align="center">P R I S M</text>
 <wire x1="26" y1="9" x2="35" y2="9" width="2" layer="29" curve="-90"/>
 <wire x1="35" y1="9" x2="43" y2="9" width="2" layer="29" curve="90"/>
 <wire x1="43" y1="9" x2="50" y2="9" width="2" layer="29" curve="-90"/>
