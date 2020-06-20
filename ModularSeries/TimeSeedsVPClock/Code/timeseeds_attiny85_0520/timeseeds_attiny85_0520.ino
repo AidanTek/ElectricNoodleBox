@@ -68,8 +68,9 @@ void runStop() {
       l_runStop = runStop;
       rsTimer = millis();
 
-      // If the button was pressed, change active state:
-      if(runStop) active = !active;
+      // If the button/trigger was released/went low, change active state:
+      // This is because the high state holds the CD4024 in reset, so it potentially can go out of sync
+      if(!runStop) active = !active;
     }
   }
 }
@@ -83,7 +84,7 @@ void clockTime() {
   // Reduce noise from the ADC by only registering changes greater than 3.
   if(clkMod > (l_clkMod+3) || clkMod < (l_clkMod-3)) {
     l_clkMod = clkMod;
-    clkInterval = map(clkMod, 0, ADCLimit, 750000, 7813); 
+    clkInterval = map(clkMod, 0, ADCLimit, 750000, 15625); 
   }
 
   if((micros()-clkTimer) >= clkInterval) {
@@ -95,6 +96,7 @@ void clockTime() {
 }
 
 // Generate Gate Patterns over 4 beats 
+// Trigger mode sets the pin low every other semiquaver
 void pattern() {
   static bool pattern[32];
   static uint32_t pttnTimer = micros();
@@ -102,7 +104,9 @@ void pattern() {
   static bool l_pttBtn = 0; // transition for pattern button
   static uint32_t btnTimer = millis(); // Debounce timer
   static uint32_t pttnStep = 0; // counter to iterate pattern step
- 
+  static uint32_t holdtime = 0; // Timer to check for click or hold
+  static bool pttnMode = 0; // 0 for gate mode, 1 for trigger mode
+  static bool pttnFlipflop = 0; // Soft flip flop for trigger mode
 
   // If button pressed, generate a new pattern sequence 
   // Check for button pin transition if debounce timer expires:
@@ -111,21 +115,48 @@ void pattern() {
       l_pttBtn = pttBtn;
       btnTimer = millis();
 
-      // If the button was pressed
-      if(pttBtn) {
+      // If the button was pressed:
+      if(!pttBtn) {
+        holdtime = millis();
         for(uint8_t n = 0; n < 32; n++) {
           pattern[n] = random(2); // Write a bit (or not) into pattern[n]
+        }
+      }
+      // If the button was released:
+      else {
+        // Long press means switch mode:
+        if((millis()-holdtime) > 1000) {
+          pttnMode = !pttnMode;
         }
       }
     }
   }
 
   // Iterate through the pattern:
-  if((micros()-pttnTimer) >= clkInterval) {
-    pttnTimer = micros();
-    
-    digitalWrite(pttrnOutPin, pattern[pttnStep]);
-    pttnStep++;
-    if(pttnStep >= 32) pttnStep = 0;
+  // Gate mode:
+  if(!pttnMode) {
+    if((micros()-pttnTimer) >= clkInterval) {
+      pttnTimer = micros();
+      
+      digitalWrite(pttrnOutPin, pattern[pttnStep]);
+      pttnStep++;
+      if(pttnStep >= 32) pttnStep = 0;
+    }
+  }
+  // Trigger mode:
+  else {
+    if((micros()-pttnTimer) >= (clkInterval/2)) {
+      pttnTimer = micros();
+
+      if(pttnFlipflop) {
+        digitalWrite(pttrnOutPin, pattern[pttnStep]);
+        pttnStep++;
+        if(pttnStep >= 32) pttnStep = 0;
+      }
+      else {
+        digitalWrite(pttrnOutPin, LOW);
+      }
+      pttnFlipflop = !pttnFlipflop;
+    }
   }
 }
