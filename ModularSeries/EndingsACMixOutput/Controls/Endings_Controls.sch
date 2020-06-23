@@ -222,10 +222,11 @@
 <wire x1="39" y1="65" x2="5" y2="65" width="0.127" layer="21"/>
 <wire x1="5" y1="65" x2="0" y2="60" width="0.127" layer="21" curve="90"/>
 </package>
-<package name="BANANA_PANEL">
-<pad name="CONN" x="0" y="0" drill="6.5" diameter="8"/>
-<circle x="0" y="0" radius="5" width="0.127" layer="49"/>
-<text x="0" y="-6.35" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<package name="CINCHNANA_PANEL">
+<pad name="CONN" x="0" y="0" drill="3" diameter="3.6" shape="long"/>
+<text x="6.35" y="0" size="1.27" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="5.56" width="0.2" layer="49"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
 </package>
 <package name="ALPHA_RV09_9MMPOT">
 <pad name="C1" x="-2.5" y="-7" drill="1.2" diameter="1.778"/>
@@ -330,6 +331,33 @@
 <wire x1="0.4" y1="-4.5" x2="0.4" y2="-3" width="0.127" layer="21"/>
 <wire x1="0.4" y1="-3" x2="-0.4" y2="-3" width="0.127" layer="21"/>
 <wire x1="-0.4" y1="-3" x2="-0.4" y2="-4.5" width="0.127" layer="21"/>
+</package>
+<package name="NEWCOMBOJACK_PANEL">
+<pad name="CONN" x="0" y="0" drill="3" diameter="3.6" shape="long"/>
+<text x="6.35" y="0" size="1.27" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
+<pad name="S" x="0" y="-7" drill="0.6" diameter="1.27" shape="long"/>
+<pad name="T2" x="0" y="-3.38" drill="0.6" diameter="1.27" shape="long"/>
+<pad name="T1" x="0" y="4.92" drill="0.6" diameter="1.27" shape="long"/>
+<wire x1="-0.75" y1="4.92" x2="0.75" y2="4.92" width="0.6" layer="46"/>
+<wire x1="-0.8" y1="-3.38" x2="0.8" y2="-3.38" width="0.6" layer="46"/>
+<wire x1="-0.8" y1="4.92" x2="0.8" y2="4.92" width="0.6" layer="46"/>
+<wire x1="-0.7" y1="-7" x2="0.7" y2="-7" width="0.6" layer="46"/>
+<circle x="0" y="0" radius="5.56" width="0.2" layer="49"/>
+<wire x1="-4.5" y1="-4.5" x2="-0.4" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="-4.5" x2="0.4" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="0.4" y1="-4.5" x2="4.5" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="4.5" y1="-4.5" x2="4.5" y2="6" width="0.2" layer="21"/>
+<wire x1="4.5" y1="6" x2="1" y2="6" width="0.2" layer="21"/>
+<wire x1="-1" y1="6" x2="-4.5" y2="6" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="6" x2="-4.5" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="0.4" y1="-4.5" x2="0.4" y2="-6" width="0.2" layer="21"/>
+<wire x1="0.4" y1="-6" x2="-0.4" y2="-6" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="-6" x2="-0.4" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="-1" y1="4.5" x2="1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="1" y1="4.5" x2="1" y2="6" width="0.2" layer="21"/>
+<wire x1="1" y1="6" x2="-1" y2="6" width="0.2" layer="21"/>
+<wire x1="-1" y1="6" x2="-1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
 </package>
 <package name="COMBOJACK_PANEL">
 <pad name="CONN" x="0" y="0" drill="6.5" diameter="8"/>
@@ -509,7 +537,7 @@
 <gate name="J" symbol="CONN_01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BANANA_PANEL">
+<device name="" package="CINCHNANA_PANEL">
 <connects>
 <connect gate="J" pin="1" pad="CONN"/>
 </connects>
@@ -578,7 +606,16 @@
 <gate name="G$1" symbol="JACK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="COMBOJACK_PANEL">
+<device name="STANDARD" package="COMBOJACK_PANEL">
+<connects>
+<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="T" pad="CONN T1 T2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CINCHNANA" package="NEWCOMBOJACK_PANEL">
 <connects>
 <connect gate="G$1" pin="S" pad="S"/>
 <connect gate="G$1" pin="T" pad="CONN T1 T2"/>
@@ -650,10 +687,10 @@
 <part name="AGND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="OUT" library="ElectricNoodleBox" deviceset="3XWIREPAD" device=""/>
 <part name="HP" library="ElectricNoodleBox" deviceset="STEREOJACK" device=""/>
-<part name="IN1" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="IN2" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="IN3" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="IN4" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
+<part name="IN1" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="IN2" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="IN3" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="IN4" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="AGND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 </parts>
 <sheets>

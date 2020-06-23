@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -269,6 +269,33 @@
 <text x="0" y="6.35" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="7.62" y="-7.62" size="1.27" layer="27" align="center">&gt;VALUE</text>
 </package>
+<package name="NEWCOMBOJACK_PANEL">
+<pad name="CONN" x="0" y="0" drill="3" diameter="3.6" shape="long"/>
+<text x="6.35" y="0" size="1.27" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
+<pad name="S" x="0" y="-7" drill="0.6" diameter="1.27" shape="long"/>
+<pad name="T2" x="0" y="-3.38" drill="0.6" diameter="1.27" shape="long"/>
+<pad name="T1" x="0" y="4.92" drill="0.6" diameter="1.27" shape="long"/>
+<wire x1="-0.75" y1="4.92" x2="0.75" y2="4.92" width="0.6" layer="46"/>
+<wire x1="-0.8" y1="-3.38" x2="0.8" y2="-3.38" width="0.6" layer="46"/>
+<wire x1="-0.8" y1="4.92" x2="0.8" y2="4.92" width="0.6" layer="46"/>
+<wire x1="-0.7" y1="-7" x2="0.7" y2="-7" width="0.6" layer="46"/>
+<circle x="0" y="0" radius="5.56" width="0.2" layer="49"/>
+<wire x1="-4.5" y1="-4.5" x2="-0.4" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="-4.5" x2="0.4" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="0.4" y1="-4.5" x2="4.5" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="4.5" y1="-4.5" x2="4.5" y2="6" width="0.2" layer="21"/>
+<wire x1="4.5" y1="6" x2="1" y2="6" width="0.2" layer="21"/>
+<wire x1="-1" y1="6" x2="-4.5" y2="6" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="6" x2="-4.5" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="0.4" y1="-4.5" x2="0.4" y2="-6" width="0.2" layer="21"/>
+<wire x1="0.4" y1="-6" x2="-0.4" y2="-6" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="-6" x2="-0.4" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="-1" y1="4.5" x2="1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="1" y1="4.5" x2="1" y2="6" width="0.2" layer="21"/>
+<wire x1="1" y1="6" x2="-1" y2="6" width="0.2" layer="21"/>
+<wire x1="-1" y1="6" x2="-1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
+</package>
 <package name="COMBOJACK_PANEL">
 <pad name="CONN" x="0" y="0" drill="6.5" diameter="8"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="49"/>
@@ -456,7 +483,16 @@
 <gate name="G$1" symbol="JACK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="COMBOJACK_PANEL">
+<device name="STANDARD" package="COMBOJACK_PANEL">
+<connects>
+<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="T" pad="CONN T1 T2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CINCHNANA" package="NEWCOMBOJACK_PANEL">
 <connects>
 <connect gate="G$1" pin="S" pad="S"/>
 <connect gate="G$1" pin="T" pad="CONN T1 T2"/>
@@ -2506,16 +2542,16 @@ Source: www.kingbright.com</description>
 <part name="R4" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B100K"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
-<part name="AV1_IN" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="AV1_OUT" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="AV2_IN" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="AV2_OUT" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="SUM_INA" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="SUM_INB" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="SUM_OUT" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="SPLIT_IN" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="SPLIT_OUTA" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
-<part name="SPLIT_OUTB" library="ElectricNoodleBox" deviceset="COMBI-JACK" device=""/>
+<part name="AV1_IN" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="AV1_OUT" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="AV2_IN" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="AV2_OUT" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="SUM_INA" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="SUM_INB" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="SUM_OUT" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="SPLIT_IN" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="SPLIT_OUTA" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
+<part name="SPLIT_OUTB" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12.5" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -176,8 +176,8 @@
 <wire x1="50.5" y1="-8.25" x2="50.5" y2="108.25" width="0.1524" layer="49"/>
 <wire x1="50.5" y1="108.25" x2="0" y2="108.25" width="0.1524" layer="49"/>
 <wire x1="0" y1="108.25" x2="0" y2="-8.25" width="0.1524" layer="49"/>
-<text x="31.4325" y="77.47" size="5.08" layer="21" font="vector" ratio="16" align="center">Mirrors</text>
-<text x="31.4325" y="72.7075" size="5.08" layer="21" font="vector" ratio="16" rot="SMR180" align="center">Mirrors</text>
+<text x="31.4325" y="75.47" size="5.08" layer="21" font="vector" ratio="16" align="center">Mirrors</text>
+<text x="31.4325" y="71.2075" size="5.08" layer="21" font="vector" ratio="16" rot="SMR180" align="center">Mirrors</text>
 <text x="25.0825" y="94.615" size="2.1844" layer="21" font="vector" ratio="16" align="center">ELECTRIC
 NOODLE
 BOX</text>
@@ -298,9 +298,8 @@ BOX</text>
 <text x="0" y="6.35" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="7.62" y="-7.62" size="1.27" layer="27" align="center">&gt;VALUE</text>
 </package>
-<package name="COMBOJACK_PANEL">
-<pad name="CONN" x="0" y="0" drill="6.5" diameter="8"/>
-<circle x="0" y="0" radius="5" width="0.127" layer="49"/>
+<package name="NEWCOMBOJACK_PANEL">
+<pad name="CONN" x="0" y="0" drill="3" diameter="3.6" shape="long"/>
 <text x="6.35" y="0" size="1.27" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
 <pad name="S" x="0" y="-7" drill="0.6" diameter="1.27" shape="long"/>
 <pad name="T2" x="0" y="-3.38" drill="0.6" diameter="1.27" shape="long"/>
@@ -309,7 +308,7 @@ BOX</text>
 <wire x1="-0.8" y1="-3.38" x2="0.8" y2="-3.38" width="0.6" layer="46"/>
 <wire x1="-0.8" y1="4.92" x2="0.8" y2="4.92" width="0.6" layer="46"/>
 <wire x1="-0.7" y1="-7" x2="0.7" y2="-7" width="0.6" layer="46"/>
-<circle x="0" y="0" radius="5.25" width="0.2" layer="49"/>
+<circle x="0" y="0" radius="5.56" width="0.2" layer="49"/>
 <wire x1="-4.5" y1="-4.5" x2="-0.4" y2="-4.5" width="0.2" layer="21"/>
 <wire x1="-0.4" y1="-4.5" x2="0.4" y2="-4.5" width="0.2" layer="21"/>
 <wire x1="0.4" y1="-4.5" x2="4.5" y2="-4.5" width="0.2" layer="21"/>
@@ -324,6 +323,7 @@ BOX</text>
 <wire x1="1" y1="4.5" x2="1" y2="6" width="0.2" layer="21"/>
 <wire x1="1" y1="6" x2="-1" y2="6" width="0.2" layer="21"/>
 <wire x1="-1" y1="6" x2="-1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
 </package>
 </packages>
 </library>
@@ -573,42 +573,42 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="42.62" y="36.38" size="1.27" layer="27" align="center"/>
 </element>
 <element name="R3" library="ElectricNoodleBox" package="ALPHA_RV09_9MMPOT" value="B100K" x="15.5" y="69" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.85" y="69" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="NAME" x="21.85" y="65.5075" size="1.27" layer="25" rot="R270" align="center"/>
 <attribute name="VALUE" x="7.88" y="61.38" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R4" library="ElectricNoodleBox" package="ALPHA_RV09_9MMPOT" value="B100K" x="15.5" y="49" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.5" y="42.65" size="1.27" layer="25" rot="R180" align="center"/>
 <attribute name="VALUE" x="7.88" y="56.62" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
-<element name="AV1_IN" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="43.5" y="93" smashed="yes">
+<element name="AV1_IN" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="43.5" y="93" smashed="yes">
 <attribute name="NAME" x="37.15" y="96.4925" size="1.27" layer="25" font="vector" rot="R90" align="center"/>
 </element>
-<element name="AV1_OUT" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="33" y="85" smashed="yes">
-<attribute name="NAME" x="39.35" y="84.365" size="1.27" layer="25" font="vector" rot="R90" align="center"/>
+<element name="AV1_OUT" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="33" y="84" smashed="yes">
+<attribute name="NAME" x="39.35" y="83.365" size="1.27" layer="25" font="vector" rot="R90" align="center"/>
 </element>
-<element name="AV2_IN" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="7" y="93" smashed="yes">
+<element name="AV2_IN" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="7" y="93" smashed="yes">
 <attribute name="NAME" x="13.35" y="95.54" size="1.27" layer="25" font="vector" rot="R90" align="center"/>
 </element>
-<element name="AV2_OUT" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="17.5" y="85" smashed="yes">
-<attribute name="NAME" x="23.85" y="85" size="1.27" layer="25" font="vector" rot="R90" align="center"/>
+<element name="AV2_OUT" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="17.5" y="84" smashed="yes">
+<attribute name="NAME" x="23.85" y="84" size="1.27" layer="25" font="vector" rot="R90" align="center"/>
 </element>
-<element name="SUM_INA" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="8" y="25" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.4125" y="31.35" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
+<element name="SUM_INA" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="8" y="27" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.4125" y="33.35" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
 </element>
-<element name="SUM_INB" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="8" y="6.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="16.89" y="3.96" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
+<element name="SUM_INB" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="8" y="5.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.2075" y="7.7225" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
 </element>
-<element name="SUM_OUT" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="18" y="16.5" smashed="yes" rot="R180">
+<element name="SUM_OUT" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="18" y="16.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="11.65" y="15.865" size="1.27" layer="25" font="vector" rot="R270" align="center"/>
 </element>
-<element name="SPLIT_IN" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="32.5" y="16" smashed="yes" rot="R180">
+<element name="SPLIT_IN" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="32.5" y="16" smashed="yes" rot="R180">
 <attribute name="NAME" x="26.15" y="15.365" size="1.27" layer="25" font="vector" rot="R270" align="center"/>
 </element>
-<element name="SPLIT_OUTA" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="42.5" y="25" smashed="yes" rot="R270">
-<attribute name="NAME" x="43.4525" y="31.35" size="1.27" layer="25" font="vector" align="center"/>
+<element name="SPLIT_OUTA" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="42.5" y="27" smashed="yes" rot="R270">
+<attribute name="NAME" x="43.4525" y="33.35" size="1.27" layer="25" font="vector" align="center"/>
 </element>
-<element name="SPLIT_OUTB" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="42.5" y="6.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.34" y="3.96" size="1.27" layer="25" font="vector" align="center"/>
+<element name="SPLIT_OUTB" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="42.5" y="5.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.0225" y="7.7225" size="1.27" layer="25" font="vector" align="center"/>
 </element>
 </elements>
 <signals>
@@ -688,9 +688,9 @@ design rules under a new name.</description>
 <contactref element="AV1_OUT" pad="CONN"/>
 <contactref element="AV1_OUT" pad="T2"/>
 <wire x1="38.1" y1="73.3425" x2="37.465" y2="75.2475" width="0.6096" layer="1" curve="-51.159234"/>
-<wire x1="37.465" y1="75.2475" x2="33" y2="81.62" width="0.6096" layer="1" curve="84.32466"/>
-<wire x1="33" y1="85" x2="33" y2="89.92" width="0.6096" layer="1"/>
-<wire x1="33" y1="85" x2="33" y2="81.62" width="0.6096" layer="1"/>
+<wire x1="37.465" y1="75.2475" x2="33" y2="80.62" width="0.6096" layer="1" curve="84.32466"/>
+<wire x1="33" y1="84" x2="33" y2="88.92" width="0.6096" layer="1"/>
+<wire x1="33" y1="84" x2="33" y2="80.62" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="BOARD1" pad="LEDA1"/>
@@ -784,9 +784,9 @@ design rules under a new name.</description>
 <wire x1="11.1125" y1="79.0575" x2="11.1125" y2="79.375" width="0.6096" layer="1" curve="-7.636653"/>
 <via x="11.1125" y="79.375" extent="1-16" drill="0.35"/>
 <wire x1="11.1125" y1="79.375" x2="11.43" y2="79.375" width="0.6096" layer="16"/>
-<wire x1="11.43" y1="79.375" x2="17.5" y2="81.62" width="0.6096" layer="16" curve="40.594004"/>
-<wire x1="17.5" y1="85" x2="17.5" y2="81.62" width="0.6096" layer="1"/>
-<wire x1="17.5" y1="89.92" x2="17.5" y2="85" width="0.6096" layer="1"/>
+<wire x1="11.43" y1="79.375" x2="17.5" y2="80.62" width="0.6096" layer="16" curve="40.594004"/>
+<wire x1="17.5" y1="84" x2="17.5" y2="80.62" width="0.6096" layer="1"/>
+<wire x1="17.5" y1="88.92" x2="17.5" y2="84" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="BOARD1" pad="LEDA2"/>
@@ -813,27 +813,25 @@ design rules under a new name.</description>
 <contactref element="SUM_INA" pad="T1"/>
 <contactref element="SUM_INA" pad="CONN"/>
 <contactref element="SUM_INA" pad="T2"/>
-<wire x1="7.62" y1="40.64" x2="11.38" y2="25" width="0.6096" layer="1" curve="31.538121"/>
-<wire x1="8" y1="25" x2="3.08" y2="25" width="0.6096" layer="1"/>
-<wire x1="8" y1="25" x2="11.38" y2="25" width="0.6096" layer="1"/>
+<wire x1="7.62" y1="40.64" x2="11.38" y2="27" width="0.6096" layer="1" curve="31.538121"/>
+<wire x1="8" y1="27" x2="3.08" y2="27" width="0.6096" layer="1"/>
+<wire x1="8" y1="27" x2="11.38" y2="27" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$22">
 <contactref element="BOARD1" pad="SUMB"/>
 <wire x1="3.78" y1="44.45" x2="4.7625" y2="43.4975" width="0.6096" layer="16"/>
 <wire x1="4.7625" y1="43.4975" x2="9.2075" y2="39.6875" width="0.6096" layer="16" curve="7.02094"/>
 <via x="9.2075" y="39.6875" extent="1-16" drill="0.35"/>
-<wire x1="12.7" y1="20.6375" x2="10.4775" y2="12.3825" width="0.6096" layer="1" curve="22.431409"/>
 <contactref element="SUM_INB" pad="T1"/>
 <contactref element="SUM_INB" pad="CONN"/>
 <contactref element="SUM_INB" pad="T2"/>
 <wire x1="9.2075" y1="39.6875" x2="9.8425" y2="38.4175" width="0.6096" layer="1"/>
 <wire x1="9.8425" y1="38.4175" x2="12.3825" y2="30.1625" width="0.6096" layer="1" curve="-18.924644"/>
-<wire x1="12.3825" y1="30.1625" x2="13.0175" y2="22.86" width="0.6096" layer="1" curve="-5.341288"/>
-<wire x1="13.0175" y1="22.86" x2="12.7" y2="20.6375" width="0.6096" layer="1" curve="-20.858391"/>
-<wire x1="10.4775" y1="12.3825" x2="10.4775" y2="11.1125" width="0.6096" layer="1" curve="7.705556"/>
-<wire x1="10.4775" y1="11.1125" x2="11.38" y2="6.5" width="0.6096" layer="1" curve="2.268766"/>
-<wire x1="11.38" y1="6.5" x2="3.08" y2="6.5" width="0.6096" layer="1"/>
-<wire x1="8" y1="6.5" x2="11.38" y2="6.5" width="0.6096" layer="1"/>
+<wire x1="11.38" y1="5.5" x2="3.08" y2="5.5" width="0.6096" layer="1"/>
+<wire x1="8" y1="5.5" x2="11.38" y2="5.5" width="0.6096" layer="1"/>
+<wire x1="12.3825" y1="30.1625" x2="12.7" y2="29.21" width="0.6096" layer="1" curve="21.589125"/>
+<wire x1="12.7" y1="29.21" x2="13.335" y2="25.0825" width="0.6096" layer="1" curve="-40.966657"/>
+<wire x1="13.335" y1="25.0825" x2="11.38" y2="5.5" width="0.6096" layer="1" curve="12.071927"/>
 </signal>
 <signal name="N$23">
 <contactref element="BOARD1" pad="SUMO"/>
@@ -872,9 +870,9 @@ design rules under a new name.</description>
 <contactref element="SPLIT_OUTA" pad="T1"/>
 <contactref element="SPLIT_OUTA" pad="CONN"/>
 <contactref element="SPLIT_OUTA" pad="T2"/>
-<wire x1="44.7675" y1="41.275" x2="39.12" y2="25" width="0.6096" layer="1" curve="-43.503641"/>
-<wire x1="42.5" y1="25" x2="47.42" y2="25" width="0.6096" layer="1"/>
-<wire x1="42.5" y1="25" x2="39.12" y2="25" width="0.6096" layer="1"/>
+<wire x1="44.7675" y1="41.275" x2="39.12" y2="27" width="0.6096" layer="1" curve="-43.503641"/>
+<wire x1="42.5" y1="27" x2="47.42" y2="27" width="0.6096" layer="1"/>
+<wire x1="42.5" y1="27" x2="39.12" y2="27" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$26">
 <contactref element="BOARD1" pad="SPLOB"/>
@@ -882,16 +880,13 @@ design rules under a new name.</description>
 <via x="43.4975" y="41.91" extent="1-16" drill="0.35"/>
 <wire x1="43.4975" y1="41.91" x2="43.4975" y2="41.275" width="0.6096" layer="1"/>
 <wire x1="43.4975" y1="41.275" x2="39.6875" y2="33.02" width="0.6096" layer="1" curve="-49.550285"/>
-<wire x1="38.1" y1="21.9075" x2="40.3225" y2="13.0175" width="0.6096" layer="1" curve="-38.507786"/>
 <contactref element="SPLIT_OUTB" pad="T1"/>
 <contactref element="SPLIT_OUTB" pad="CONN"/>
 <contactref element="SPLIT_OUTB" pad="T2"/>
-<wire x1="39.6875" y1="33.02" x2="37.7825" y2="28.2575" width="0.6096" layer="1" curve="55.497813"/>
-<wire x1="37.7825" y1="28.2575" x2="37.7825" y2="24.13" width="0.6096" layer="1" curve="-11.894987"/>
-<wire x1="37.7825" y1="24.13" x2="38.1" y2="21.9075" width="0.6096" layer="1" curve="28.155182"/>
-<wire x1="40.3225" y1="13.0175" x2="39.12" y2="6.5" width="0.6096" layer="1" curve="-1.868683"/>
-<wire x1="39.12" y1="6.5" x2="47.42" y2="6.5" width="0.6096" layer="1"/>
-<wire x1="39.12" y1="6.5" x2="42.5" y2="6.5" width="0.6096" layer="16"/>
+<wire x1="39.12" y1="5.5" x2="47.42" y2="5.5" width="0.6096" layer="1"/>
+<wire x1="39.12" y1="5.5" x2="42.5" y2="5.5" width="0.6096" layer="16"/>
+<wire x1="39.6875" y1="33.02" x2="37.465" y2="26.9875" width="0.6096" layer="1" curve="58.650909"/>
+<wire x1="37.465" y1="26.9875" x2="39.12" y2="5.5" width="0.6096" layer="1" curve="-9.392531"/>
 </signal>
 <signal name="AGND">
 <contactref element="R1" pad="LUGR"/>
@@ -929,27 +924,27 @@ design rules under a new name.</description>
 <contactref element="SUM_OUT" pad="S"/>
 <contactref element="SUM_INB" pad="S"/>
 <wire x1="15.5" y1="73.3" x2="15.5575" y2="74.6125" width="0.6096" layer="1"/>
-<wire x1="15.5575" y1="74.6125" x2="17.5" y2="78" width="0.6096" layer="1" curve="-54.645651"/>
+<wire x1="15.5575" y1="74.6125" x2="17.5" y2="77" width="0.6096" layer="1" curve="-54.645651"/>
 <wire x1="35" y1="68.3" x2="34.925" y2="69.5325" width="0.6096" layer="1"/>
-<wire x1="34.925" y1="69.5325" x2="33" y2="78" width="0.6096" layer="1" curve="18.651315"/>
-<wire x1="17.5" y1="78" x2="16.51" y2="78.4225" width="0.6096" layer="1"/>
+<wire x1="34.925" y1="69.5325" x2="33" y2="77" width="0.6096" layer="1" curve="18.651315"/>
+<wire x1="17.5" y1="77" x2="16.51" y2="78.4225" width="0.6096" layer="1"/>
 <wire x1="16.51" y1="78.4225" x2="7" y2="86" width="0.6096" layer="1" curve="-37.875018"/>
-<wire x1="33" y1="78" x2="34.29" y2="78.105" width="0.6096" layer="16"/>
+<wire x1="33" y1="77" x2="34.29" y2="78.105" width="0.6096" layer="16"/>
 <wire x1="34.29" y1="78.105" x2="43.5" y2="86" width="0.6096" layer="16" curve="78.699783"/>
 <wire x1="30.7" y1="44" x2="30.48" y2="41.5925" width="0.6096" layer="1"/>
 <wire x1="30.48" y1="41.5925" x2="31.115" y2="33.9725" width="0.6096" layer="1" curve="19.969785"/>
 <wire x1="31.115" y1="33.9725" x2="32.5" y2="23" width="0.6096" layer="1" curve="-15.108871"/>
-<wire x1="15" y1="25" x2="15.5575" y2="24.765" width="0.6096" layer="16"/>
+<wire x1="15" y1="27" x2="15.5575" y2="24.765" width="0.6096" layer="16"/>
 <wire x1="15.5575" y1="24.765" x2="18" y2="23.5" width="0.6096" layer="16" curve="-29.70274"/>
 <wire x1="18" y1="23.5" x2="19.3675" y2="23.1775" width="0.6096" layer="16"/>
 <wire x1="19.3675" y1="23.1775" x2="32.5" y2="23" width="0.6096" layer="16" curve="24.99068"/>
 <wire x1="32.5" y1="23" x2="33.3375" y2="23.495" width="0.6096" layer="16"/>
-<wire x1="33.3375" y1="23.495" x2="35.5" y2="25" width="0.6096" layer="16" curve="-2.214654"/>
-<wire x1="15" y1="6.5" x2="16.1925" y2="6.6675" width="0.6096" layer="1"/>
+<wire x1="33.3375" y1="23.495" x2="35.5" y2="27" width="0.6096" layer="16" curve="-2.214654"/>
+<wire x1="15" y1="5.5" x2="16.1925" y2="6.6675" width="0.6096" layer="1"/>
 <wire x1="16.1925" y1="6.6675" x2="23.8125" y2="13.6525" width="0.6096" layer="1" curve="73.717034"/>
 <wire x1="23.8125" y1="13.6525" x2="18" y2="23.5" width="0.6096" layer="1" curve="82.36465"/>
-<wire x1="15" y1="6.5" x2="15.24" y2="6.35" width="0.6096" layer="16"/>
-<wire x1="15.24" y1="6.35" x2="35.5" y2="6.5" width="0.6096" layer="16" curve="23.745463"/>
+<wire x1="15" y1="5.5" x2="15.24" y2="6.35" width="0.6096" layer="16"/>
+<wire x1="15.24" y1="6.35" x2="35.5" y2="5.5" width="0.6096" layer="16" curve="23.745463"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -2292,15 +2292,7 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="21,19,ce6fb06fb253b26d"/>
-<approved hash="2,20,7225ed6698ec355e"/>
-<approved hash="2,20,9969964974a13273"/>
-<approved hash="2,20,702492e7aa6c32dc"/>
-<approved hash="2,20,a8eae9c975a335f0"/>
-<approved hash="2,20,e42e91f87080953d"/>
-<approved hash="2,20,f500d03c30dd9cea"/>
-<approved hash="2,20,cec11c8a554531a0"/>
-<approved hash="2,20,a381f37b0d6af25e"/>
+<approved hash="21,19,c2f7bcf7becbbef5"/>
 </errors>
 </board>
 </drawing>

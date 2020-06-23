@@ -187,7 +187,7 @@ BOX</text>
 <wire x1="1" y1="5" x2="6" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="6" y1="0" x2="24.5" y2="0" width="0" layer="20"/>
 <wire x1="24.5" y1="0" x2="29.5" y2="5" width="0" layer="20" curve="90"/>
-<circle x="39.5" y="8" radius="5.06" width="0" layer="49"/>
+<circle x="40" y="6" radius="5.06" width="0" layer="49"/>
 </plain>
 <libraries>
 <library name="ElectricNoodleBox">
@@ -254,10 +254,11 @@ BOX</text>
 <wire x1="39" y1="65" x2="5" y2="65" width="0.127" layer="21"/>
 <wire x1="5" y1="65" x2="0" y2="60" width="0.127" layer="21" curve="90"/>
 </package>
-<package name="BANANA_PANEL">
-<pad name="CONN" x="0" y="0" drill="6.5" diameter="8"/>
-<circle x="0" y="0" radius="5" width="0.127" layer="49"/>
-<text x="0" y="-6.35" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<package name="CINCHNANA_PANEL">
+<pad name="CONN" x="0" y="0" drill="3" diameter="3.6" shape="long"/>
+<text x="6.35" y="0" size="1.27" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="5.56" width="0.2" layer="49"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
 </package>
 <package name="ALPHA_RV09_9MMPOT">
 <pad name="C1" x="-2.5" y="-7" drill="1.2" diameter="1.778"/>
@@ -363,9 +364,8 @@ BOX</text>
 <wire x1="0.4" y1="-3" x2="-0.4" y2="-3" width="0.127" layer="21"/>
 <wire x1="-0.4" y1="-3" x2="-0.4" y2="-4.5" width="0.127" layer="21"/>
 </package>
-<package name="COMBOJACK_PANEL">
-<pad name="CONN" x="0" y="0" drill="6.5" diameter="8"/>
-<circle x="0" y="0" radius="5" width="0.127" layer="49"/>
+<package name="NEWCOMBOJACK_PANEL">
+<pad name="CONN" x="0" y="0" drill="3" diameter="3.6" shape="long"/>
 <text x="6.35" y="0" size="1.27" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
 <pad name="S" x="0" y="-7" drill="0.6" diameter="1.27" shape="long"/>
 <pad name="T2" x="0" y="-3.38" drill="0.6" diameter="1.27" shape="long"/>
@@ -374,7 +374,7 @@ BOX</text>
 <wire x1="-0.8" y1="-3.38" x2="0.8" y2="-3.38" width="0.6" layer="46"/>
 <wire x1="-0.8" y1="4.92" x2="0.8" y2="4.92" width="0.6" layer="46"/>
 <wire x1="-0.7" y1="-7" x2="0.7" y2="-7" width="0.6" layer="46"/>
-<circle x="0" y="0" radius="5.25" width="0.2" layer="49"/>
+<circle x="0" y="0" radius="5.56" width="0.2" layer="49"/>
 <wire x1="-4.5" y1="-4.5" x2="-0.4" y2="-4.5" width="0.2" layer="21"/>
 <wire x1="-0.4" y1="-4.5" x2="0.4" y2="-4.5" width="0.2" layer="21"/>
 <wire x1="0.4" y1="-4.5" x2="4.5" y2="-4.5" width="0.2" layer="21"/>
@@ -389,6 +389,7 @@ BOX</text>
 <wire x1="1" y1="4.5" x2="1" y2="6" width="0.2" layer="21"/>
 <wire x1="1" y1="6" x2="-1" y2="6" width="0.2" layer="21"/>
 <wire x1="-1" y1="6" x2="-1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
 </package>
 </packages>
 </library>
@@ -586,7 +587,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="BOARD1" library="ElectricNoodleBox" package="ENDINGS" value="" x="49.53" y="36.83" smashed="yes" rot="MR0"/>
-<element name="LINK" library="ElectricNoodleBox" package="BANANA_PANEL" value="BANANA_PANEL" x="44" y="25" smashed="yes">
+<element name="LINK" library="ElectricNoodleBox" package="CINCHNANA_PANEL" value="BANANA_PANEL" x="44" y="25" smashed="yes">
 <attribute name="NAME" x="44" y="31.35" size="1.27" layer="25" font="vector" align="center"/>
 </element>
 <element name="R1" library="ElectricNoodleBox" package="ALPHA_RV09_9MMPOT" value="B100K" x="22" y="94" smashed="yes">
@@ -617,20 +618,20 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.718" y="21.59" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
 <attribute name="VALUE" x="32.385" y="23.368" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="HP" library="ElectricNoodleBox" package="STEREO_JACK_PANEL" value="STEREOJACK" x="23" y="9" smashed="yes">
-<attribute name="NAME" x="22.75" y="16.65" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
+<element name="HP" library="ElectricNoodleBox" package="STEREO_JACK_PANEL" value="STEREOJACK" x="25" y="10" smashed="yes">
+<attribute name="NAME" x="24.75" y="17.65" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
 </element>
-<element name="IN1" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="8" y="87" smashed="yes" rot="R90">
-<attribute name="NAME" x="8" y="93.35" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
+<element name="IN1" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="8" y="88.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="8" y="94.85" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
 </element>
-<element name="IN2" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="8" y="75" smashed="yes" rot="R90">
-<attribute name="NAME" x="8" y="81.35" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
+<element name="IN2" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="8" y="75.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="8" y="81.85" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
 </element>
-<element name="IN3" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="8" y="63" smashed="yes" rot="R90">
-<attribute name="NAME" x="8" y="69.35" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
+<element name="IN3" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="8" y="62.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="8" y="68.85" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
 </element>
-<element name="IN4" library="ElectricNoodleBox" package="COMBOJACK_PANEL" value="COMBI-JACK" x="8" y="51" smashed="yes" rot="R90">
-<attribute name="NAME" x="8" y="57.35" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
+<element name="IN4" library="ElectricNoodleBox" package="NEWCOMBOJACK_PANEL" value="COMBI-JACKCINCHNANA" x="8" y="49.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="8" y="55.85" size="1.27" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 </elements>
 <signals>
@@ -668,8 +669,8 @@ design rules under a new name.</description>
 <wire x1="46.99" y1="83.82" x2="46.0375" y2="83.82" width="0.6096" layer="16"/>
 <wire x1="46.0375" y1="83.82" x2="29.845" y2="90.17" width="0.6096" layer="16" curve="-42.825939"/>
 <wire x1="29.845" y1="90.17" x2="26.3" y2="94" width="0.6096" layer="16" curve="-8.774223"/>
-<wire x1="15" y1="87" x2="19.5" y2="87" width="0.6096" layer="16"/>
-<wire x1="15" y1="75" x2="15.5575" y2="74.93" width="0.6096" layer="16"/>
+<wire x1="15" y1="88.5" x2="19.5" y2="87" width="0.6096" layer="16"/>
+<wire x1="15" y1="75.5" x2="15.5575" y2="74.93" width="0.6096" layer="16"/>
 <wire x1="15.5575" y1="74.93" x2="21.7" y2="77" width="0.6096" layer="16" curve="51.560524"/>
 <wire x1="17.7" y1="94" x2="26.3" y2="94" width="0.6096" layer="16"/>
 <wire x1="17.7" y1="94" x2="17.78" y2="93.345" width="0.6096" layer="1"/>
@@ -698,10 +699,10 @@ design rules under a new name.</description>
 <wire x1="9" y1="14.3" x2="9" y2="5.7" width="0.6096" layer="1"/>
 <wire x1="9" y1="5.7" x2="9.8425" y2="5.715" width="0.6096" layer="16"/>
 <wire x1="9.8425" y1="5.715" x2="16" y2="7.5" width="0.6096" layer="16" curve="30.292743"/>
-<wire x1="15" y1="63" x2="15.5575" y2="62.865" width="0.6096" layer="16"/>
+<wire x1="15" y1="62.5" x2="15.5575" y2="62.865" width="0.6096" layer="16"/>
 <wire x1="15.5575" y1="62.865" x2="25.7" y2="60" width="0.6096" layer="16" curve="-4.322717"/>
 <wire x1="25.7" y1="60" x2="34.3" y2="60" width="0.6096" layer="16"/>
-<wire x1="15" y1="63" x2="15" y2="51" width="0.6096" layer="1"/>
+<wire x1="15" y1="62.5" x2="15" y2="49.5" width="0.6096" layer="1"/>
 <wire x1="29.7" y1="43" x2="38.3" y2="43" width="0.6096" layer="16"/>
 <wire x1="38.3" y1="43" x2="38.4175" y2="42.2275" width="0.6096" layer="1"/>
 <contactref element="BOARD1" pad="HPOUTS"/>
@@ -710,33 +711,34 @@ design rules under a new name.</description>
 <wire x1="46.0375" y1="47.625" x2="42.545" y2="45.72" width="0.6096" layer="16" curve="-10.159216"/>
 <wire x1="42.545" y1="45.72" x2="38.3" y2="43" width="0.6096" layer="16" curve="18.238012"/>
 <wire x1="16" y1="7.5" x2="16.51" y2="6.985" width="0.6096" layer="16"/>
-<wire x1="16.51" y1="6.985" x2="23" y2="2.52" width="0.6096" layer="16" curve="21.504474"/>
+<wire x1="16.51" y1="6.985" x2="25" y2="3.52" width="0.6096" layer="16" curve="21.504474"/>
 <wire x1="31.5" y1="36" x2="32.0675" y2="34.925" width="0.6096" layer="1"/>
 <wire x1="32.0675" y1="34.925" x2="34.6075" y2="33.3375" width="0.6096" layer="1" curve="60.329462"/>
 <wire x1="34.6075" y1="33.3375" x2="40.3225" y2="30.1625" width="0.6096" layer="1" curve="-54.427892"/>
 <wire x1="40.3225" y1="30.1625" x2="44" y2="25" width="0.6096" layer="1" curve="3.465314"/>
-<wire x1="21.7" y1="77" x2="30.3" y2="77" width="0" layer="19" extent="1-1"/>
+<wire x1="21.7" y1="77" x2="30.3" y2="77" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="C3"/>
 <contactref element="IN1" pad="T1"/>
 <contactref element="IN1" pad="CONN"/>
 <contactref element="IN1" pad="T2"/>
-<wire x1="3.08" y1="87" x2="8" y2="87" width="0.6096" layer="16"/>
-<wire x1="8" y1="87" x2="11.38" y2="87" width="0.6096" layer="16"/>
-<wire x1="8" y1="87" x2="11.7475" y2="88.5825" width="0.6096" layer="16"/>
-<wire x1="11.7475" y1="88.5825" x2="16.1925" y2="89.2175" width="0.6096" layer="16" curve="-29.526666"/>
-<wire x1="16.1925" y1="89.2175" x2="20.32" y2="89.535" width="0.6096" layer="16" curve="22.06384"/>
+<wire x1="3.08" y1="88.5" x2="8" y2="88.5" width="0.6096" layer="16"/>
+<wire x1="8" y1="88.5" x2="11.38" y2="88.5" width="0.6096" layer="16"/>
 <wire x1="20.32" y1="89.535" x2="24.5" y2="87" width="0.6096" layer="16" curve="-93.331431"/>
+<wire x1="11.38" y1="88.5" x2="12.065" y2="88.9" width="0.6096" layer="16"/>
+<wire x1="12.065" y1="88.9" x2="13.335" y2="90.17" width="0.6096" layer="16" curve="29.435132"/>
+<wire x1="13.335" y1="90.17" x2="15.875" y2="90.4875" width="0.6096" layer="16" curve="-105.1851"/>
+<wire x1="15.875" y1="90.4875" x2="20.32" y2="89.535" width="0.6096" layer="16" curve="66.745568"/>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="C3"/>
 <contactref element="IN2" pad="T1"/>
 <contactref element="IN2" pad="CONN"/>
 <contactref element="IN2" pad="T2"/>
-<wire x1="3.08" y1="75" x2="8" y2="75" width="0.6096" layer="16"/>
-<wire x1="8" y1="75" x2="11.38" y2="75" width="0.6096" layer="16"/>
-<wire x1="8" y1="75" x2="8.5725" y2="75.565" width="0.6096" layer="16"/>
+<wire x1="3.08" y1="75.5" x2="8" y2="75.5" width="0.6096" layer="16"/>
+<wire x1="8" y1="75.5" x2="11.38" y2="75.5" width="0.6096" layer="16"/>
+<wire x1="8" y1="75.5" x2="8.5725" y2="75.565" width="0.6096" layer="16"/>
 <wire x1="8.5725" y1="75.565" x2="21.9075" y2="83.5025" width="0.6096" layer="16" curve="-27.719024"/>
 <via x="21.9075" y="83.5025" extent="1-16" drill="0.35"/>
 <wire x1="21.9075" y1="83.5025" x2="22.225" y2="83.185" width="0.6096" layer="1"/>
@@ -747,9 +749,9 @@ design rules under a new name.</description>
 <contactref element="IN3" pad="T1"/>
 <contactref element="IN3" pad="CONN"/>
 <contactref element="IN3" pad="T2"/>
-<wire x1="3.08" y1="63" x2="8" y2="63" width="0.6096" layer="16"/>
-<wire x1="8" y1="63" x2="11.38" y2="63" width="0.6096" layer="16"/>
-<wire x1="8" y1="63" x2="8.5725" y2="62.23" width="0.6096" layer="16"/>
+<wire x1="3.08" y1="62.5" x2="8" y2="62.5" width="0.6096" layer="16"/>
+<wire x1="8" y1="62.5" x2="11.38" y2="62.5" width="0.6096" layer="16"/>
+<wire x1="8" y1="62.5" x2="8.5725" y2="62.23" width="0.6096" layer="16"/>
 <wire x1="8.5725" y1="62.23" x2="14.605" y2="59.055" width="0.6096" layer="16" curve="51.22084"/>
 <wire x1="14.605" y1="59.055" x2="23.495" y2="56.1975" width="0.6096" layer="16" curve="-31.341535"/>
 <wire x1="23.495" y1="56.1975" x2="26.67" y2="55.5625" width="0.6096" layer="16" curve="44.359429"/>
@@ -760,9 +762,9 @@ design rules under a new name.</description>
 <contactref element="IN4" pad="T1"/>
 <contactref element="IN4" pad="CONN"/>
 <contactref element="IN4" pad="T2"/>
-<wire x1="3.08" y1="51" x2="8" y2="51" width="0.6096" layer="16"/>
-<wire x1="8" y1="51" x2="11.38" y2="51" width="0.6096" layer="16"/>
-<wire x1="8" y1="51" x2="8.5725" y2="50.4825" width="0.6096" layer="16"/>
+<wire x1="3.08" y1="49.5" x2="8" y2="49.5" width="0.6096" layer="16"/>
+<wire x1="8" y1="49.5" x2="11.38" y2="49.5" width="0.6096" layer="16"/>
+<wire x1="8" y1="49.5" x2="8.5725" y2="50.4825" width="0.6096" layer="16"/>
 <wire x1="8.5725" y1="50.4825" x2="17.78" y2="45.085" width="0.6096" layer="16" curve="23.464506"/>
 <wire x1="17.78" y1="45.085" x2="25.0825" y2="40.64" width="0.6096" layer="16" curve="-25.363587"/>
 <wire x1="25.0825" y1="40.64" x2="30.1625" y2="38.735" width="0.6096" layer="16" curve="46.908841"/>
@@ -908,8 +910,10 @@ design rules under a new name.</description>
 <wire x1="27.305" y1="46.0375" x2="27.94" y2="39.0525" width="0.6096" layer="1" curve="63.518956"/>
 <wire x1="27.94" y1="39.0525" x2="29.5275" y2="32.7025" width="0.6096" layer="1" curve="-45.835321"/>
 <wire x1="29.5275" y1="32.7025" x2="27.94" y2="13.97" width="0.6096" layer="1" curve="8.074839"/>
-<wire x1="27.94" y1="13.97" x2="26.035" y2="6.6675" width="0.6096" layer="1" curve="-27.628588"/>
-<wire x1="26.035" y1="6.6675" x2="23" y2="5.62" width="0.6096" layer="1" curve="-85.046466"/>
+<wire x1="25" y1="6.62" x2="25.7175" y2="6.6675" width="0.6096" layer="1"/>
+<wire x1="25.7175" y1="6.6675" x2="27.305" y2="7.62" width="0.6096" layer="1" curve="54.352377"/>
+<wire x1="27.305" y1="7.62" x2="27.94" y2="12.065" width="0.6096" layer="1" curve="47.459862"/>
+<wire x1="27.94" y1="12.065" x2="27.94" y2="13.97" width="0.6096" layer="1" curve="-31.199672"/>
 </signal>
 <signal name="N$17">
 <contactref element="BOARD1" pad="HPOUTT"/>
@@ -922,7 +926,7 @@ design rules under a new name.</description>
 <wire x1="26.67" y1="47.3075" x2="27.305" y2="38.1" width="0.6096" layer="1" curve="61.02047"/>
 <wire x1="27.305" y1="38.1" x2="28.2575" y2="32.0675" width="0.6096" layer="1" curve="-50.965584"/>
 <wire x1="28.2575" y1="32.0675" x2="26.3525" y2="18.0975" width="0.6096" layer="1" curve="17.48996"/>
-<wire x1="26.3525" y1="18.0975" x2="23" y2="13.92" width="0.6096" layer="1" curve="-79.454656"/>
+<wire x1="26.3525" y1="18.0975" x2="25" y2="14.92" width="0.6096" layer="1" curve="-79.454656"/>
 </signal>
 <signal name="N$14">
 <contactref element="BOARD1" pad="OUTS"/>
