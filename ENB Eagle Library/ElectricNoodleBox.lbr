@@ -10808,11 +10808,14 @@ ADC1</text>
 <gate name="G$1" symbol="PRECISION_REF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="TH" package="TO-92">
+<device name="TH" package="TO92">
 <connects>
 <connect gate="G$1" pin="ANODE" pad="3"/>
 <connect gate="G$1" pin="CATHODE" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28523/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>

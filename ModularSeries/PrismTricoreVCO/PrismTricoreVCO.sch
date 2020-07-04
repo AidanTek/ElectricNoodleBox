@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10804,19 +10804,23 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <text x="8.255" y="0" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center">V-</text>
 <text x="0" y="-5.08" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 </package>
-<package name="TO-92">
+<package name="TO92" urn="urn:adsk.eagle:footprint:28459/1" locally_modified="yes">
 <description>&lt;b&gt;TO 92&lt;/b&gt;</description>
-<wire x1="-0.7863" y1="2.5485" x2="-2.0946" y2="-1.651" width="0.2032" layer="21" curve="111.098962"/>
-<wire x1="2.0945" y1="-1.651" x2="0.7863" y2="2.548396875" width="0.2032" layer="21" curve="111.099507"/>
-<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.2032" layer="21"/>
-<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.2032" layer="21"/>
-<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.2032" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.8796"/>
-<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<text x="0" y="3.048" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.781"/>
+<wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.3185"/>
+<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.1"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.2537" y1="-0.254" x2="-0.2863" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.2936"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="SOT23-3">
 <description>SOT23-3</description>
@@ -10853,6 +10857,12 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 diameter 2 mm, horizontal, grid 7.62 mm</description>
 <packageinstances>
 <packageinstance name="DO35-7"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92" urn="urn:adsk.eagle:package:28523/2" type="model">
+<description>TO 92</description>
+<packageinstances>
+<packageinstance name="TO92"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -11099,10 +11109,10 @@ Diode with low voltage drop</description>
 </deviceset>
 <deviceset name="TL0X4" prefix="IC" uservalue="yes">
 <gates>
-<gate name="A" symbol="OPAMP" x="-2.54" y="17.78"/>
-<gate name="B" symbol="OPAMP" x="-2.54" y="5.08"/>
-<gate name="C" symbol="OPAMP" x="-2.54" y="-7.62"/>
-<gate name="D" symbol="OPAMP" x="-2.54" y="-20.32"/>
+<gate name="A" symbol="OPAMP" x="-2.54" y="17.78" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="-2.54" y="5.08" swaplevel="1"/>
+<gate name="C" symbol="OPAMP" x="-2.54" y="-7.62" swaplevel="1"/>
+<gate name="D" symbol="OPAMP" x="-2.54" y="-20.32" swaplevel="1"/>
 <gate name="P" symbol="SUPPLYPINS" x="15.24" y="-2.54"/>
 </gates>
 <devices>
@@ -11242,11 +11252,14 @@ Diode with low voltage drop</description>
 <gate name="G$1" symbol="PRECISION_REF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="TH" package="TO-92">
+<device name="TH" package="TO92">
 <connects>
 <connect gate="G$1" pin="ANODE" pad="3"/>
 <connect gate="G$1" pin="CATHODE" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28523/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -11344,8 +11357,8 @@ Diode with low voltage drop</description>
 <part name="GNDT" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
 <part name="FREQ" library="ElectricNoodleBox" deviceset="3XWIREPAD" device="" value="100K"/>
 <part name="WP1" library="ElectricNoodleBox" deviceset="COMBO_SUPPLY_HEADER" device=""/>
-<part name="PREF1" library="ElectricNoodleBox" deviceset="LM4040" device="TH"/>
-<part name="PREF2" library="ElectricNoodleBox" deviceset="LM4040" device="TH"/>
+<part name="PREF1" library="ElectricNoodleBox" deviceset="LM4040" device="TH" package3d_urn="urn:adsk.eagle:package:28523/2"/>
+<part name="PREF2" library="ElectricNoodleBox" deviceset="LM4040" device="TH" package3d_urn="urn:adsk.eagle:package:28523/2"/>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4K7"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4K7"/>
 </parts>
