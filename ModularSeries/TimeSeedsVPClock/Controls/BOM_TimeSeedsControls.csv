@@ -1,16 +1,17 @@
 ﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
 6,,LED3MM,"LED1, LED2, LED3, LED4, LED5, LED6",LED,Farnell,1581121
 2,B100K,ALPHA_RV09_9MMPOT,"R1, R2",Taiwan Alpha 9mm Potentiometer,Taiwan Alpha 9mm Potentiometer,D-Shaft B100K
-6,BANANA_PANEL,BANANA_PANEL,"CLOCK, D2, D4, D8, D16, PTNOUT",Green Banana Socket,Farnell,1698955
-2,BANANA_PANEL,BANANA_PANEL,"FREQCV, RUNSTOP",Red Banana Socket,Farnell,1698950
+6,BANANA_PANEL,BANANA_PANEL,"CLOCK, D2, D4, D8, D16, PTNOUT",Cinch White Banana Socket,Mouser,530-108-0901-1
+1,BANANA_PANEL,BANANA_PANEL,"FREQCV",Cinch Red Banana Socket,Mouser,530-108-0902-1
+1,BANANA_PANEL,BANANA_PANEL,"RUNSTOP",Cinch Violet Banana Socket,Mouser,530-108-0912-1
 2,MCDTS-2_PUSHBUTTON,MCDTS-2_PUSHBUTTON,"S1, S2",MCDTS-2 Series Momentary Switch,Farnell,2543105
-1,Small Knob,Small Knob,R2,SIFAM/SELCO Small Grey,Thonk,Small Grey
-1,Large Knob,Large Knob,R1,SIFAM/SELCO Large Grey,Thonk ,Large Grey
+1,Small Knob,Small Knob,R2,SIFAM/SELCO Small Black,Thonk,Small Black
+1,Large Knob,Large Knob,R1,SIFAM/SELCO Large Black,Thonk ,Large Black
 1,Small Red Cap,Small Red Cap,R2,SIFAM/SELCO Cap Red Small,Thonk ,Cap Red Small
-1,Large Green Cap,Large Green Cap,R1,SIFAM/SELCO Cap Green Large,Thonk ,Cap Green Large
+1,Large White Cap,Large White Cap,R1,SIFAM/SELCO Cap White Large,Thonk ,Cap White Large
 1,MCDTS-2 Cap,MCDTS-2 Cap,S2,MCDTS-2 Series Cap KTSC-22R Red,Farnell,9561536
 1,MCDTS-2 Cap,MCDTS-2 Cap,S1,MCDTS-2 Series Cap KTSC-22K Black,Farnell,9561552
-3,Male Header,Male Header,,8way 1row 2.54mm Header Male,Farnell,2356160
+3,Male Header,Male Header,,8way 1row 2.54mm Header Male,Farnell,2856626
 3,Female Header,Female Header,,8way 1row 2.54mm Header Female,Farnell,1668208
-4,PCB Standoff,PCB Standoff,,PCB Spacer,Farnell,1733392
+4,PCB Standoff,PCB Standoff,,PCB Spacer,Farnell,1466945
 4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
