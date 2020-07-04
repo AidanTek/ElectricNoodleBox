@@ -1,14 +1,14 @@
 ﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
 4,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R3, R5",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
-4,BANANA_PANEL,BANANA_PANEL,"CVA1, CVA2, CVB1, CVB2",Red Banana Socket,Farnell,1698950
-2,BANANA_PANEL,BANANA_PANEL,"IN1, IN2",Yellow Banana Socket,Farnell,1698954
-2,BANANA_PANEL,BANANA_PANEL,"OUT1, OUT2",Blue Banana Socket,Farnell,1698952
+4,BANANA_PANEL,BANANA_PANEL,"CVA1, CVA2, CVB1, CVB2",Cinch Red Banana Socket,Mouser,530-108-0902-1
+2,BANANA_PANEL,BANANA_PANEL,"IN1, IN2",Cinch Orange Banana Socket,Mouser,530-108-0906-1
+2,BANANA_PANEL,BANANA_PANEL,"OUT1, OUT2",Cinch Blue Banana Socket,Mouser,530-108-0910-1
 2,SPDT_SWITCHDW1,MICRODPDT-DW1,"SW1, SW2",SPDT Dailywell Toggle Switch,Thonk,DW1
-3,Male Header,Male Header,,8way 1row 2.54mm Header Male,Farnell,2356160
+3,Male Header,Male Header,,8way 1row 2.54mm Header Male,Farnell,2856626
 3,Female Header,Female Header,,8way 1row 2.54mm Header Female,Farnell,1668208
-2,Large Knob,Large Knob,"R1, R2",SIFAM/SELCO Large Grey,Thonk ,Large Grey
-2,Small Knob,Small Knob,"R3, R5",SIFAM/SELCO Small Grey,Thonk ,Small Grey
+2,Large Knob,Large Knob,"R1, R2",SIFAM/SELCO Large Black,Thonk ,Large Black
+2,Small Knob,Small Knob,"R3, R5",SIFAM/SELCO Small Black,Thonk ,Small Black
 2,Small Red Cap,Small Red Cap,"R3, R5",SIFAM/SELCO Cap Red Small,Thonk ,Cap Small Red
-2,Large Yellow Cap,Large Yellow Cap,,SIFAM/SELCO Cap Yellow Large,,Cap Large Yellow
+2,Large Yellow Cap,Large Yellow Cap,,SIFAM/SELCO Cap Orange Large,Thonk,Cap Large Yellow
 4,PCB Standoff,PCB Standoff,,PCB Spacer,Farnell,1733392
 4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
