@@ -2,6 +2,10 @@
 1,"TRS 1/4"" Jack",1X03,OUT,Neutrik Stereo Jack (wired),Farnell,4169190
 2,A100K,ALPHA_RV09_9MMPOT,"R5, R6",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft A100K
 4,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R3, R4",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
+4,Small Knob,Small Knob,"R1, R2, R3, R4",SIFAM/SELCO Small Black,Thonk,Small Black
+2,Large Knob,Large Knob,"R5, R6",SIFAM/SELCO Large Black,Thonk,Large Black
+4,Small Orange Cap,Small Orange Cap,"R1, R2, R3, R4",SIFAM/SELCO Cap Small Orange,Thonk,Cap Orange Small
+2,Large Orange Cap, Large Orange Cap,"R5, R6", SIFAM/SELCO Cap Large Orange, Cap Orange Large
 1,Black Banana,BANANA_PANEL,LINK,(optional) Johnson/Cinch Banana Black ,Mouser,530-108-0903-1
 4,COMBI-JACK,COMBOJACK_PANEL,"IN1, IN2, IN3, IN4",Johnson/Cinch Banana Orange,Mouser,530-108-0906-1
 4,COMBI-JACK,COMBOJACK_PANEL,"IN1, IN2, IN3, IN4",(Alternative to above) PJ398SM mini-jack,Thonk,PJ398SM
