@@ -4,5 +4,5 @@
 4,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R3, R4",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
 1,Black Banana,BANANA_PANEL,LINK,(optional) Johnson/Cinch Banana Black ,Mouser,530-108-0903-1
 4,COMBI-JACK,COMBOJACK_PANEL,"IN1, IN2, IN3, IN4",Johnson/Cinch Banana Orange,Mouser,530-108-0906-1
-4,COMBI-JACK,COMBOJACK_PANEL,"IN1, IN2, IN3, IN4",(Alternative to above) PJ301BM mini-jack,Thonk,PJ301BM
+4,COMBI-JACK,COMBOJACK_PANEL,"IN1, IN2, IN3, IN4",(Alternative to above) PJ398SM mini-jack,Thonk,PJ398SM
 1,STEREOJACK,STEREO_JACK_PANEL,HP,Stereo Minijack PJ301CM,Thonk,PJ301CM
