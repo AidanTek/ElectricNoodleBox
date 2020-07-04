@@ -177,50 +177,50 @@
 <hole x="5" y="5" drill="3.2"/>
 <hole x="39" y="5" drill="3.2"/>
 <hole x="39" y="60" drill="3.2"/>
-<circle x="5" y="5" radius="2.5" width="1.27" layer="49"/>
-<circle x="39" y="5" radius="2.5" width="1.27" layer="49"/>
-<circle x="5" y="60.08" radius="2.5" width="1.27" layer="49"/>
-<circle x="39" y="60.08" radius="2.5" width="1.27" layer="49"/>
-<wire x1="3.81" y1="19.05" x2="3.81" y2="24.13" width="0.6096" layer="49"/>
-<wire x1="3.81" y1="31.75" x2="3.81" y2="34.29" width="0.6096" layer="49"/>
-<wire x1="3.81" y1="54.61" x2="3.81" y2="46.99" width="0.6096" layer="49"/>
-<text x="1.27" y="19.05" size="1.016" layer="49" font="vector" rot="R90" align="center">T</text>
-<text x="1.27" y="21.59" size="1.016" layer="49" font="vector" rot="R90" align="center">S</text>
-<text x="1.27" y="24.13" size="1.016" layer="49" font="vector" rot="R90" align="center">R</text>
-<text x="5.08" y="33.02" size="1.016" layer="49" font="vector" rot="R90" align="center">Mstr</text>
-<text x="5.08" y="21.59" size="1.016" layer="49" font="vector" rot="R90" align="center">Out</text>
-<text x="1.27" y="34.29" size="1.016" layer="49" font="vector" rot="R90" align="center">2</text>
-<text x="1.27" y="31.75" size="1.016" layer="49" font="vector" rot="R90" align="center">3</text>
-<wire x1="3.81" y1="36.83" x2="3.81" y2="44.45" width="0.6096" layer="49"/>
-<text x="5.08" y="40.64" size="1.016" layer="49" font="vector" rot="R90" align="center">Input</text>
-<text x="1.27" y="36.83" size="1.016" layer="49" font="vector" rot="R90" align="center">4</text>
-<text x="1.27" y="39.37" size="1.016" layer="49" font="vector" rot="R90" align="center">3</text>
-<text x="1.27" y="41.91" size="1.016" layer="49" font="vector" rot="R90" align="center">2</text>
-<text x="1.27" y="44.45" size="1.016" layer="49" font="vector" rot="R90" align="center">1</text>
-<text x="5.08" y="50.8" size="1.016" layer="49" font="vector" rot="R90" align="center">GND</text>
+<circle x="5" y="5" radius="2.5" width="1.27" layer="21"/>
+<circle x="39" y="5" radius="2.5" width="1.27" layer="21"/>
+<circle x="5" y="60.08" radius="2.5" width="1.27" layer="21"/>
+<circle x="39" y="60.08" radius="2.5" width="1.27" layer="21"/>
+<wire x1="3.81" y1="19.05" x2="3.81" y2="24.13" width="0.6096" layer="21"/>
+<wire x1="3.81" y1="31.75" x2="3.81" y2="34.29" width="0.6096" layer="21"/>
+<wire x1="3.81" y1="54.61" x2="3.81" y2="46.99" width="0.6096" layer="21"/>
+<text x="1.27" y="19.05" size="1.016" layer="21" font="vector" rot="R90" align="center">T</text>
+<text x="1.27" y="21.59" size="1.016" layer="21" font="vector" rot="R90" align="center">S</text>
+<text x="1.27" y="24.13" size="1.016" layer="21" font="vector" rot="R90" align="center">R</text>
+<text x="5.08" y="33.02" size="1.016" layer="21" font="vector" rot="R90" align="center">Mstr</text>
+<text x="5.08" y="21.59" size="1.016" layer="21" font="vector" rot="R90" align="center">Out</text>
+<text x="1.27" y="34.29" size="1.016" layer="21" font="vector" rot="R90" align="center">2</text>
+<text x="1.27" y="31.75" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
+<wire x1="3.81" y1="36.83" x2="3.81" y2="44.45" width="0.6096" layer="21"/>
+<text x="5.08" y="40.64" size="1.016" layer="21" font="vector" rot="R90" align="center">Input</text>
+<text x="1.27" y="36.83" size="1.016" layer="21" font="vector" rot="R90" align="center">4</text>
+<text x="1.27" y="39.37" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
+<text x="1.27" y="41.91" size="1.016" layer="21" font="vector" rot="R90" align="center">2</text>
+<text x="1.27" y="44.45" size="1.016" layer="21" font="vector" rot="R90" align="center">1</text>
+<text x="5.08" y="50.8" size="1.016" layer="21" font="vector" rot="R90" align="center">GND</text>
 <pad name="HPV2" x="2.54" y="29.21" drill="1.016"/>
 <pad name="HPV3" x="2.54" y="26.67" drill="1.016"/>
-<text x="1.27" y="26.67" size="1.016" layer="49" font="vector" rot="R90" align="center">3</text>
-<text x="1.27" y="29.21" size="1.016" layer="49" font="vector" rot="R90" align="center">3</text>
+<text x="1.27" y="26.67" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
+<text x="1.27" y="29.21" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
 <pad name="HPOUTT" x="2.54" y="16.51" drill="1.016"/>
 <pad name="HPOUTR" x="2.54" y="13.97" drill="1.016"/>
 <pad name="HPOUTS" x="2.54" y="11.43" drill="1.016"/>
-<wire x1="3.81" y1="26.67" x2="3.81" y2="29.21" width="0.6096" layer="49"/>
-<text x="5.08" y="27.94" size="1.016" layer="49" font="vector" rot="R90" align="center">HPvol</text>
-<wire x1="3.81" y1="11.43" x2="3.81" y2="16.51" width="0.6096" layer="49"/>
-<text x="5.08" y="13.97" size="1.016" layer="49" font="vector" rot="R90" align="center">HPOut</text>
-<text x="1.27" y="16.51" size="1.016" layer="49" font="vector" rot="R90" align="center">T</text>
-<text x="1.27" y="13.97" size="1.016" layer="49" font="vector" rot="R90" align="center">R</text>
-<text x="1.27" y="11.43" size="1.016" layer="49" font="vector" rot="R90" align="center">S</text>
+<wire x1="3.81" y1="26.67" x2="3.81" y2="29.21" width="0.6096" layer="21"/>
+<text x="5.08" y="27.94" size="1.016" layer="21" font="vector" rot="R90" align="center">HPvol</text>
+<wire x1="3.81" y1="11.43" x2="3.81" y2="16.51" width="0.6096" layer="21"/>
+<text x="5.08" y="13.97" size="1.016" layer="21" font="vector" rot="R90" align="center">HPOut</text>
+<text x="1.27" y="16.51" size="1.016" layer="21" font="vector" rot="R90" align="center">T</text>
+<text x="1.27" y="13.97" size="1.016" layer="21" font="vector" rot="R90" align="center">R</text>
+<text x="1.27" y="11.43" size="1.016" layer="21" font="vector" rot="R90" align="center">S</text>
 <hole x="5" y="60" drill="3.2"/>
-<wire x1="0" y1="60" x2="0" y2="5" width="0.127" layer="21"/>
-<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="5" y1="0" x2="39" y2="0" width="0.127" layer="21"/>
-<wire x1="39" y1="0" x2="44" y2="5" width="0.127" layer="21" curve="90"/>
-<wire x1="44" y1="5" x2="44" y2="60" width="0.127" layer="21"/>
-<wire x1="44" y1="60" x2="39" y2="65" width="0.127" layer="21" curve="90"/>
-<wire x1="39" y1="65" x2="5" y2="65" width="0.127" layer="21"/>
-<wire x1="5" y1="65" x2="0" y2="60" width="0.127" layer="21" curve="90"/>
+<wire x1="0" y1="60" x2="0" y2="5" width="0.127" layer="49"/>
+<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
+<wire x1="5" y1="0" x2="39" y2="0" width="0.127" layer="49"/>
+<wire x1="39" y1="0" x2="44" y2="5" width="0.127" layer="49" curve="90"/>
+<wire x1="44" y1="5" x2="44" y2="60" width="0.127" layer="49"/>
+<wire x1="44" y1="60" x2="39" y2="65" width="0.127" layer="49" curve="90"/>
+<wire x1="39" y1="65" x2="5" y2="65" width="0.127" layer="49"/>
+<wire x1="5" y1="65" x2="0" y2="60" width="0.127" layer="49" curve="90"/>
 </package>
 <package name="CINCHNANA_PANEL">
 <pad name="CONN" x="0" y="0" drill="3" diameter="3.6" shape="long"/>

@@ -184,14 +184,14 @@
 <hole x="5" y="90" drill="3.2"/>
 <hole x="42" y="5" drill="3.2"/>
 <hole x="42" y="90" drill="3.2"/>
-<wire x1="0" y1="90" x2="0" y2="5" width="0.127" layer="21"/>
-<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="5" y1="0" x2="42" y2="0" width="0.127" layer="21"/>
-<wire x1="42" y1="0" x2="47" y2="5" width="0.127" layer="21" curve="90"/>
-<wire x1="47" y1="5" x2="47" y2="90" width="0.127" layer="21"/>
-<wire x1="47" y1="90" x2="42" y2="95" width="0.127" layer="21" curve="90"/>
-<wire x1="42" y1="95" x2="5" y2="95" width="0.127" layer="21"/>
-<wire x1="5" y1="95" x2="0" y2="90" width="0.127" layer="21" curve="90"/>
+<wire x1="0" y1="90" x2="0" y2="5" width="0.127" layer="49"/>
+<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
+<wire x1="5" y1="0" x2="42" y2="0" width="0.127" layer="49"/>
+<wire x1="42" y1="0" x2="47" y2="5" width="0.127" layer="49" curve="90"/>
+<wire x1="47" y1="5" x2="47" y2="90" width="0.127" layer="49"/>
+<wire x1="47" y1="90" x2="42" y2="95" width="0.127" layer="49" curve="90"/>
+<wire x1="42" y1="95" x2="5" y2="95" width="0.127" layer="49"/>
+<wire x1="5" y1="95" x2="0" y2="90" width="0.127" layer="49" curve="90"/>
 <pad name="INVA" x="2.54" y="29.71" drill="1.016"/>
 <text x="0.9525" y="14.605" size="1.016" layer="21" font="vector" rot="R90" align="center">Bias</text>
 <text x="4.1275" y="11.7475" size="1.016" layer="21" font="vector" rot="R90" align="center">1</text>

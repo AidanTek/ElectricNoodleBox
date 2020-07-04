@@ -174,14 +174,14 @@
 <pad name="DIST2" x="43.83" y="2.54" drill="1.016"/>
 <pad name="TRI" x="46.37" y="2.54" drill="1.016"/>
 <pad name="SQR" x="48.91" y="2.54" drill="1.016"/>
-<wire x1="0" y1="44" x2="0" y2="5" width="0.127" layer="21"/>
-<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="5" y1="0" x2="83" y2="0" width="0.127" layer="21"/>
-<wire x1="83" y1="0" x2="88" y2="5" width="0.127" layer="21" curve="90"/>
-<wire x1="88" y1="5" x2="88" y2="44" width="0.127" layer="21"/>
-<wire x1="88" y1="44" x2="83" y2="49" width="0.127" layer="21" curve="90"/>
-<wire x1="83" y1="49" x2="5" y2="49" width="0.127" layer="21"/>
-<wire x1="5" y1="49" x2="0" y2="44" width="0.127" layer="21" curve="90"/>
+<wire x1="0" y1="44" x2="0" y2="5" width="0.127" layer="49"/>
+<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
+<wire x1="5" y1="0" x2="83" y2="0" width="0.127" layer="49"/>
+<wire x1="83" y1="0" x2="88" y2="5" width="0.127" layer="49" curve="90"/>
+<wire x1="88" y1="5" x2="88" y2="44" width="0.127" layer="49"/>
+<wire x1="88" y1="44" x2="83" y2="49" width="0.127" layer="49" curve="90"/>
+<wire x1="83" y1="49" x2="5" y2="49" width="0.127" layer="49"/>
+<wire x1="5" y1="49" x2="0" y2="44" width="0.127" layer="49" curve="90"/>
 <hole x="5" y="5" drill="3.2"/>
 <hole x="83" y="5" drill="3.2"/>
 <hole x="83" y="44" drill="3.2"/>
