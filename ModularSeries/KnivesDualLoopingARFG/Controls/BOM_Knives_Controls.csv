@@ -2,8 +2,8 @@
 2,,LED3MM,"LED1, LED2",LED 3mm Red,Farnell,1581121
 4,A1Meg,ALPHA_RV09_9MMPOT,"R1, R2, R3, R4",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft A1M
 2,BANANA_PANEL,BANANA_PANEL,"ENV1, ENV2",Cinch Green Banana Socket,Mouser,530-1080904-1
-2,BANANA_PANEL,BANANA_PANEL,"PULSE1, PULSE2",Cinch Violet Banana Socket,Mouser,530-108-0912-1
-2,BANANA_PANEL,BANANA_PANEL,"GATE1, GATE2",Cinch Red Banana Socket,Mouser,530-108-0902-1
+2,BANANA_PANEL,BANANA_PANEL,"PULSE1, PULSE2",Cinch White Banana Socket,Mouser,530-108-0901-1
+2,BANANA_PANEL,BANANA_PANEL,"GATE1, GATE2",Cinch Violet Banana Socket,Mouser,530-108-0912-1
 2,MCDTS-2_PUSHBUTTON,MCDTS-2_PUSHBUTTON,"S1, S2",MCDTS-2 Series Momentary Switch,Farnell,2543105
 2,SPDT_SWITCHDW1,MICRODPDT-DW1,"SW1, SW2",SPDT Dailywell Toggle Switch,Thonk,DW1
 2,MCDTS-2 Cap,MCDTS-2 Cap,"S1, S2",MCDTS-2 Series Cap KTSC-22R Red,Farnell,9561536
@@ -11,4 +11,5 @@
 4,Small Green Cap,Small Green Cap,"R1, R2, R3, R4",SIFAM/SELCO Cap Green Small,Thonk,Small Green
 4,Male Header,Male Header,,8way 1row 2.54mm Header Male,Farnell,2856626
 4,Female Header,Female Header,,8way 1row 2.54mm Header Female,Farnell,1668208
+4,M3 Standoff,M3 Standoff,,8mm Standoff Nylon,Farnell,1466945
 4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
