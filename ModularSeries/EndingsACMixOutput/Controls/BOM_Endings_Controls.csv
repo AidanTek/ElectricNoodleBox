@@ -9,7 +9,7 @@
 1,Black Banana,BANANA_PANEL,LINK,(optional) Johnson/Cinch Banana Black ,Mouser,530-108-0903-1
 4,COMBI-JACK,COMBOJACK_PANEL,"IN1, IN2, IN3, IN4",Johnson/Cinch Banana Orange,Mouser,530-108-0906-1
 4,COMBI-JACK,COMBOJACK_PANEL,"IN1, IN2, IN3, IN4",(Alternative to above) PJ398SM mini-jack,Thonk,PJ398SM
-1,STEREOJACK,STEREO_JACK_PANEL,HP,Stereo Minijack PJ301CM,Thonk,PJ301CM
+1,STEREOJACK,STEREO_JACK_PANEL,HP,Stereo Minijack PJ366ST,Thonk,PJ366ST
 3,Male Header,Male Header,,8way 1row 2.54mm Header Male,Farnell,2856626
 3,Female Header,Female Header,,8way 1row 2.54mm Header Female,Farnell,1668208
 4,M3 Standoff,M3 Standoff,,8mm Standoff Nylon,Farnell,1466945
