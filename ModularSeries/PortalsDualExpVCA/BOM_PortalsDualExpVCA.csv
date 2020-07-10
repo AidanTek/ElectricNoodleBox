@@ -18,7 +18,7 @@
 ,,,,,,
 4,2N3906,TO92,"Q1, Q2, Q3, Q4",PNP Transistor,Farnell,1574372
 1,LM13700_DIP,DIL16,IC1,LM13700 16 pin DIL,Farnell,3118206
-2,TL084_DIP,DIL14,"IC2, IC3",TL084 14 pin DIL,Farnell,3005140
+2,TL084_DIP,DIL14,"IC2, IC3",TL084 14 pin DIL,Farnell,3117825
 ,,,,,,
 1,Power Header,,WP1,4 way MTA156 or 10 way IDC,Farnell,589068
 1,(Alt) Power Header,,WP1,10 way Shrouded IDC,Farnell,2843527

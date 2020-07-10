@@ -18,7 +18,7 @@
 ,,,,,,
 6,BAT85,DO35-7,"D1, D2, D3, D4, D5, D6",BAT85 Schottky Diode,Farnell,2889133
 6,2N3904,TO92,"Q1, Q2, Q3, Q4, Q5, Q6",NPN TRANSISTOR,Farnell,1574370
-2,TL084_DIP,DIL14,"IC1, IC2",TL084 14 pin DIL,Farnell,3005140
+2,TL084_DIP,DIL14,"IC1, IC2",TL084 14 pin DIL,Farnell,3117825
 ,,,,,,
 6,Banana Connector,,"EO1, EO2, GI1, GI2, PO1, PO2",Banana or Jack patch point (panel part),Farnell,1698951
 2,LED,,"LED1, LED2",LED (panel part),Farnell,1581143

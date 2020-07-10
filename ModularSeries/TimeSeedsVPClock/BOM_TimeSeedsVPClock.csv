@@ -16,7 +16,7 @@
 1,L78L05,TO92,VR1,L78L05 TO-92 package,Farnell,3335816
 1,ATTiny85,DIL08,IC1,ATTiny85 8 pin DIL,Farnell,1455162
 1,CD4024,DIL14,IC3,CD4024 14 pin DIL,Farnell,1470783
-1,TL084_DIP,DIL14,IC2,TL084 14 pin DIL,Farnell,3005140
+1,TL084_DIP,DIL14,IC2,TL084 14 pin DIL,Farnell,3117825
 ,,,,,,
 6,LED,5mm LED,"CLKLED, L+2, L+4, L+8, L+16, PLED",LED (panel part),Farnell,1581143
 8,Banana Connector,,"/2, /4, /8, /16, CLK, CVI, EXT, PTRN",Banana or Jack patch point (panel part),Farnell,1698951
