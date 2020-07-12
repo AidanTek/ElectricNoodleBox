@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17916,6 +17916,8 @@ Holes</text>
 Out</text>
 <text x="149.86" y="88.9" size="1.778" layer="97" align="center">Pulse
 Out</text>
+<text x="38.1" y="88.9" size="1.778" layer="91">Test R30 150K and R29 560K
+for 2.5V threshold</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="50.8" y="78.74" smashed="yes">
