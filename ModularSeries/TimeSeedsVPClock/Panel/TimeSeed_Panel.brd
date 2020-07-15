@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjdlNGE0" projecturn="a.cGVyc29uYWw6dWUyYjdlNGE0IzIwMjAwNDA1MjgzMzA0MTgx" f3durn="urn:adsk.wipprod:dm.lineage:Y39tz4oTQsKUQ-tcbYR8SA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="de486b2f-65fa-41f6-81a7-b63279111559" lastsyncedrevisionid="de486b2f-65fa-41f6-81a7-b63279111559" lastboardhashguid="7055d2db-d7db-5fb8-3466-54cad6186d58" lastpushedtime="2020-06-25T11:17:59Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjdlNGE0" projecturn="a.cGVyc29uYWw6dWUyYjdlNGE0IzIwMjAwNDA1MjgzMzA0MTgx" f3durn="urn:adsk.wipprod:dm.lineage:Y39tz4oTQsKUQ-tcbYR8SA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="ab122399-fad9-483c-8ff5-5fbf1e069fbb" lastsyncedrevisionid="ab122399-fad9-483c-8ff5-5fbf1e069fbb" lastboardhashguid="5bb234f9-881d-10e4-fa42-a3b30b626d73" lastpushedtime="2020-07-12T20:46:16Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="-14.25" x2="50.5" y2="-14.25" width="0" layer="20"/>
 <wire x1="50.5" y1="-14.25" x2="50.5" y2="114.25" width="0" layer="20"/>
@@ -176,7 +176,7 @@
 <text x="44" y="71" size="1.9304" layer="21" font="vector" ratio="16" align="center">/2</text>
 <text x="44" y="56" size="1.9304" layer="21" font="vector" ratio="16" align="center">/4</text>
 <text x="44" y="41" size="1.9304" layer="21" font="vector" ratio="16" align="center">/8</text>
-<text x="44" y="26" size="1.9304" layer="21" font="vector" ratio="16" align="center">/2</text>
+<text x="44" y="26" size="1.9304" layer="21" font="vector" ratio="16" align="center">/16</text>
 <text x="33" y="6.5" size="1.9304" layer="21" font="vector" ratio="16" align="center">Pattern</text>
 <text x="7" y="60" size="1.9304" layer="21" font="vector" ratio="16" align="center">Pattern</text>
 <text x="7" y="40" size="1.9304" layer="21" font="vector" ratio="16" align="center">RunStop</text>
@@ -611,7 +611,6 @@ Freq.</text>
 <wire x1="14.6" y1="45.1" x2="10.9" y2="47.5" width="1" layer="29" curve="82.170421"/>
 <wire x1="16.8" y1="29.5" x2="16.6" y2="29.5" width="1" layer="29"/>
 <wire x1="16.6" y1="29.5" x2="14.4" y2="27.6" width="1" layer="29" curve="81.630164"/>
-<wire x1="8" y1="21.3" x2="6.9" y2="21.6" width="1" layer="29"/>
 <wire x1="8.2" y1="9.2" x2="7.4" y2="9.5" width="1" layer="29"/>
 <wire x1="7.4" y1="9.5" x2="4.7" y2="11.7" width="1" layer="29" curve="-37.235227"/>
 <wire x1="7.8" y1="97" x2="7.2" y2="97.1" width="1" layer="29"/>

@@ -157,6 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjdlNGE0" projecturn="a.cGVyc29uYWw6dWUyYjdlNGE0IzIwMjAwNDA1MjgzMzA0MTgx" f3durn="urn:adsk.wipprod:dm.lineage:_tFk5kgkR3ODdIiFkKQrQA" pcbguid="cc0741da-c39f-4bac-9138-21032b12d278" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="fbfa285f-c619-4097-bf57-c955b1927665" lastsyncedrevisionid="fbfa285f-c619-4097-bf57-c955b1927665" lastboardhashguid="be59fded-f77c-72f4-7c9f-39d078d1fa37" lastpushedtime="2020-07-12T17:28:43Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="-14.25" x2="50.5" y2="-14.25" width="0" layer="20"/>
 <wire x1="50.5" y1="-14.25" x2="50.5" y2="114.25" width="0" layer="20"/>
@@ -173,8 +174,8 @@
 <text x="25.5" y="-11" size="1.9304" layer="1" font="vector" ratio="16" align="center">T h e L e f t H a n d P a t h</text>
 <text x="25.5" y="105" size="2.1844" layer="1" font="vector" ratio="16" align="center">Sŵn</text>
 <text x="25.5" y="105" size="2.1844" layer="29" font="vector" ratio="16" align="center">Sŵn</text>
-<text x="16.5" y="85.5" size="1.9304" layer="29" font="vector" ratio="16" align="center">Specimin</text>
-<text x="16.5" y="85.5" size="1.9304" layer="1" font="vector" ratio="16" align="center">Specimin</text>
+<text x="16.5" y="85.5" size="1.9304" layer="29" font="vector" ratio="16" align="center">Specimen</text>
+<text x="16.5" y="85.5" size="1.9304" layer="1" font="vector" ratio="16" align="center">Specimen</text>
 <text x="34" y="85.5" size="1.9304" layer="29" font="vector" ratio="16" align="center">Result</text>
 <text x="34" y="85.5" size="1.9304" layer="1" font="vector" ratio="16" align="center">Result</text>
 <text x="7" y="67" size="1.9304" layer="29" font="vector" ratio="16" align="center">Chop</text>
@@ -218,8 +219,8 @@
 <text x="32.5" y="15" size="1.27" layer="21" font="vector" ratio="16" align="center">SLEW</text>
 <text x="25.5" y="69.5" size="1.778" layer="29" font="vector" ratio="16" align="center">Volt
 Sampler</text>
-<text x="7" y="18.5" size="1.9304" layer="1" font="vector" ratio="16" align="center">Specimin</text>
-<text x="7" y="18.5" size="1.9304" layer="29" font="vector" ratio="16" align="center">Specimin</text>
+<text x="7" y="18.5" size="1.9304" layer="1" font="vector" ratio="16" align="center">Specimen</text>
+<text x="7" y="18.5" size="1.9304" layer="29" font="vector" ratio="16" align="center">Specimen</text>
 <text x="43.5" y="18.5" size="1.9304" layer="1" font="vector" ratio="16" align="center">Result</text>
 <text x="43.5" y="18.5" size="1.9304" layer="29" font="vector" ratio="16" align="center">Result</text>
 <text x="13" y="36" size="1.9304" layer="1" font="vector" ratio="16" align="center">Modify</text>
@@ -321,7 +322,6 @@ Filter</text>
 <vertex x="25" y="52" curve="-122.520374"/>
 <vertex x="25.5" y="51.5"/>
 <vertex x="26" y="51"/>
-<vertex x="28.5" y="48"/>
 <vertex x="28.5" y="48"/>
 <vertex x="27.166665625" y="50" curve="-30.510237"/>
 <vertex x="25.5" y="55" curve="37.24315"/>
@@ -1270,6 +1270,27 @@ Filter</text>
 <text x="25" y="1.5" size="1.27" layer="21" font="vector" ratio="16" align="center">FAST</text>
 <text x="42" y="9" size="1.9304" layer="29" font="vector" ratio="16" align="center">Mode</text>
 <text x="42" y="9" size="1.9304" layer="1" font="vector" ratio="16" align="center">Mode</text>
+<text x="1.5" y="50" size="1.778" layer="29" font="vector" ratio="12" align="center">F
+O
+E
+L
+
+F
+R
+A
+I
+T
+H</text>
+<text x="49" y="50" size="1.778" layer="29" font="vector" ratio="12" align="center">P
+E
+N
+
+Y
+
+F
+A
+N</text>
+<text x="25.5" y="112.75" size="1.778" layer="29" font="vector" ratio="12" align="center">PICWS DU</text>
 </plain>
 <libraries>
 <library name="ElectricNoodleBox">
@@ -1535,6 +1556,11 @@ design rules under a new name.</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 </compatibility>
 </eagle>

@@ -244,10 +244,6 @@
 <pad name="S" x="0" y="-7" drill="0.6" diameter="1.27" shape="long"/>
 <pad name="T2" x="0" y="-3.38" drill="0.6" diameter="1.27" shape="long"/>
 <pad name="T1" x="0" y="4.92" drill="0.6" diameter="1.27" shape="long"/>
-<wire x1="-0.75" y1="4.92" x2="0.75" y2="4.92" width="0.6" layer="46"/>
-<wire x1="-0.8" y1="-3.38" x2="0.8" y2="-3.38" width="0.6" layer="46"/>
-<wire x1="-0.8" y1="4.92" x2="0.8" y2="4.92" width="0.6" layer="46"/>
-<wire x1="-0.7" y1="-7" x2="0.7" y2="-7" width="0.6" layer="46"/>
 <circle x="0" y="0" radius="5.56" width="0.2" layer="49"/>
 <wire x1="-4.5" y1="-4.5" x2="-0.4" y2="-4.5" width="0.2" layer="21"/>
 <wire x1="-0.4" y1="-4.5" x2="0.4" y2="-4.5" width="0.2" layer="21"/>
@@ -263,6 +259,9 @@
 <wire x1="1" y1="4.5" x2="1" y2="6" width="0.2" layer="21"/>
 <wire x1="1" y1="6" x2="-1" y2="6" width="0.2" layer="21"/>
 <wire x1="-1" y1="6" x2="-1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-0.8" y1="4.92" x2="0.8" y2="4.92" width="0.6" layer="46"/>
+<wire x1="-0.8" y1="-3.38" x2="0.8" y2="-3.38" width="0.6" layer="46"/>
+<wire x1="-0.7" y1="-7" x2="0.7" y2="-7" width="0.6" layer="46"/>
 <wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
 </package>
 <package name="ALPHA_RV09_9MMPOT">
@@ -271,8 +270,6 @@
 <pad name="C3" x="2.5" y="-7" drill="1.2" diameter="1.778"/>
 <pad name="LUGL" x="-4.3" y="0" drill="2.1" diameter="2.8" shape="long" rot="R90"/>
 <pad name="LUGR" x="4.3" y="0" drill="2.1" diameter="2.8" shape="long" rot="R90"/>
-<wire x1="-4.3" y1="-0.5" x2="-4.3" y2="0.5" width="2.1" layer="46"/>
-<wire x1="4.3" y1="-0.5" x2="4.3" y2="0.5" width="2.1" layer="46"/>
 <circle x="0" y="0" radius="3" width="0.254" layer="21"/>
 <wire x1="3.9" y1="5.5" x2="-3.9" y2="5.5" width="0.254" layer="21"/>
 <wire x1="-3.9" y1="5.5" x2="-4.9" y2="4.5" width="0.254" layer="21" curve="90"/>
@@ -289,6 +286,8 @@
 <wire x1="-2.5" y1="-1.5" x2="2.5" y2="-1.5" width="0.254" layer="21"/>
 <text x="0" y="6.35" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="7.62" y="-7.62" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-4.3" y1="-0.5" x2="-4.3" y2="0.5" width="2.1" layer="46"/>
+<wire x1="4.3" y1="-0.5" x2="4.3" y2="0.5" width="2.1" layer="46"/>
 </package>
 <package name="LED5MM" urn="urn:adsk.eagle:footprint:15655/1">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
