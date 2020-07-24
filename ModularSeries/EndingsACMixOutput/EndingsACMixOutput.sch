@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9437,7 +9437,7 @@ ELECTRIC NOODLE BOX</text>
 <junction x="124.46" y="81.28"/>
 </segment>
 </net>
-<net name="HP_IN" class="0">
+<net name="HP_VOLOUT" class="0">
 <segment>
 <pinref part="HPVOL" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>

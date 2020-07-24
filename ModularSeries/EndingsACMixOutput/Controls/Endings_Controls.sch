@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -164,8 +164,8 @@
 <pad name="OUTT" x="2.54" y="19.05" drill="1.016"/>
 <pad name="OUTS" x="2.54" y="21.59" drill="1.016"/>
 <pad name="OUTR" x="2.54" y="24.13" drill="1.016"/>
-<pad name="MSTR3" x="2.54" y="31.75" drill="1.016"/>
-<pad name="MSTR2" x="2.54" y="34.29" drill="1.016"/>
+<pad name="MSTRVOLOUT" x="2.54" y="31.75" drill="1.016"/>
+<pad name="MSTRVOLIN" x="2.54" y="34.29" drill="1.016"/>
 <pad name="IN4" x="2.54" y="36.83" drill="1.016"/>
 <pad name="IN3" x="2.54" y="39.37" drill="1.016"/>
 <pad name="IN2" x="2.54" y="41.91" drill="1.016"/>
@@ -174,9 +174,9 @@
 <pad name="GND3" x="2.54" y="49.53" drill="1.016"/>
 <pad name="GND2" x="2.54" y="52.07" drill="1.016"/>
 <pad name="GND1" x="2.54" y="54.61" drill="1.016"/>
-<hole x="5" y="5" drill="3.2"/>
-<hole x="39" y="5" drill="3.2"/>
-<hole x="39" y="60" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="39" y="5" drill="4"/>
+<hole x="39" y="60" drill="4"/>
 <circle x="5" y="5" radius="2.5" width="1.27" layer="21"/>
 <circle x="39" y="5" radius="2.5" width="1.27" layer="21"/>
 <circle x="5" y="60.08" radius="2.5" width="1.27" layer="21"/>
@@ -198,9 +198,9 @@
 <text x="1.27" y="41.91" size="1.016" layer="21" font="vector" rot="R90" align="center">2</text>
 <text x="1.27" y="44.45" size="1.016" layer="21" font="vector" rot="R90" align="center">1</text>
 <text x="5.08" y="50.8" size="1.016" layer="21" font="vector" rot="R90" align="center">GND</text>
-<pad name="HPV2" x="2.54" y="29.21" drill="1.016"/>
-<pad name="HPV3" x="2.54" y="26.67" drill="1.016"/>
-<text x="1.27" y="26.67" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
+<pad name="HPVOLIN" x="2.54" y="29.21" drill="1.016"/>
+<pad name="HPVOLOUT" x="2.54" y="26.67" drill="1.016"/>
+<text x="1.27" y="26.67" size="1.016" layer="21" font="vector" rot="R90" align="center">2</text>
 <text x="1.27" y="29.21" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
 <pad name="HPOUTT" x="2.54" y="16.51" drill="1.016"/>
 <pad name="HPOUTR" x="2.54" y="13.97" drill="1.016"/>
@@ -212,7 +212,7 @@
 <text x="1.27" y="16.51" size="1.016" layer="21" font="vector" rot="R90" align="center">T</text>
 <text x="1.27" y="13.97" size="1.016" layer="21" font="vector" rot="R90" align="center">R</text>
 <text x="1.27" y="11.43" size="1.016" layer="21" font="vector" rot="R90" align="center">S</text>
-<hole x="5" y="60" drill="3.2"/>
+<hole x="5" y="60" drill="4"/>
 <wire x1="0" y1="60" x2="0" y2="5" width="0.127" layer="49"/>
 <wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
 <wire x1="5" y1="0" x2="39" y2="0" width="0.127" layer="49"/>
@@ -234,8 +234,6 @@
 <pad name="C3" x="2.5" y="-7" drill="1.2" diameter="1.778"/>
 <pad name="LUGL" x="-4.3" y="0" drill="2.1" diameter="2.8" shape="long" rot="R90"/>
 <pad name="LUGR" x="4.3" y="0" drill="2.1" diameter="2.8" shape="long" rot="R90"/>
-<wire x1="-4.3" y1="-0.5" x2="-4.3" y2="0.5" width="2.1" layer="46"/>
-<wire x1="4.3" y1="-0.5" x2="4.3" y2="0.5" width="2.1" layer="46"/>
 <circle x="0" y="0" radius="3" width="0.254" layer="21"/>
 <wire x1="3.9" y1="5.5" x2="-3.9" y2="5.5" width="0.254" layer="21"/>
 <wire x1="-3.9" y1="5.5" x2="-4.9" y2="4.5" width="0.254" layer="21" curve="90"/>
@@ -252,6 +250,8 @@
 <wire x1="-2.5" y1="-1.5" x2="2.5" y2="-1.5" width="0.254" layer="21"/>
 <text x="0" y="6.35" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="7.62" y="-7.62" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-4.3" y1="-0.5" x2="-4.3" y2="0.5" width="2.1" layer="46"/>
+<wire x1="4.3" y1="-0.5" x2="4.3" y2="0.5" width="2.1" layer="46"/>
 </package>
 <package name="1X03">
 <description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
@@ -338,10 +338,6 @@
 <pad name="S" x="0" y="-7" drill="0.6" diameter="1.27" shape="long"/>
 <pad name="T2" x="0" y="-3.38" drill="0.6" diameter="1.27" shape="long"/>
 <pad name="T1" x="0" y="4.92" drill="0.6" diameter="1.27" shape="long"/>
-<wire x1="-0.75" y1="4.92" x2="0.75" y2="4.92" width="0.6" layer="46"/>
-<wire x1="-0.8" y1="-3.38" x2="0.8" y2="-3.38" width="0.6" layer="46"/>
-<wire x1="-0.8" y1="4.92" x2="0.8" y2="4.92" width="0.6" layer="46"/>
-<wire x1="-0.7" y1="-7" x2="0.7" y2="-7" width="0.6" layer="46"/>
 <circle x="0" y="0" radius="5.56" width="0.2" layer="49"/>
 <wire x1="-4.5" y1="-4.5" x2="-0.4" y2="-4.5" width="0.2" layer="21"/>
 <wire x1="-0.4" y1="-4.5" x2="0.4" y2="-4.5" width="0.2" layer="21"/>
@@ -357,6 +353,9 @@
 <wire x1="1" y1="4.5" x2="1" y2="6" width="0.2" layer="21"/>
 <wire x1="1" y1="6" x2="-1" y2="6" width="0.2" layer="21"/>
 <wire x1="-1" y1="6" x2="-1" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-0.8" y1="4.92" x2="0.8" y2="4.92" width="0.6" layer="46"/>
+<wire x1="-0.8" y1="-3.38" x2="0.8" y2="-3.38" width="0.6" layer="46"/>
+<wire x1="-0.7" y1="-7" x2="0.7" y2="-7" width="0.6" layer="46"/>
 <wire x1="-2.5" y1="0" x2="2.5" y2="0" width="1.5" layer="46"/>
 </package>
 <package name="COMBOJACK_PANEL">
@@ -501,8 +500,8 @@
 <gate name="INPUT" symbol="CONN_04" x="-17.78" y="25.4"/>
 <gate name="MSTR_S" symbol="CONN_01" x="-20.32" y="7.62"/>
 <gate name="MSTR_R" symbol="CONN_01" x="-20.32" y="-5.08"/>
-<gate name="HP_S" symbol="CONN_01" x="-2.54" y="43.18"/>
-<gate name="HP_R" symbol="CONN_01" x="-2.54" y="30.48"/>
+<gate name="HP_VOLOUT" symbol="CONN_01" x="-2.54" y="43.18"/>
+<gate name="HP_VOLIN" symbol="CONN_01" x="-2.54" y="30.48"/>
 <gate name="OUT" symbol="CONN_03" x="-2.54" y="15.24"/>
 <gate name="HPOUT" symbol="CONN_03" x="-2.54" y="-2.54"/>
 <gate name="GNDT" symbol="CONN_01" x="-20.32" y="43.18"/>
@@ -514,14 +513,14 @@
 <connect gate="HPOUT" pin="1" pad="HPOUTT"/>
 <connect gate="HPOUT" pin="2" pad="HPOUTR"/>
 <connect gate="HPOUT" pin="3" pad="HPOUTS"/>
-<connect gate="HP_R" pin="1" pad="HPV2"/>
-<connect gate="HP_S" pin="1" pad="HPV3"/>
+<connect gate="HP_VOLIN" pin="1" pad="HPVOLIN"/>
+<connect gate="HP_VOLOUT" pin="1" pad="HPVOLOUT"/>
 <connect gate="INPUT" pin="1" pad="IN1"/>
 <connect gate="INPUT" pin="2" pad="IN2"/>
 <connect gate="INPUT" pin="3" pad="IN3"/>
 <connect gate="INPUT" pin="4" pad="IN4"/>
-<connect gate="MSTR_R" pin="1" pad="MSTR2"/>
-<connect gate="MSTR_S" pin="1" pad="MSTR3"/>
+<connect gate="MSTR_R" pin="1" pad="MSTRVOLIN"/>
+<connect gate="MSTR_S" pin="1" pad="MSTRVOLOUT"/>
 <connect gate="OUT" pin="1" pad="OUTR"/>
 <connect gate="OUT" pin="2" pad="OUTS"/>
 <connect gate="OUT" pin="3" pad="OUTT"/>
@@ -767,13 +766,13 @@ ELECTRIC NOODLE BOX</text>
 <attribute name="VALUE" x="58.42" y="89.154" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="58.42" y="97.028" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="BOARD1" gate="HP_S" x="50.8" y="27.94" smashed="yes">
-<attribute name="VALUE" x="48.26" y="23.114" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="48.26" y="30.988" size="1.778" layer="95" font="vector"/>
+<instance part="BOARD1" gate="HP_VOLOUT" x="88.9" y="17.78" smashed="yes" rot="R180">
+<attribute name="VALUE" x="91.44" y="22.606" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="91.44" y="14.732" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="BOARD1" gate="HP_R" x="76.2" y="17.78" smashed="yes" rot="R180">
-<attribute name="VALUE" x="78.74" y="22.606" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="83.82" y="14.732" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="BOARD1" gate="HP_VOLIN" x="48.26" y="27.94" smashed="yes">
+<attribute name="VALUE" x="45.72" y="23.114" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="40.64" y="30.988" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="R6" gate="PIN" x="60.96" y="17.78" smashed="yes">
 <attribute name="NAME" x="66.04" y="7.62" size="1.778" layer="95" rot="R90"/>
@@ -1031,21 +1030,6 @@ ELECTRIC NOODLE BOX</text>
 <wire x1="66.04" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="BOARD1" gate="HP_S" pin="1"/>
-<wire x1="58.42" y1="27.94" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R6" gate="PIN" pin="B"/>
-<wire x1="60.96" y1="27.94" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="R6" gate="PIN" pin="W"/>
-<pinref part="BOARD1" gate="HP_R" pin="1"/>
-<wire x1="66.04" y1="17.78" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="BOARD1" gate="OUT" pin="3"/>
@@ -1081,6 +1065,21 @@ ELECTRIC NOODLE BOX</text>
 <pinref part="BOARD1" gate="OUT" pin="2"/>
 <pinref part="OUT" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="35.56" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="BOARD1" gate="HP_VOLIN" pin="1"/>
+<wire x1="55.88" y1="27.94" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="R6" gate="PIN" pin="B"/>
+<wire x1="60.96" y1="27.94" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="R6" gate="PIN" pin="W"/>
+<pinref part="BOARD1" gate="HP_VOLOUT" pin="1"/>
+<wire x1="66.04" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

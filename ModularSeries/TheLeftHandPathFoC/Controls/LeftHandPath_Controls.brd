@@ -53,7 +53,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -202,10 +202,10 @@ Taylor
 <wire x1="100" y1="44" x2="95" y2="49" width="0.127" layer="49" curve="90"/>
 <wire x1="95" y1="49" x2="5" y2="49" width="0.127" layer="49"/>
 <wire x1="5" y1="49" x2="0" y2="44" width="0.127" layer="49" curve="90"/>
-<hole x="5" y="5" drill="3.2"/>
-<hole x="95" y="5" drill="3.2"/>
-<hole x="95" y="44" drill="3.2"/>
-<hole x="5" y="44" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="95" y="5" drill="4"/>
+<hole x="95" y="44" drill="4"/>
+<hole x="5" y="44" drill="4"/>
 <pad name="TRIG" x="26.67" y="2.54" drill="1.016"/>
 <pad name="COMP" x="29.21" y="2.54" drill="1.016"/>
 <pad name="LEDA" x="31.75" y="2.54" drill="1.016"/>

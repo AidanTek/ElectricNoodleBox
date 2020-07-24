@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjdlNGE0" projecturn="a.cGVyc29uYWw6dWUyYjdlNGE0IzIwMjAwNDA1MjgzMzA0MTgx" f3durn="urn:adsk.wipprod:dm.lineage:U9FcZgH7SfaU26SPP2NbYw" pcbguid="6f58206b-30da-436d-98fb-ee7fcbdd6e0c" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="0be03638-d620-4086-a5b4-d81e10938f8d" lastsyncedrevisionid="0be03638-d620-4086-a5b4-d81e10938f8d" lastboardhashguid="dd2dca40-37f1-c678-8af3-d0961fdfd614" lastpushedtime="2020-06-25T11:19:21Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjdlNGE0" projecturn="a.cGVyc29uYWw6dWUyYjdlNGE0IzIwMjAwNDA1MjgzMzA0MTgx" f3durn="urn:adsk.wipprod:dm.lineage:U9FcZgH7SfaU26SPP2NbYw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="0be03638-d620-4086-a5b4-d81e10938f8d" lastsyncedrevisionid="0be03638-d620-4086-a5b4-d81e10938f8d" lastboardhashguid="dd2dca40-37f1-c678-8af3-d0961fdfd614" lastpushedtime="2020-06-25T11:19:21Z" linktopcb3d="true"/>
 <plain>
 <text x="37.1475" y="37.465" size="3.81" layer="21" font="vector" ratio="16" rot="R90" align="center-left">Endings</text>
 <text x="41.5925" y="37.465" size="1.016" layer="21" font="vector" ratio="16" rot="R90" align="center-left">AC Mix with
@@ -179,8 +179,8 @@ Isolated Output</text>
 <text x="4.7625" y="16.51" size="1.27" layer="21" font="vector" align="center">T</text>
 <text x="4.7625" y="13.97" size="1.27" layer="21" font="vector" align="center">R</text>
 <text x="4.7625" y="11.43" size="1.27" layer="21" font="vector" align="center">S</text>
-<text x="4.7625" y="26.67" size="1.27" layer="21" font="vector" align="center">3</text>
-<text x="4.7625" y="29.21" size="1.27" layer="21" font="vector" align="center">2</text>
+<text x="4.7625" y="26.67" size="1.27" layer="21" font="vector" align="center">2</text>
+<text x="4.7625" y="29.21" size="1.27" layer="21" font="vector" align="center">3</text>
 <dimension x1="5" y1="5" x2="39" y2="5" x3="22" y3="-3" textsize="1.778" layer="47"/>
 <dimension x1="0" y1="0" x2="44" y2="0" x3="22" y3="-6" textsize="1.778" layer="47"/>
 <dimension x1="5" y1="5" x2="5" y2="60" x3="-1" y3="32.5" textsize="1.778" layer="47"/>
@@ -4521,7 +4521,7 @@ design rules under a new name.</description>
 <via x="21.59" y="22.225" extent="1-16" drill="0.35"/>
 <wire x1="21.59" y1="22.225" x2="21.59" y2="27.94" width="0.6096" layer="1"/>
 </signal>
-<signal name="HP_IN">
+<signal name="HP_VOLOUT">
 <contactref element="HPVOL" pad="2"/>
 <contactref element="IC2" pad="3"/>
 <contactref element="IC2" pad="5"/>

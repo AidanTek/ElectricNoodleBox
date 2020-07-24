@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1710,10 +1710,10 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <text x="3.81" y="0" size="1.27" layer="25" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="TS-VPC">
-<hole x="5" y="5" drill="3.2"/>
-<hole x="5" y="42" drill="3.2"/>
-<hole x="87" y="5" drill="3.2"/>
-<hole x="87" y="42" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="5" y="42" drill="4"/>
+<hole x="87" y="5" drill="4"/>
+<hole x="87" y="42" drill="4"/>
 <circle x="5" y="5" radius="2.5" width="0.6096" layer="49"/>
 <circle x="87" y="5" radius="2.5" width="0.6096" layer="49"/>
 <circle x="87" y="42" radius="2.5" width="0.6096" layer="49"/>
@@ -1832,10 +1832,10 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="G2" x="44.45" y="46.22" drill="1.016"/>
 <pad name="G3" x="44.45" y="48.76" drill="1.016"/>
 <pad name="G4" x="44.45" y="51.3" drill="1.016"/>
-<hole x="5" y="5" drill="3.2"/>
-<hole x="5" y="90" drill="3.2"/>
-<hole x="42" y="5" drill="3.2"/>
-<hole x="42" y="90" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="5" y="90" drill="4"/>
+<hole x="42" y="5" drill="4"/>
+<hole x="42" y="90" drill="4"/>
 <wire x1="0" y1="90" x2="0" y2="5" width="0.127" layer="49"/>
 <wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
 <wire x1="5" y1="0" x2="42" y2="0" width="0.127" layer="49"/>
@@ -1903,10 +1903,10 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <wire x1="88" y1="44" x2="83" y2="49" width="0.127" layer="49" curve="90"/>
 <wire x1="83" y1="49" x2="5" y2="49" width="0.127" layer="49"/>
 <wire x1="5" y1="49" x2="0" y2="44" width="0.127" layer="49" curve="90"/>
-<hole x="5" y="5" drill="3.2"/>
-<hole x="83" y="5" drill="3.2"/>
-<hole x="83" y="44" drill="3.2"/>
-<hole x="5" y="44" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="83" y="5" drill="4"/>
+<hole x="83" y="44" drill="4"/>
+<hole x="5" y="44" drill="4"/>
 <circle x="5" y="5" radius="2.5" width="1" layer="21"/>
 <circle x="83" y="5" radius="2.5" width="1" layer="21"/>
 <circle x="83" y="44" radius="2.5" width="1" layer="21"/>
@@ -1960,10 +1960,10 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="MODE2-2" x="77.47" y="2.54" drill="1.016"/>
 <pad name="MODE2-3" x="80.01" y="2.54" drill="1.016"/>
 <pad name="P2" x="82.55" y="2.54" drill="1.016"/>
-<hole x="5" y="5" drill="3.2"/>
-<hole x="90" y="5" drill="3.2"/>
-<hole x="90" y="39" drill="3.2"/>
-<hole x="5" y="39" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="90" y="5" drill="4"/>
+<hole x="90" y="39" drill="4"/>
+<hole x="5" y="39" drill="4"/>
 <wire x1="95" y1="39" x2="95" y2="5" width="0.127" layer="49"/>
 <wire x1="95" y1="5" x2="90" y2="0" width="0.127" layer="49" curve="-90"/>
 <wire x1="90" y1="0" x2="5" y2="0" width="0.127" layer="49"/>
@@ -2034,8 +2034,8 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="OUTT" x="2.54" y="19.05" drill="1.016"/>
 <pad name="OUTS" x="2.54" y="21.59" drill="1.016"/>
 <pad name="OUTR" x="2.54" y="24.13" drill="1.016"/>
-<pad name="MSTR3" x="2.54" y="31.75" drill="1.016"/>
-<pad name="MSTR2" x="2.54" y="34.29" drill="1.016"/>
+<pad name="MSTRVOLOUT" x="2.54" y="31.75" drill="1.016"/>
+<pad name="MSTRVOLIN" x="2.54" y="34.29" drill="1.016"/>
 <pad name="IN4" x="2.54" y="36.83" drill="1.016"/>
 <pad name="IN3" x="2.54" y="39.37" drill="1.016"/>
 <pad name="IN2" x="2.54" y="41.91" drill="1.016"/>
@@ -2044,9 +2044,9 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="GND3" x="2.54" y="49.53" drill="1.016"/>
 <pad name="GND2" x="2.54" y="52.07" drill="1.016"/>
 <pad name="GND1" x="2.54" y="54.61" drill="1.016"/>
-<hole x="5" y="5" drill="3.2"/>
-<hole x="39" y="5" drill="3.2"/>
-<hole x="39" y="60" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="39" y="5" drill="4"/>
+<hole x="39" y="60" drill="4"/>
 <circle x="5" y="5" radius="2.5" width="1.27" layer="21"/>
 <circle x="39" y="5" radius="2.5" width="1.27" layer="21"/>
 <circle x="5" y="60.08" radius="2.5" width="1.27" layer="21"/>
@@ -2068,9 +2068,9 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <text x="1.27" y="41.91" size="1.016" layer="21" font="vector" rot="R90" align="center">2</text>
 <text x="1.27" y="44.45" size="1.016" layer="21" font="vector" rot="R90" align="center">1</text>
 <text x="5.08" y="50.8" size="1.016" layer="21" font="vector" rot="R90" align="center">GND</text>
-<pad name="HPV2" x="2.54" y="29.21" drill="1.016"/>
-<pad name="HPV3" x="2.54" y="26.67" drill="1.016"/>
-<text x="1.27" y="26.67" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
+<pad name="HPVOLIN" x="2.54" y="29.21" drill="1.016"/>
+<pad name="HPVOLOUT" x="2.54" y="26.67" drill="1.016"/>
+<text x="1.27" y="26.67" size="1.016" layer="21" font="vector" rot="R90" align="center">2</text>
 <text x="1.27" y="29.21" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
 <pad name="HPOUTT" x="2.54" y="16.51" drill="1.016"/>
 <pad name="HPOUTR" x="2.54" y="13.97" drill="1.016"/>
@@ -2082,7 +2082,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <text x="1.27" y="16.51" size="1.016" layer="21" font="vector" rot="R90" align="center">T</text>
 <text x="1.27" y="13.97" size="1.016" layer="21" font="vector" rot="R90" align="center">R</text>
 <text x="1.27" y="11.43" size="1.016" layer="21" font="vector" rot="R90" align="center">S</text>
-<hole x="5" y="60" drill="3.2"/>
+<hole x="5" y="60" drill="4"/>
 <wire x1="0" y1="60" x2="0" y2="5" width="0.127" layer="49"/>
 <wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
 <wire x1="5" y1="0" x2="39" y2="0" width="0.127" layer="49"/>
@@ -2093,10 +2093,10 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <wire x1="5" y1="65" x2="0" y2="60" width="0.127" layer="49" curve="90"/>
 </package>
 <package name="MIRRORS">
-<hole x="5" y="5" drill="3.2"/>
-<hole x="68" y="5" drill="3.2"/>
-<hole x="5" y="43" drill="3.2"/>
-<hole x="68" y="43" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="68" y="5" drill="4"/>
+<hole x="5" y="43" drill="4"/>
+<hole x="68" y="43" drill="4"/>
 <circle x="5" y="5" radius="2.5" width="1.27" layer="49"/>
 <circle x="68" y="5" radius="2.5" width="1.27" layer="49"/>
 <circle x="5" y="43" radius="2.5" width="1.27" layer="49"/>
@@ -8953,10 +8953,10 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <wire x1="100" y1="44" x2="95" y2="49" width="0.127" layer="49" curve="90"/>
 <wire x1="95" y1="49" x2="5" y2="49" width="0.127" layer="49"/>
 <wire x1="5" y1="49" x2="0" y2="44" width="0.127" layer="49" curve="90"/>
-<hole x="5" y="5" drill="3.2"/>
-<hole x="95" y="5" drill="3.2"/>
-<hole x="95" y="44" drill="3.2"/>
-<hole x="5" y="44" drill="3.2"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="95" y="5" drill="4"/>
+<hole x="95" y="44" drill="4"/>
+<hole x="5" y="44" drill="4"/>
 <pad name="TRIG" x="26.67" y="2.54" drill="1.016"/>
 <pad name="COMP" x="29.21" y="2.54" drill="1.016"/>
 <pad name="LEDA" x="31.75" y="2.54" drill="1.016"/>
@@ -10540,6 +10540,96 @@ ADC1</text>
 <text x="-7.62" y="1.27" size="1.27" layer="97" font="vector" ratio="16" align="center">1</text>
 <text x="-7.62" y="-1.27" size="1.27" layer="97" font="vector" ratio="16" align="center">2</text>
 </symbol>
+<symbol name="ADCDUAL">
+<pin name="IN+" x="-7.62" y="5.08" visible="off" length="middle" direction="in"/>
+<pin name="IN-" x="-7.62" y="-5.08" visible="off" length="middle"/>
+<wire x1="-7.62" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="2.54" layer="94" align="center">+</text>
+<text x="0" y="-5.08" size="2.54" layer="94" align="center">-</text>
+<text x="2.54" y="0" size="2.54" layer="97" align="center">ADC</text>
+<text x="2.54" y="10.16" size="1.778" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="ADC_MCP_CORE">
+<pin name="CS/SHDN" x="-10.16" y="7.62" visible="off" length="middle" direction="in"/>
+<pin name="CLK" x="-10.16" y="2.54" visible="off" length="middle" direction="in"/>
+<pin name="DIN" x="-10.16" y="-2.54" visible="off" length="middle" direction="in"/>
+<pin name="DOUT" x="-10.16" y="-7.62" visible="off" length="middle" direction="out"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="0" size="1.4224" layer="97" rot="R90" align="center">ADC</text>
+<text x="-10.16" y="10.16" size="1.4224" layer="97" align="center">CS/SHDN</text>
+<text x="-10.16" y="5.08" size="1.4224" layer="97" align="center">CLK</text>
+<text x="-10.16" y="0" size="1.4224" layer="97" align="center">DIN</text>
+<text x="-10.16" y="-5.08" size="1.4224" layer="97" align="center">DOUT</text>
+<text x="0" y="-12.7" size="1.778" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="ADCSINGLE">
+<pin name="CHAN_IN" x="-12.7" y="0" visible="off" length="middle" direction="in"/>
+<wire x1="-7.62" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<text x="2.54" y="0" size="2.54" layer="97" align="center">ADC</text>
+<text x="2.54" y="10.16" size="1.778" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="MCP3208_CORE">
+<pin name="AREF" x="0" y="15.24" visible="off" length="middle" direction="in" rot="R270"/>
+<pin name="DGND" x="0" y="-15.24" visible="off" length="middle" direction="in" rot="R90"/>
+<pin name="CS/SHDN" x="-10.16" y="7.62" visible="off" length="middle" direction="in"/>
+<pin name="CLK" x="-10.16" y="2.54" visible="off" length="middle" direction="in"/>
+<pin name="DIN" x="-10.16" y="-2.54" visible="off" length="middle" direction="in"/>
+<pin name="DOUT" x="-10.16" y="-7.62" visible="off" length="middle" direction="out"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="10.16" size="1.4224" layer="97" align="center">CS/SHDN</text>
+<text x="-10.16" y="5.08" size="1.4224" layer="97" align="center">CLK</text>
+<text x="-10.16" y="0" size="1.4224" layer="97" align="center">DIN</text>
+<text x="-10.16" y="-5.08" size="1.4224" layer="97" align="center">DOUT</text>
+<text x="2.54" y="12.7" size="1.4224" layer="97" align="center">AREF</text>
+<text x="2.54" y="-12.7" size="1.4224" layer="97" align="center">DGND</text>
+<text x="7.62" y="0" size="1.4224" layer="95" rot="R90" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.4224" layer="95" rot="R90" align="center">ADC</text>
+</symbol>
+<symbol name="DAC">
+<pin name="VOUT" x="10.16" y="0" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="VREF" x="-10.16" y="0" visible="off" length="middle" direction="in"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="0" size="1.4224" layer="97" align="center">DAC</text>
+<text x="0" y="-7.62" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="-7.62" y="2.54" size="1.4224" layer="97" align="center">VREF</text>
+<text x="7.62" y="2.54" size="1.4224" layer="97" align="center">VOUT</text>
+</symbol>
+<symbol name="MCP4902_BUS">
+<pin name="SDI" x="-10.16" y="0" visible="off" length="middle" direction="in"/>
+<pin name="SCK" x="-10.16" y="5.08" visible="off" length="middle" direction="in"/>
+<pin name="/CS" x="-10.16" y="10.16" visible="off" length="middle" direction="in"/>
+<pin name="/LDAC" x="-10.16" y="-5.08" visible="off" length="middle" direction="in"/>
+<pin name="/SHDN" x="-10.16" y="-10.16" visible="off" length="middle" direction="in"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<text x="-7.62" y="12.7" size="1.4224" layer="97" align="center">/CS</text>
+<text x="-7.62" y="7.62" size="1.4224" layer="97" align="center">SCK</text>
+<text x="-7.62" y="2.54" size="1.4224" layer="97" align="center">SDI</text>
+<text x="-7.62" y="-2.54" size="1.4224" layer="97" align="center">/LDAC</text>
+<text x="-7.62" y="-7.62" size="1.4224" layer="97" align="center">/SHDN</text>
+<text x="0" y="0" size="1.4224" layer="97" rot="R90" align="center">DAC</text>
+<text x="0" y="-15.24" size="1.778" layer="95" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TOUCHPAD10X20" prefix="TP">
@@ -12033,8 +12123,8 @@ ADC1</text>
 <gate name="INPUT" symbol="CONN_04" x="-17.78" y="25.4"/>
 <gate name="MSTR_S" symbol="CONN_01" x="-20.32" y="7.62"/>
 <gate name="MSTR_R" symbol="CONN_01" x="-20.32" y="-5.08"/>
-<gate name="HP_S" symbol="CONN_01" x="-2.54" y="43.18"/>
-<gate name="HP_R" symbol="CONN_01" x="-2.54" y="30.48"/>
+<gate name="HP_VOLOUT" symbol="CONN_01" x="-2.54" y="43.18"/>
+<gate name="HP_VOLIN" symbol="CONN_01" x="-2.54" y="30.48"/>
 <gate name="OUT" symbol="CONN_03" x="-2.54" y="15.24"/>
 <gate name="HPOUT" symbol="CONN_03" x="-2.54" y="-2.54"/>
 <gate name="GNDT" symbol="CONN_01" x="-20.32" y="43.18"/>
@@ -12046,14 +12136,14 @@ ADC1</text>
 <connect gate="HPOUT" pin="1" pad="HPOUTT"/>
 <connect gate="HPOUT" pin="2" pad="HPOUTR"/>
 <connect gate="HPOUT" pin="3" pad="HPOUTS"/>
-<connect gate="HP_R" pin="1" pad="HPV2"/>
-<connect gate="HP_S" pin="1" pad="HPV3"/>
+<connect gate="HP_VOLIN" pin="1" pad="HPVOLIN"/>
+<connect gate="HP_VOLOUT" pin="1" pad="HPVOLOUT"/>
 <connect gate="INPUT" pin="1" pad="IN1"/>
 <connect gate="INPUT" pin="2" pad="IN2"/>
 <connect gate="INPUT" pin="3" pad="IN3"/>
 <connect gate="INPUT" pin="4" pad="IN4"/>
-<connect gate="MSTR_R" pin="1" pad="MSTR2"/>
-<connect gate="MSTR_S" pin="1" pad="MSTR3"/>
+<connect gate="MSTR_R" pin="1" pad="MSTRVOLIN"/>
+<connect gate="MSTR_S" pin="1" pad="MSTRVOLOUT"/>
 <connect gate="OUT" pin="1" pad="OUTR"/>
 <connect gate="OUT" pin="2" pad="OUTS"/>
 <connect gate="OUT" pin="3" pad="OUTT"/>
@@ -12337,6 +12427,154 @@ ADC1</text>
 <connect gate="SWITCH" pin="2" pad="SWITCH_S"/>
 <connect gate="VCA" pin="1" pad="VCA"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP3202" prefix="ADC">
+<gates>
+<gate name="CH0" symbol="ADCSINGLE" x="-12.7" y="12.7"/>
+<gate name="CH1" symbol="ADCSINGLE" x="-12.7" y="-10.16"/>
+<gate name="BUS" symbol="ADC_MCP_CORE" x="15.24" y="0"/>
+<gate name="SUPPLY" symbol="SUPPLYPINS" x="30.48" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL08">
+<connects>
+<connect gate="BUS" pin="CLK" pad="7"/>
+<connect gate="BUS" pin="CS/SHDN" pad="1"/>
+<connect gate="BUS" pin="DIN" pad="5"/>
+<connect gate="BUS" pin="DOUT" pad="6"/>
+<connect gate="CH0" pin="CHAN_IN" pad="2"/>
+<connect gate="CH1" pin="CHAN_IN" pad="3"/>
+<connect gate="SUPPLY" pin="V+" pad="8"/>
+<connect gate="SUPPLY" pin="V-" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:29519/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP3208" prefix="ADC">
+<gates>
+<gate name="CH0" symbol="ADCDUAL" x="-10.16" y="15.24"/>
+<gate name="CH1" symbol="ADCDUAL" x="-10.16" y="-5.08"/>
+<gate name="CH2" symbol="ADCDUAL" x="15.24" y="15.24"/>
+<gate name="CH3" symbol="ADCDUAL" x="15.24" y="-5.08"/>
+<gate name="BUS" symbol="MCP3208_CORE" x="43.18" y="5.08"/>
+<gate name="SUPPLY" symbol="SUPPLYPINS" x="58.42" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="BUS" pin="AREF" pad="15"/>
+<connect gate="BUS" pin="CLK" pad="13"/>
+<connect gate="BUS" pin="CS/SHDN" pad="10"/>
+<connect gate="BUS" pin="DGND" pad="9"/>
+<connect gate="BUS" pin="DIN" pad="11"/>
+<connect gate="BUS" pin="DOUT" pad="12"/>
+<connect gate="CH0" pin="IN+" pad="1"/>
+<connect gate="CH0" pin="IN-" pad="2"/>
+<connect gate="CH1" pin="IN+" pad="3"/>
+<connect gate="CH1" pin="IN-" pad="4"/>
+<connect gate="CH2" pin="IN+" pad="5"/>
+<connect gate="CH2" pin="IN-" pad="6"/>
+<connect gate="CH3" pin="IN+" pad="7"/>
+<connect gate="CH3" pin="IN-" pad="8"/>
+<connect gate="SUPPLY" pin="V+" pad="16"/>
+<connect gate="SUPPLY" pin="V-" pad="14"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:922/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP4902" prefix="DAC">
+<gates>
+<gate name="CH0" symbol="DAC" x="-20.32" y="10.16"/>
+<gate name="CH1" symbol="DAC" x="-20.32" y="-10.16"/>
+<gate name="BUS" symbol="MCP4902_BUS" x="7.62" y="0"/>
+<gate name="SUPPLY" symbol="SUPPLYPINS" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL14">
+<connects>
+<connect gate="BUS" pin="/CS" pad="3"/>
+<connect gate="BUS" pin="/LDAC" pad="8"/>
+<connect gate="BUS" pin="/SHDN" pad="9"/>
+<connect gate="BUS" pin="SCK" pad="4"/>
+<connect gate="BUS" pin="SDI" pad="5"/>
+<connect gate="CH0" pin="VOUT" pad="14"/>
+<connect gate="CH0" pin="VREF" pad="13"/>
+<connect gate="CH1" pin="VOUT" pad="10"/>
+<connect gate="CH1" pin="VREF" pad="11"/>
+<connect gate="SUPPLY" pin="V+" pad="1"/>
+<connect gate="SUPPLY" pin="V-" pad="12"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16407/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM358-2.5" prefix="PREF">
+<gates>
+<gate name="G$1" symbol="PRECISION_REF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="3"/>
+<connect gate="G$1" pin="CATHODE" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28523/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP3204" prefix="ADC">
+<gates>
+<gate name="G$1" symbol="ADCDUAL" x="-12.7" y="12.7"/>
+<gate name="G$2" symbol="ADCDUAL" x="-12.7" y="-12.7"/>
+<gate name="G$3" symbol="MCP3208_CORE" x="17.78" y="0"/>
+<gate name="G$4" symbol="SUPPLYPINS" x="33.02" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL14">
+<connects>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$2" pin="IN+" pad="3"/>
+<connect gate="G$2" pin="IN-" pad="4"/>
+<connect gate="G$3" pin="AREF" pad="13"/>
+<connect gate="G$3" pin="CLK" pad="11"/>
+<connect gate="G$3" pin="CS/SHDN" pad="8"/>
+<connect gate="G$3" pin="DGND" pad="7"/>
+<connect gate="G$3" pin="DIN" pad="9"/>
+<connect gate="G$3" pin="DOUT" pad="10"/>
+<connect gate="G$4" pin="V+" pad="14"/>
+<connect gate="G$4" pin="V-" pad="12"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16407/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>

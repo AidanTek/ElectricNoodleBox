@@ -9238,10 +9238,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
 <part name="AGND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="20K"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="20K"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100Ω"/>
 <part name="PTRN" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
@@ -9302,12 +9302,12 @@ Source: AVX .. aphvc.pdf</description>
 <part name="AGND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
-<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470Ω"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
 <part name="PLED" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
-<part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470Ω"/>
-<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470Ω"/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470Ω"/>
-<part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470Ω"/>
+<part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2K"/>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2K"/>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2K"/>
+<part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2K"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
 <part name="AGND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
@@ -9321,12 +9321,13 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100Ω"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="AGND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2K"/>
 <part name="AGND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="12VT" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
 <part name="WP1" library="ElectricNoodleBox" deviceset="COMBO_SUPPLY_HEADER" device=""/>
 <part name="LEDKS" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
+<part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
 </parts>
 <sheets>
 <sheet>
@@ -9370,9 +9371,9 @@ so output from MCU should go HIGH to LOW</text>
 <instance part="IC3" gate="P" x="15.24" y="88.9" smashed="yes">
 <attribute name="NAME" x="17.78" y="83.82" size="1.27" layer="97" rot="R90" align="center"/>
 </instance>
-<instance part="D1" gate="G$1" x="124.46" y="60.96" smashed="yes" rot="MR90">
-<attribute name="NAME" x="127" y="60.96" size="1.778" layer="95" font="vector" rot="MR90" align="center"/>
-<attribute name="VALUE" x="121.92" y="60.96" size="1.778" layer="96" font="vector" rot="MR90" align="center"/>
+<instance part="D1" gate="G$1" x="127" y="60.96" smashed="yes" rot="MR90">
+<attribute name="NAME" x="129.54" y="60.96" size="1.778" layer="95" font="vector" rot="MR90" align="center"/>
+<attribute name="VALUE" x="124.46" y="60.96" size="1.778" layer="96" font="vector" rot="MR90" align="center"/>
 </instance>
 <instance part="AGND1" gate="VR1" x="17.78" y="22.86" smashed="yes">
 <attribute name="VALUE" x="15.24" y="17.78" size="1.778" layer="96" rot="R90"/>
@@ -9449,20 +9450,20 @@ so output from MCU should go HIGH to LOW</text>
 <instance part="IC2" gate="B" x="93.98" y="66.04" smashed="yes" rot="MR0">
 <attribute name="NAME" x="91.44" y="69.215" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="R20" gate="G$1" x="114.3" y="68.58" smashed="yes" rot="MR0">
-<attribute name="NAME" x="118.11" y="70.0786" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="118.11" y="65.278" size="1.778" layer="96" rot="MR0"/>
+<instance part="R20" gate="G$1" x="116.84" y="68.58" smashed="yes" rot="MR0">
+<attribute name="NAME" x="120.65" y="70.0786" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="120.65" y="65.278" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R21" gate="G$1" x="96.52" y="55.88" smashed="yes" rot="MR0">
-<attribute name="NAME" x="100.33" y="57.3786" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="100.33" y="52.578" size="1.778" layer="96" rot="MR0"/>
+<instance part="R21" gate="G$1" x="96.52" y="53.34" smashed="yes" rot="MR0">
+<attribute name="NAME" x="100.33" y="54.8386" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="100.33" y="50.038" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R22" gate="G$1" x="76.2" y="66.04" smashed="yes" rot="MR0">
 <attribute name="NAME" x="80.01" y="67.5386" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="80.01" y="62.738" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="AGND5" gate="VR1" x="121.92" y="48.26" smashed="yes">
-<attribute name="VALUE" x="124.46" y="50.8" size="1.778" layer="96"/>
+<instance part="AGND5" gate="VR1" x="124.46" y="48.26" smashed="yes">
+<attribute name="VALUE" x="127" y="50.8" size="1.778" layer="96"/>
 </instance>
 <instance part="R26" gate="G$1" x="114.3" y="76.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="118.11" y="77.6986" size="1.778" layer="95" rot="MR0"/>
@@ -9483,8 +9484,8 @@ so output from MCU should go HIGH to LOW</text>
 <attribute name="NAME" x="24.384" y="91.821" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.384" y="86.741" size="1.778" layer="96"/>
 </instance>
-<instance part="CVI" gate="G$1" x="147.32" y="68.58" smashed="yes" rot="R180">
-<attribute name="NAME" x="149.86" y="65.532" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="CVI" gate="G$1" x="149.86" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="152.4" y="65.532" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="FREQ" gate="G$1" x="137.16" y="86.36" smashed="yes" rot="MR0">
 <attribute name="NAME" x="139.7" y="91.948" size="1.778" layer="95" font="vector" rot="MR0"/>
@@ -9563,9 +9564,9 @@ so output from MCU should go HIGH to LOW</text>
 <instance part="H4" gate="G$1" x="139.7" y="104.14" smashed="yes">
 <attribute name="NAME" x="141.732" y="104.7242" size="1.778" layer="95"/>
 </instance>
-<instance part="R9" gate="G$1" x="132.08" y="68.58" smashed="yes" rot="MR0">
-<attribute name="NAME" x="135.89" y="70.0786" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="135.89" y="65.278" size="1.778" layer="96" rot="MR0"/>
+<instance part="R9" gate="G$1" x="134.62" y="68.58" smashed="yes" rot="MR0">
+<attribute name="NAME" x="138.43" y="70.0786" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="138.43" y="65.278" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="D3" gate="G$1" x="68.58" y="71.12" smashed="yes" rot="MR90">
 <attribute name="NAME" x="71.12" y="71.12" size="1.778" layer="95" font="vector" rot="MR90" align="center"/>
@@ -9606,9 +9607,9 @@ so output from MCU should go HIGH to LOW</text>
 <attribute name="NAME" x="44.45" y="9.1186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="44.45" y="4.318" size="1.778" layer="96"/>
 </instance>
-<instance part="R24" gate="G$1" x="111.76" y="55.88" smashed="yes" rot="MR0">
-<attribute name="NAME" x="115.57" y="57.3786" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="115.57" y="52.578" size="1.778" layer="96" rot="MR0"/>
+<instance part="R24" gate="G$1" x="116.84" y="53.34" smashed="yes" rot="MR0">
+<attribute name="NAME" x="120.65" y="54.8386" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="120.65" y="50.038" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R4" gate="G$1" x="50.8" y="20.32" smashed="yes">
 <attribute name="NAME" x="46.99" y="21.8186" size="1.778" layer="95"/>
@@ -9707,6 +9708,10 @@ so output from MCU should go HIGH to LOW</text>
 <instance part="LEDKS" gate="G$1" x="114.3" y="0" smashed="yes">
 <attribute name="NAME" x="111.76" y="5.588" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="R35" gate="G$1" x="109.22" y="60.96" smashed="yes" rot="MR270">
+<attribute name="NAME" x="107.7214" y="64.77" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="112.522" y="64.77" size="1.778" layer="96" rot="MR270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9726,15 +9731,13 @@ so output from MCU should go HIGH to LOW</text>
 </segment>
 <segment>
 <pinref part="AGND5" gate="VR1" pin="AGND"/>
-<wire x1="119.38" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="53.34" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
-<junction x="121.92" y="53.34"/>
+<wire x1="124.46" y1="53.34" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="121.92" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="53.34" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="127" y1="53.34" x2="127" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="55.88" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<junction x="124.46" y="53.34"/>
 </segment>
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -10009,15 +10012,19 @@ so output from MCU should go HIGH to LOW</text>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="68.58" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
 <junction x="104.14" y="68.58"/>
+<pinref part="R35" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="68.58" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<junction x="109.22" y="68.58"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="66.04" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="66.04" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="B" pin="OUT"/>
 <wire x1="83.82" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
 <junction x="83.82" y="66.04"/>
@@ -10183,18 +10190,18 @@ so output from MCU should go HIGH to LOW</text>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="124.46" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="68.58" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
-<junction x="124.46" y="68.58"/>
+<wire x1="127" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="127" y1="68.58" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<junction x="127" y="68.58"/>
 <pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="CVI" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="68.58" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="68.58" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -10259,12 +10266,16 @@ so output from MCU should go HIGH to LOW</text>
 <segment>
 <pinref part="IC2" gate="B" pin="-IN"/>
 <wire x1="101.6" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="63.5" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="63.5" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="55.88" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
-<junction x="104.14" y="55.88"/>
+<wire x1="104.14" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<junction x="104.14" y="53.34"/>
+<pinref part="R35" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="53.34" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="55.88" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<junction x="109.22" y="53.34"/>
 </segment>
 </net>
 <net name="N$4" class="0">

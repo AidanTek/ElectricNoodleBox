@@ -36,8 +36,9 @@ const uint8_t pttrnOutPin = 0; // 0 Pattern Output
 
 // Global Variables
 bool active = 0; // 0 stop, 1 run
-uint32_t clkInterval = 83333; // Default is 90bpm in quavers, as microseconds
-const uint16_t ADCLimit = 877; // Approximate upper voltage in 10bit received by ADC
+float clkInterval = 62500.0; // Default is 120bpm in quavers, as microseconds
+uint32_t clkI; // int conversion of the above, probably non-critical but faster to process
+const uint16_t ADCLimit = 900; // Approximate upper voltage in 10bit received by ADC
 
 void setup() {
   // Hardware Pin Setup
@@ -78,16 +79,24 @@ void runStop() {
 void clockTime() {
   static uint32_t clkTimer = micros(); // main clock state timer (this is half a step)
   uint16_t clkMod = analogRead(clkModPin); // Read from the ADC (potentiometer+CV)
-  static uint16_t l_clkMod = 0; // Used for pot noise reduction
-  static bool clkState = 0; // 0 low clock, 1 high clock
+  static uint16_t l_clkMod; // Used for pot noise reduction
+  static bool clkState; // 0 low clock, 1 high clock;
 
   // Reduce noise from the ADC by only registering changes greater than 3.
   if(clkMod > (l_clkMod+3) || clkMod < (l_clkMod-3)) {
     l_clkMod = clkMod;
-    clkInterval = map(clkMod, 0, ADCLimit, 750000, 15625); 
-  }
+    // Map the ADC reading to a range to scale the clock frequency
+    int16_t cfshift = map(clkMod, 0, ADCLimit, 40, -30); 
+    // Use anti-log function to adjust clock, centre frequency is 120bpm and the clock
+    // generates quavers and divides down, therefore cf = 62500µS. Range is approx.
+    // 15bpm - 480bpm
+    // n.b 20 'steps' of the scale should half or double the frequency
+    clkInterval = 62500*pow(1.03526, cfshift); 
+    // Worth converting to an int here so float math isn't used constantly by clock
+    clkI = clkInterval;
+  } 
 
-  if((micros()-clkTimer) >= clkInterval) {
+  if((micros()-clkTimer) >= (clkI/2)) {
     clkTimer = micros();
     clkState = !clkState;
 
@@ -95,8 +104,10 @@ void clockTime() {
   }
 }
 
-// Generate Gate Patterns over 4 beats 
+// Generate Gate Patterns over 4 beats duration
 // Trigger mode sets the pin low every other semiquaver
+// Gate mode sets variable gate length pattern
+// Trigger is default on reset
 void pattern() {
   static bool pattern[32];
   static uint32_t pttnTimer = micros();
@@ -118,6 +129,7 @@ void pattern() {
       // If the button was pressed:
       if(!pttBtn) {
         holdtime = millis();
+        // writes a 32 item array with random bits
         for(uint8_t n = 0; n < 32; n++) {
           pattern[n] = random(2); // Write a bit (or not) into pattern[n]
         }
@@ -135,7 +147,7 @@ void pattern() {
   // Iterate through the pattern:
   // Gate mode:
   if(!pttnMode) {
-    if((micros()-pttnTimer) >= clkInterval) {
+    if((micros()-pttnTimer) >= (clkI/2)) {
       pttnTimer = micros();
       
       digitalWrite(pttrnOutPin, pattern[pttnStep]);
@@ -145,7 +157,7 @@ void pattern() {
   }
   // Trigger mode:
   else {
-    if((micros()-pttnTimer) >= (clkInterval/2)) {
+    if((micros()-pttnTimer) >= (clkI/4)) {
       pttnTimer = micros();
 
       if(pttnFlipflop) {
