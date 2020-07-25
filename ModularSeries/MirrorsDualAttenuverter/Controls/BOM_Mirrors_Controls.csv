@@ -1,5 +1,12 @@
-"Qty";"Value";"Device";"Package";"Parts";"Description";"POPULARITY";
-"2";"";"LED5MM";"LED5MM";"LED1, LED2";"LED";"93";
-"1";"";"MIRRORS_LINK";"MIRRORS";"BOARD1";"";"";
-"4";"B100K";"POTENTIOMETER";"ALPHA_RV09_9MMPOT";"R1, R2, R3, R4";"";"";
-"10";"COMBI-JACK";"COMBI-JACK";"COMBOJACK_PANEL";"AV1_IN, AV1_OUT, AV2_IN, AV2_OUT, SPLIT_IN, SPLIT_OUTA, SPLIT_OUTB, SUM_INA, SUM_INB, SUM_OUT";"";"";
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+2,Bicolour 5MM,LED5MM,"LED1, LED2",Bicolour LED Red/Green,Farnell,1581207
+4,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R3, R4","Taiwan Alpha 9mm Potentiometer ""D""",Thonk,D-shaft B100K
+5,Cinch Banana Jack,Cinch Banana Jack,"AV1_IN, AV2_IN, SPLIT_IN, SUM_INA, SUM_INB",Cinch Red Banana Socket,Mouser,530-108-0902-1
+5,Cinch Banana Jack,Cinch Banana Jack,"AV1_OUT, AV2_OUT, SPLIT_OUTA, SPLIT_OUTB, SUM_OUT",Cinch Blue Banana Socket,Mouser,530-108-0910-1
+4,Small Knob,Small Knob,"R1, R2, R3, R4",SIFAM/SELCO Small Black,Thonk,Small Black
+2,Small Red Cap,Small Red Cap,"R1, R3",SIFAM/SELCO Cap Red Small,Thonk,Small Red Cap
+2,Small Green Cap,Small Green Cap,"R2, R4",SIFAM/SELCO Cap Green Small,Thonk,Small Green Cap
+4,Pin Header,Pin Header,,8way 1row 2.54mm Header Pin,Farnell,2856626
+2,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
+4,PCB Standoff,PCB Standoff,,PCB Standoff M3,Farnell,1466945
+4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
