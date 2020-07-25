@@ -249,45 +249,6 @@
 <wire x1="-4.3" y1="-0.5" x2="-4.3" y2="0.5" width="2.1" layer="46"/>
 <wire x1="4.3" y1="-0.5" x2="4.3" y2="0.5" width="2.1" layer="46"/>
 </package>
-<package name="MSS120004">
-<hole x="-6.6" y="-2.65" drill="1.5"/>
-<hole x="6.6" y="-2.65" drill="1.5"/>
-<hole x="6.6" y="2.65" drill="1.5"/>
-<hole x="-6.6" y="2.65" drill="1.5"/>
-<pad name="C1" x="-2" y="0" drill="1"/>
-<pad name="C2" x="0" y="0" drill="1"/>
-<pad name="C3" x="2" y="0" drill="1"/>
-<wire x1="-7" y1="-2.9" x2="7" y2="-2.9" width="0.127" layer="21"/>
-<wire x1="7" y1="-2.9" x2="7" y2="2.9" width="0.127" layer="21"/>
-<wire x1="7" y1="2.9" x2="-7" y2="2.9" width="0.127" layer="21"/>
-<wire x1="-7" y1="2.9" x2="-7" y2="-2.9" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="-1.7" x2="3.75" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3.75" y1="-1.7" x2="3.75" y2="1.7" width="0.127" layer="21"/>
-<wire x1="3.75" y1="1.7" x2="-3.75" y2="1.7" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="1.7" x2="-3.75" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3.65" y1="-1.6" x2="2.65" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="2.65" y1="-1.6" x2="2.65" y2="1.6" width="0.127" layer="21"/>
-<wire x1="2.65" y1="1.6" x2="-3.65" y2="1.6" width="0.127" layer="21"/>
-<wire x1="-3.65" y1="1.6" x2="-3.65" y2="-1.6" width="0.127" layer="21"/>
-<text x="0" y="-3.81" size="1.27" layer="25" align="center">&gt;NAME</text>
-</package>
-<package name="MICRODPDT-DW1">
-<pad name="C1" x="0" y="-2.54" drill="1.1"/>
-<pad name="C2" x="0" y="0" drill="1.1"/>
-<pad name="C3" x="0" y="2.54" drill="1.1"/>
-<wire x1="-2.54" y1="3.56" x2="-2.54" y2="-3.56" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-3.56" x2="-2.04" y2="-4.06" width="0.127" layer="21" curve="90"/>
-<wire x1="-2.04" y1="-4.06" x2="2.04" y2="-4.06" width="0.127" layer="21"/>
-<wire x1="2.04" y1="-4.06" x2="2.54" y2="-3.56" width="0.127" layer="21" curve="90"/>
-<wire x1="2.54" y1="-3.56" x2="2.54" y2="3.56" width="0.127" layer="21"/>
-<wire x1="2.54" y1="3.56" x2="2.04" y2="4.06" width="0.127" layer="21" curve="90"/>
-<wire x1="2.04" y1="4.06" x2="-2.04" y2="4.06" width="0.127" layer="21"/>
-<wire x1="-2.04" y1="4.06" x2="-2.54" y2="3.56" width="0.127" layer="21" curve="90"/>
-<circle x="0" y="0" radius="2.475" width="0.127" layer="21"/>
-<wire x1="-1.3" y1="2.075" x2="1.3" y2="2.075" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
-<text x="3.81" y="0" size="1.27" layer="25" rot="R90" align="center">&gt;NAME</text>
-</package>
 <package name="COMBOJACK_PANEL">
 <pad name="CONN" x="0" y="0" drill="6.5" diameter="8"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="49"/>
@@ -406,25 +367,6 @@
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="SW_SPDT_POL">
-<description>&lt;h3&gt;SPST Switch w/ Polarity Mark&lt;/h3&gt;
-&lt;p&gt;Used by 3PDT switch. Drawn as three separate gates for schematic clarity.&lt;/p&gt;</description>
-<wire x1="-2.54" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0.635" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="0" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="94"/>
-<circle x="0" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="0" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="-2.54" y="0" radius="0.3592" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.302" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="-1.27" y="-3.302" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
-<pin name="P" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="S" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="O" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="-1.27" y1="-1.778" x2="-1.27" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="2.032" x2="-1.524" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.524" y1="1.27" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.27" x2="-1.27" y2="2.032" width="0.254" layer="94"/>
-</symbol>
 <symbol name="JACK">
 <wire x1="-2.54" y1="2.54" x2="-1.524" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-1.524" y1="2.54" x2="0" y2="1.016" width="0.1524" layer="94"/>
@@ -494,33 +436,6 @@
 <connect gate="PIN" pin="A" pad="C1"/>
 <connect gate="PIN" pin="B" pad="C3"/>
 <connect gate="PIN" pin="W" pad="C2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SPDT_SWITCH" prefix="SW">
-<gates>
-<gate name="G$1" symbol="SW_SPDT_POL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="MSS120004" package="MSS120004">
-<connects>
-<connect gate="G$1" pin="O" pad="C3"/>
-<connect gate="G$1" pin="P" pad="C2"/>
-<connect gate="G$1" pin="S" pad="C1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DW1" package="MICRODPDT-DW1">
-<connects>
-<connect gate="G$1" pin="O" pad="C1"/>
-<connect gate="G$1" pin="P" pad="C2"/>
-<connect gate="G$1" pin="S" pad="C3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -609,8 +524,6 @@
 <part name="AGND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="SW1" library="ElectricNoodleBox" deviceset="SPDT_SWITCH" device="DW1"/>
-<part name="SW2" library="ElectricNoodleBox" deviceset="SPDT_SWITCH" device="DW1"/>
 <part name="CVA1" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="CVB1" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
@@ -632,6 +545,8 @@ Control PCB
 Aidan Taylor
 ELECTRIC NOODLE BOX
 2020</text>
+<text x="88.9" y="83.82" size="1.778" layer="91">No longer used</text>
+<text x="132.08" y="83.82" size="1.778" layer="91">No longer used</text>
 </plain>
 <instances>
 <instance part="BOARD1" gate="BIAS1" x="22.86" y="101.6" smashed="yes" rot="MR0">
@@ -720,12 +635,6 @@ ELECTRIC NOODLE BOX
 <instance part="AGND7" gate="VR1" x="93.98" y="68.58" smashed="yes">
 <attribute name="VALUE" x="96.52" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="SW1" gate="G$1" x="99.06" y="91.44" smashed="yes" rot="MR0">
-<attribute name="NAME" x="100.33" y="94.742" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
-</instance>
-<instance part="SW2" gate="G$1" x="142.24" y="91.44" smashed="yes" rot="MR0">
-<attribute name="NAME" x="143.51" y="94.742" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
-</instance>
 <instance part="CVA1" gate="G$1" x="-7.62" y="83.82" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-5.08" y="87.884" size="1.778" layer="95" rot="MR0"/>
 </instance>
@@ -747,14 +656,14 @@ ELECTRIC NOODLE BOX
 <instance part="OUT1" gate="G$1" x="114.3" y="104.14" smashed="yes">
 <attribute name="NAME" x="111.76" y="108.204" size="1.778" layer="95"/>
 </instance>
-<instance part="IN1" gate="G$1" x="114.3" y="88.9" smashed="yes">
-<attribute name="NAME" x="111.76" y="92.964" size="1.778" layer="95"/>
+<instance part="IN1" gate="G$1" x="114.3" y="93.98" smashed="yes">
+<attribute name="NAME" x="111.76" y="98.044" size="1.778" layer="95"/>
 </instance>
 <instance part="OUT2" gate="G$1" x="157.48" y="104.14" smashed="yes">
 <attribute name="NAME" x="154.94" y="108.204" size="1.778" layer="95"/>
 </instance>
-<instance part="IN2" gate="G$1" x="157.48" y="88.9" smashed="yes">
-<attribute name="NAME" x="154.94" y="92.964" size="1.778" layer="95"/>
+<instance part="IN2" gate="G$1" x="157.48" y="93.98" smashed="yes">
+<attribute name="NAME" x="154.94" y="98.044" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -828,20 +737,20 @@ ELECTRIC NOODLE BOX
 <junction x="93.98" y="73.66"/>
 <pinref part="OUT1" gate="G$1" pin="S"/>
 <wire x1="109.22" y1="101.6" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="101.6" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="101.6" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="IN1" gate="G$1" pin="S"/>
-<wire x1="106.68" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="73.66" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
-<junction x="106.68" y="86.36"/>
+<wire x1="106.68" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="73.66" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
+<junction x="106.68" y="91.44"/>
 <wire x1="106.68" y1="73.66" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
 <junction x="106.68" y="73.66"/>
 <pinref part="OUT2" gate="G$1" pin="S"/>
 <wire x1="152.4" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="101.6" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="101.6" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="IN2" gate="G$1" pin="S"/>
-<wire x1="149.86" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="73.66" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
-<junction x="149.86" y="86.36"/>
+<wire x1="149.86" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="73.66" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
+<junction x="149.86" y="91.44"/>
 </segment>
 <segment>
 <pinref part="CVB1" gate="G$1" pin="S"/>
@@ -947,61 +856,11 @@ ELECTRIC NOODLE BOX
 <wire x1="53.34" y1="111.76" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="SW1" gate="G$1" pin="P"/>
-<pinref part="IN1" gate="G$1" pin="T"/>
-<wire x1="104.14" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="BOARD1" gate="SI1" pin="1"/>
-<wire x1="91.44" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="96.52" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="O"/>
-<wire x1="93.98" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="BOARD1" gate="INV1" pin="1"/>
-<wire x1="91.44" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="86.36" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="S"/>
-<wire x1="93.98" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="BOARD1" gate="SO2" pin="1"/>
 <pinref part="OUT2" gate="G$1" pin="T"/>
 <wire x1="134.62" y1="106.68" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="BOARD1" gate="SI2" pin="1"/>
-<wire x1="134.62" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="96.52" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="G$1" pin="O"/>
-<wire x1="139.7" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="BOARD1" gate="INV2" pin="1"/>
-<wire x1="134.62" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="86.36" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="G$1" pin="S"/>
-<wire x1="137.16" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="SW2" gate="G$1" pin="P"/>
-<pinref part="IN2" gate="G$1" pin="T"/>
-<wire x1="147.32" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1016,6 +875,20 @@ ELECTRIC NOODLE BOX
 <pinref part="BOARD1" gate="CVB2" pin="1"/>
 <wire x1="48.26" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="CVB2" gate="G$1" pin="T"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="BOARD1" gate="SI1" pin="1"/>
+<pinref part="IN1" gate="G$1" pin="T"/>
+<wire x1="91.44" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="BOARD1" gate="SI2" pin="1"/>
+<pinref part="IN2" gate="G$1" pin="T"/>
+<wire x1="134.62" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
