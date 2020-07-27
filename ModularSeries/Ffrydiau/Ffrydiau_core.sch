@@ -651,6 +651,7 @@
 </symbols>
 <devicesets>
 <deviceset name="TL0X4" prefix="IC" uservalue="yes">
+<description>Quad Operational Amplifier</description>
 <gates>
 <gate name="A" symbol="OPAMP" x="-2.54" y="17.78" swaplevel="1"/>
 <gate name="B" symbol="OPAMP" x="-2.54" y="5.08" swaplevel="1"/>
@@ -680,7 +681,10 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:16407/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CATALOGUE" value="3005140" constant="no"/>
+<attribute name="RETAILER" value="Farnell" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMD" package="SO14">
@@ -707,6 +711,7 @@
 </devices>
 </deviceset>
 <deviceset name="LM13700" prefix="IC" uservalue="yes">
+<description>Dual Transconductance Amplifier with Darlington Buffer</description>
 <gates>
 <gate name="A1" symbol="LM13700_AMP" x="-22.86" y="15.24" swaplevel="1"/>
 <gate name="B1" symbol="LM13700_AMP" x="-22.86" y="-10.16" swaplevel="1"/>
@@ -738,7 +743,10 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:922/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CATALOGUE" value="3118206" constant="no"/>
+<attribute name="RETAILER" value="Farnell" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMD" package="SO16">
@@ -767,6 +775,7 @@
 </devices>
 </deviceset>
 <deviceset name="TL0X2" prefix="IC" uservalue="yes">
+<description>Dual Operational Amplifier</description>
 <gates>
 <gate name="A" symbol="OPAMP" x="0" y="2.54" swaplevel="1"/>
 <gate name="B" symbol="OPAMP" x="0" y="-12.7" swaplevel="1"/>
@@ -788,7 +797,10 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:29519/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CATALOGUE" value="1103189" constant="no"/>
+<attribute name="RETAILER" value="Farnell" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMD" package="SOIC8">
@@ -20076,9 +20088,9 @@ R2 3 2 {val-val*var/100}
 <part name="AGND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
-<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2K"/>
+<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
 <part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2K"/>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="5K7"/>
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="5K7"/>
 <part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="15K"/>

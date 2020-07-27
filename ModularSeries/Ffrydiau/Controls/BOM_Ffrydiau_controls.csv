@@ -1,0 +1,14 @@
+﻿Qty,Value,Package,Parts,Description,RETAILER,CATALOGUE
+2,100Ω,0207/10,"R3, R4",RESISTOR 1/4W,Farnell,2329854
+4,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R5, R6",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
+4,BANANA_PANEL,Cinch Banana Jack,"FOLD1, FOLD2, OUTPUT, VCA",Cinch Blue Banana Socket,Mouser,530-108-0910-1
+4,BANANA_PANEL,Cinch Banana Jack,"CV1, CV2, OFFSET1, OFFSET2",Cinch Red Banana Socket,Mouser,530-108-0902-1
+2,BANANA_PANEL,Cinch Banana Jack,"EXTERNAL, INPUT",Cinch Orange Banana Socket,Mouser,530-108-0906-1
+1,SPDT_SWITCHDW1,MICRODPDT-DW1,SW1,SPDT Dailywell Toggle Switch,Thonk,DW1
+4,Small Knob,Small Knob,"R1, R2, R5, R6",SIFAM/SELCO Small Black,Thonk,Small Black
+2,Small Red Cap,Small Red Cap,"R5, R6",SIFAM/SELCO Cap Red Small,Thonk,Cap Small Red
+2,Small Blue Cap,Small Blue Cap,"R1, R2",SIFAM/SELCO Cap Blue Small,Thonk,Cap Small Blue
+3,Pin Header,Pin Header,,8way 1row 2.54mm Header Pin,Farnell,2856626
+3,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
+4,PCB Standoff,PCB Standoff,,PCB Standoff M3,Farnell,1466945
+4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
