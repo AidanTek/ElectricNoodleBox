@@ -20162,6 +20162,11 @@ bias</text>
 <text x="-81.28" y="-10.16" size="1.778" layer="91">Mechanical switch
 sets series distortion
 or external input</text>
+<text x="127" y="0" size="2.54" layer="91">Ffrydiau v1.0
+Complex Wave Distortion Module
+
+Aidan Taylor 2020 
+ELECTRIC NOODLE BOX</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="76.2" y="68.58" smashed="yes" rot="MR180">
