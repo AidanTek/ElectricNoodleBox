@@ -9049,6 +9049,88 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="GND" x="31.75" y="2.54" drill="1.016"/>
 <text x="31.75" y="3.81" size="1.27" layer="21" font="vector" rot="R90" align="center-left">GND</text>
 </package>
+<package name="SOURCES">
+</package>
+<package name="LLETHRAU">
+<wire x1="0" y1="44" x2="0" y2="5" width="0.127" layer="49"/>
+<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
+<wire x1="5" y1="0" x2="95" y2="0" width="0.127" layer="49"/>
+<wire x1="95" y1="0" x2="100" y2="5" width="0.127" layer="49" curve="90"/>
+<wire x1="100" y1="5" x2="100" y2="44" width="0.127" layer="49"/>
+<wire x1="100" y1="44" x2="95" y2="49" width="0.127" layer="49" curve="90"/>
+<wire x1="95" y1="49" x2="5" y2="49" width="0.127" layer="49"/>
+<wire x1="5" y1="49" x2="0" y2="44" width="0.127" layer="49" curve="90"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="95" y="5" drill="4"/>
+<hole x="95" y="44" drill="4"/>
+<hole x="5" y="44" drill="4"/>
+<pad name="TRIG" x="11.43" y="2.54" drill="1.016"/>
+<pad name="COMP" x="13.97" y="2.54" drill="1.016"/>
+<pad name="SH_I" x="16.51" y="2.54" drill="1.016"/>
+<pad name="SH_O" x="19.05" y="2.54" drill="1.016"/>
+<pad name="L1K" x="21.59" y="2.54" drill="1.016"/>
+<pad name="L1A" x="24.13" y="2.54" drill="1.016"/>
+<pad name="L2A" x="71.12" y="2.54" drill="1.016"/>
+<pad name="L2K" x="73.66" y="2.54" drill="1.016"/>
+<pad name="SLW_I" x="76.2" y="2.54" drill="1.016"/>
+<pad name="SLW_O" x="78.74" y="2.54" drill="1.016"/>
+<pad name="BIAS1" x="81.28" y="2.54" drill="1.016"/>
+<pad name="BIAS2" x="83.82" y="2.54" drill="1.016"/>
+<pad name="BIAS3" x="86.36" y="2.54" drill="1.016"/>
+<pad name="CV_I" x="88.9" y="2.54" drill="1.016"/>
+<text x="11.43" y="3.81" size="1.016" layer="21" font="vector" rot="R90" align="center-left">Trig</text>
+<text x="13.97" y="3.81" size="1.016" layer="21" font="vector" rot="R90" align="center-left">Comp</text>
+<text x="16.51" y="3.81" size="1.016" layer="21" font="vector" rot="R90" align="center-left">SH_I</text>
+<text x="19.05" y="3.81" size="1.016" layer="21" font="vector" rot="R90" align="center-left">SH_O</text>
+<wire x1="21.59" y1="3.81" x2="24.13" y2="3.81" width="0.127" layer="21"/>
+<text x="22.86" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">LED1</text>
+<text x="21.59" y="1.27" size="1.016" layer="21" font="vector" rot="R90" align="center">K</text>
+<text x="24.13" y="1.27" size="1.016" layer="21" font="vector" rot="R90" align="center">A</text>
+<text x="72.39" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">LED2</text>
+<text x="76.2" y="3.81" size="1.016" layer="21" font="vector" rot="R90" align="center-left">SLW_I</text>
+<text x="78.74" y="3.81" size="1.016" layer="21" font="vector" rot="R90" align="center-left">SLW_O</text>
+<text x="83.82" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">Bias</text>
+<text x="88.9" y="3.81" size="1.016" layer="21" font="vector" rot="R90" align="center-left">CV_I</text>
+<wire x1="71.12" y1="3.81" x2="73.66" y2="3.81" width="0.127" layer="21"/>
+<wire x1="81.28" y1="3.81" x2="86.36" y2="3.81" width="0.127" layer="21"/>
+<text x="81.28" y="1.27" size="1.016" layer="21" font="vector" rot="R90" align="center">1</text>
+<text x="83.82" y="1.27" size="1.016" layer="21" font="vector" rot="R90" align="center">2</text>
+<text x="86.36" y="1.27" size="1.016" layer="21" font="vector" rot="R90" align="center">3</text>
+<text x="71.12" y="1.27" size="1.016" layer="21" font="vector" rot="R90" align="center">A</text>
+<text x="73.66" y="1.27" size="1.016" layer="21" font="vector" rot="R90" align="center">K</text>
+<pad name="GND1" x="26.67" y="2.54" drill="1.016"/>
+<pad name="GND2" x="29.21" y="2.54" drill="1.016"/>
+<wire x1="26.67" y1="3.81" x2="29.21" y2="3.81" width="0.127" layer="21"/>
+<text x="27.94" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+</package>
+<package name="FIELDS">
+<wire x1="0" y1="95" x2="0" y2="5" width="0.127" layer="49"/>
+<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
+<wire x1="5" y1="0" x2="19.25" y2="0" width="0.127" layer="49"/>
+<wire x1="19.25" y1="0" x2="24.25" y2="5" width="0.127" layer="49" curve="90"/>
+<wire x1="24.25" y1="5" x2="24.25" y2="95" width="0.127" layer="49"/>
+<wire x1="24.25" y1="95" x2="19.25" y2="100" width="0.127" layer="49" curve="90"/>
+<wire x1="19.25" y1="100" x2="5" y2="100" width="0.127" layer="49"/>
+<wire x1="5" y1="100" x2="0" y2="95" width="0.127" layer="49" curve="90"/>
+<hole x="19.25" y="13" drill="4"/>
+<hole x="19.25" y="95" drill="4"/>
+<pad name="OUT" x="2.54" y="38.1" drill="1.016"/>
+<pad name="POT1" x="2.54" y="40.64" drill="1.016"/>
+<pad name="POT2" x="2.54" y="43.18" drill="1.016"/>
+<pad name="GND" x="2.54" y="45.72" drill="1.016"/>
+<pad name="GND2" x="2.54" y="48.26" drill="1.016"/>
+<pad name="CAR" x="2.54" y="50.8" drill="1.016"/>
+<pad name="IN" x="2.54" y="53.34" drill="1.016"/>
+<text x="3.81" y="38.1" size="1.016" layer="21" font="vector" ratio="15" align="center-left">OUT</text>
+<text x="5.08" y="41.91" size="1.016" layer="21" font="vector" ratio="15" align="center-left">POT</text>
+<text x="5.08" y="46.99" size="1.016" layer="21" font="vector" ratio="15" align="center-left">GND</text>
+<text x="3.81" y="50.8" size="1.016" layer="21" font="vector" ratio="15" align="center-left">CAR</text>
+<text x="3.81" y="53.34" size="1.016" layer="21" font="vector" ratio="15" align="center-left">IN</text>
+<wire x1="3.81" y1="48.26" x2="3.81" y2="45.72" width="0.127" layer="21"/>
+<wire x1="3.81" y1="43.18" x2="3.81" y2="40.64" width="0.127" layer="21"/>
+<text x="5.08" y="40.64" size="1.016" layer="21" font="vector" ratio="15" align="center-left">1</text>
+<text x="5.08" y="43.18" size="1.016" layer="21" font="vector" ratio="15" align="center-left">2</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL08" urn="urn:adsk.eagle:package:29519/2" type="model">
@@ -12587,6 +12669,70 @@ ADC1</text>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:16407/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LLETHRAU_LINK" prefix="BOARD">
+<gates>
+<gate name="TRIG" symbol="CONN_01" x="-2.54" y="33.02"/>
+<gate name="COMP" symbol="CONN_01" x="-2.54" y="20.32"/>
+<gate name="SH_I" symbol="CONN_01" x="-2.54" y="7.62"/>
+<gate name="SH_O" symbol="CONN_01" x="-2.54" y="-5.08"/>
+<gate name="SLW_I" symbol="CONN_01" x="-2.54" y="-17.78"/>
+<gate name="SLW_O" symbol="CONN_01" x="-2.54" y="-30.48"/>
+<gate name="CV_I" symbol="CONN_01" x="-2.54" y="-43.18"/>
+<gate name="LED1" symbol="CONN_02" x="35.56" y="30.48"/>
+<gate name="LED2" symbol="CONN_02" x="35.56" y="15.24"/>
+<gate name="BIAS" symbol="CONN_03" x="35.56" y="0"/>
+<gate name="GND" symbol="CONN_02" x="35.56" y="-17.78"/>
+</gates>
+<devices>
+<device name="" package="LLETHRAU">
+<connects>
+<connect gate="BIAS" pin="1" pad="BIAS1"/>
+<connect gate="BIAS" pin="2" pad="BIAS2"/>
+<connect gate="BIAS" pin="3" pad="BIAS3"/>
+<connect gate="COMP" pin="1" pad="COMP"/>
+<connect gate="CV_I" pin="1" pad="CV_I"/>
+<connect gate="GND" pin="1" pad="GND1"/>
+<connect gate="GND" pin="2" pad="GND2"/>
+<connect gate="LED1" pin="1" pad="L1A"/>
+<connect gate="LED1" pin="2" pad="L1K"/>
+<connect gate="LED2" pin="1" pad="L2A"/>
+<connect gate="LED2" pin="2" pad="L2K"/>
+<connect gate="SH_I" pin="1" pad="SH_I"/>
+<connect gate="SH_O" pin="1" pad="SH_O"/>
+<connect gate="SLW_I" pin="1" pad="SLW_I"/>
+<connect gate="SLW_O" pin="1" pad="SLW_O"/>
+<connect gate="TRIG" pin="1" pad="TRIG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIELDS_LINK" prefix="BOARD">
+<gates>
+<gate name="IN" symbol="CONN_01" x="-33.02" y="30.48"/>
+<gate name="CAR" symbol="CONN_01" x="-33.02" y="20.32"/>
+<gate name="GND" symbol="CONN_01" x="-33.02" y="10.16"/>
+<gate name="POT" symbol="CONN_02" x="-33.02" y="-2.54"/>
+<gate name="OUT" symbol="CONN_01" x="-33.02" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="FIELDS">
+<connects>
+<connect gate="CAR" pin="1" pad="CAR"/>
+<connect gate="GND" pin="1" pad="GND GND2"/>
+<connect gate="IN" pin="1" pad="IN"/>
+<connect gate="OUT" pin="1" pad="OUT"/>
+<connect gate="POT" pin="1" pad="POT1"/>
+<connect gate="POT" pin="2" pad="POT2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

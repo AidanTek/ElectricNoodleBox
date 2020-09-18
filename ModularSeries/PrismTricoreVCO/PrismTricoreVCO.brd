@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12.5" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -4579,6 +4579,20 @@ design rules under a new name.</description>
 <wire x1="11.7475" y1="3.81" x2="12.7" y2="1.905" width="0.6096" layer="1" curve="54.934547"/>
 <wire x1="12.7" y1="1.905" x2="15.875" y2="1.5875" width="0.6096" layer="1" curve="60.514202"/>
 <wire x1="15.875" y1="1.5875" x2="18.43" y2="2.54" width="0.6096" layer="1" curve="-8.202308"/>
+<polygon width="0.5" layer="1">
+<vertex x="0" y="0"/>
+<vertex x="88" y="0"/>
+<vertex x="88" y="49"/>
+<vertex x="0" y="49"/>
+</polygon>
+<polygon width="0.5" layer="16">
+<vertex x="0" y="0"/>
+<vertex x="88" y="0"/>
+<vertex x="88" y="49"/>
+<vertex x="87" y="49"/>
+<vertex x="1" y="49"/>
+<vertex x="0" y="49"/>
+</polygon>
 </signal>
 <signal name="N$4">
 <contactref element="C1" pad="1"/>
