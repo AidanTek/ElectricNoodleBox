@@ -2,3 +2,10 @@
 3,100K,ALPHA_RV09_9MMPOT,"R1, R2, R3",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
 2,BANANA_PANEL,BANANA_PANEL,"Input, Carrier",Cinch Orange Banana Socket,Mouser,530-108-0906-1
 1,BANANA_PANEL,BANANA_PANEL,Output,Cinch Blue Banana Socket,Mouser,530-108-0910-1
+3,Small Knob,Small Knob,"R1, R2, R3",SIFAM/SELCO Small Grey,Thonk,Small Black
+2,Small Orange Cap,Small Orange Cap,"R1, R2 ",SIFAM/SELCO Small Orange Cap,Thonk,Small Orange Cap
+1,Small Blue Cap,Small Blue Cap,R3,SIFAM/SELCO Small Blue Cap,Thonk,Small Blue Cap
+2,PCB Standoff,,,PCB Spacer,Farnell,1466945
+1,Male Header,,,8way 1row 2.54mm Header Male,Farnell,2856626
+1,Female Header,Female Header,,8way 1row 2.54mm Header Female,Farnell,1668208
+2,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
