@@ -4876,7 +4876,7 @@ design rules under a new name.</description>
 <element name="E$10" library="ElectricNoodleBox" package="ALPHA9MM_POT_CUTOUT" value="" x="14" y="32" smashed="yes"/>
 <element name="E$11" library="ElectricNoodleBox" package="ALPHA9MM_POT_CUTOUT" value="" x="9" y="10" smashed="yes"/>
 <element name="E$12" library="ElectricNoodleBox" package="MINIJACK_M6_CUTOUT" value="" x="25" y="10" smashed="yes"/>
-<element name="E$13" library="ElectricNoodleBox" package="NEUTRIK_6.35_CUTOUT" value="" x="40" y="6" smashed="yes"/>
+<element name="E$13" library="ElectricNoodleBox" package="NEUTRIK_6.35_CUTOUT" value="" x="41" y="5" smashed="yes"/>
 <element name="E$14" library="ElectricNoodleBox" package="LOGO20X20" value="" x="47" y="93.5" smashed="yes" rot="MR0"/>
 </elements>
 <signals>

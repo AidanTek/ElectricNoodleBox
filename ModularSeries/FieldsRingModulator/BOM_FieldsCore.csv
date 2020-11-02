@@ -1,0 +1,17 @@
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+,,,,,,
+1,100Ω,0207/10,R5,RESISTOR 1/4W,Farnell,2329854
+3,10K,0207/10,"R1, R2, R3",RESISTOR 1/4W,Farnell,2329855
+1,22K,0207/10,R4,RESISTOR 1/4W,Farnell,2329901
+,,,,,,
+2,100nF,C050-025X075,"C1, C2",CAPACITOR,Farnell,2797801
+,,,,,,
+4,"1n34, 1n270 or BAT85",DO35-10,"D1, D2, D3, D4",DIODE Germanium recommended,Farnell,1862942
+1,NE5532,DIL08,IC1,Dual Operational Amplifier,Farnell,3117314
+2,Z1604,Z1604_TRANSFORMER,"Z1, Z2",OEP Z1604,Farnell,1172421
+,,,,,,
+1,Power Header (Euro),,WP1,10 way Shrouded IDC,Farnell,2843527
+1,Power Header (Alt),,WP1,4 way MTA156 (optional),Farnell,
+,,,,,,
+3,Banana Connector,,"CAR, IN, OUT",Banana or Jack Patch point,Farnell,1698951
+1,B100K,,POT,Linear Potentiometer,Rapid,65-0753
