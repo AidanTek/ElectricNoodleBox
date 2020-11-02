@@ -459,6 +459,9 @@
 <sheets>
 <sheet>
 <plain>
+<text x="50.8" y="7.62" size="2.1844" layer="91">Fields Controls PCB
+Aidan Taylor 2020
+Electric Noodle Box</text>
 </plain>
 <instances>
 <instance part="BOARD1" gate="IN" x="7.62" y="93.98" smashed="yes">
@@ -651,6 +654,10 @@
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
