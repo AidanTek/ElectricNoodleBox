@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -9149,7 +9149,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="DSHP1" x="2.54" y="17.78" drill="1.016"/>
 <pad name="DPOT1" x="2.54" y="20.32" drill="1.016"/>
 <pad name="DNCV1" x="2.54" y="22.86" drill="1.016"/>
-<pad name="USHP1" x="2.54" y="25.4" drill="1.016"/>
+<pad name="+12V1" x="2.54" y="25.4" drill="1.016"/>
 <pad name="BOTH1" x="2.54" y="27.94" drill="1.016"/>
 <pad name="UPCV1" x="2.54" y="30.48" drill="1.016"/>
 <pad name="UPOT1" x="2.54" y="49.53" drill="1.016"/>
@@ -9165,7 +9165,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="DSHP2" x="96.52" y="17.78" drill="1.016"/>
 <pad name="DPOT2" x="96.52" y="20.32" drill="1.016"/>
 <pad name="DNCV2" x="96.52" y="22.86" drill="1.016"/>
-<pad name="USHP2" x="96.52" y="25.4" drill="1.016"/>
+<pad name="+12V2" x="96.52" y="25.4" drill="1.016"/>
 <pad name="BOTH2" x="96.52" y="27.94" drill="1.016"/>
 <pad name="UPCV2" x="96.52" y="30.48" drill="1.016"/>
 <pad name="UPOT2" x="96.52" y="49.53" drill="1.016"/>
@@ -9178,18 +9178,18 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="OUT2" x="96.52" y="67.31" drill="1.016"/>
 <text x="3.81" y="12.7" size="1.016" layer="21" font="vector" ratio="12" align="center-left">-10Vref</text>
 <text x="3.81" y="15.24" size="1.016" layer="21" font="vector" ratio="12" align="center-left">+10Vref</text>
-<text x="3.81" y="17.78" size="1.016" layer="21" font="vector" ratio="12" align="center-left">DSHP1</text>
+<text x="3.81" y="17.78" size="1.016" layer="21" font="vector" ratio="12" align="center-left">NC</text>
 <text x="3.81" y="20.32" size="1.016" layer="21" font="vector" ratio="12" align="center-left">DPOT1</text>
 <text x="3.81" y="22.86" size="1.016" layer="21" font="vector" ratio="12" align="center-left">DN_CV1</text>
-<text x="3.81" y="25.4" size="1.016" layer="21" font="vector" ratio="12" align="center-left">USHP1</text>
+<text x="3.81" y="25.4" size="1.016" layer="21" font="vector" ratio="12" align="center-left">+12V</text>
 <text x="3.81" y="27.94" size="1.016" layer="21" font="vector" ratio="12" align="center-left">BothCV</text>
 <text x="3.81" y="30.48" size="1.016" layer="21" font="vector" ratio="12" align="center-left">UP_CV1</text>
 <text x="95.25" y="12.7" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">-10Vref</text>
 <text x="95.25" y="15.24" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">+10Vref</text>
-<text x="95.25" y="17.78" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">DSHP2</text>
+<text x="95.25" y="17.78" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">NC</text>
 <text x="95.25" y="20.32" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">DPOT2</text>
 <text x="95.25" y="22.86" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">DN_CV2</text>
-<text x="95.25" y="25.4" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">USHP2</text>
+<text x="95.25" y="25.4" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">+12V</text>
 <text x="95.25" y="27.94" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">BothCV</text>
 <text x="95.25" y="30.48" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center-left">UP_CV2</text>
 <text x="3.81" y="49.53" size="1.016" layer="21" font="vector" ratio="12" align="center-left">UPOT1</text>
@@ -9282,6 +9282,29 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pad name="SWA0" x="-3" y="-0.04" drill="1"/>
 <pad name="SWB0" x="3" y="-0.04" drill="1"/>
 <text x="-5.08" y="-3.81" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+</package>
+<package name="SOT563" urn="urn:adsk.eagle:footprint:29873/1">
+<description>&lt;b&gt;SOT-563&lt;/b&gt;&lt;p&gt;
+Source: www.centralsemi.com ..SOT-563PD.pdf</description>
+<wire x1="-0.8" y1="0.55" x2="-0.8" y2="-0.55" width="0.1016" layer="21"/>
+<wire x1="0.8" y1="-0.55" x2="0.8" y2="0.55" width="0.1016" layer="21"/>
+<wire x1="-0.8" y1="0.55" x2="0.8" y2="0.55" width="0.1016" layer="51"/>
+<wire x1="-0.8" y1="-0.55" x2="0.8" y2="-0.55" width="0.1016" layer="51"/>
+<circle x="-0.575" y="-0.325" radius="0.075" width="0" layer="21"/>
+<smd name="1" x="-0.5" y="-0.7" dx="0.4" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-0.7" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="0.5" y="-0.7" dx="0.4" dy="0.6" layer="1"/>
+<smd name="4" x="0.5" y="0.7" dx="0.4" dy="0.6" layer="1" rot="R180"/>
+<smd name="5" x="0" y="0.7" dx="0.4" dy="0.6" layer="1" rot="R180"/>
+<smd name="6" x="-0.5" y="0.7" dx="0.4" dy="0.6" layer="1" rot="R180"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.65" y1="-0.85" x2="-0.35" y2="-0.55" layer="51" rot="R180"/>
+<rectangle x1="-0.15" y1="-0.85" x2="0.15" y2="-0.55" layer="51" rot="R180"/>
+<rectangle x1="0.35" y1="-0.85" x2="0.65" y2="-0.55" layer="51" rot="R180"/>
+<rectangle x1="0.35" y1="0.55" x2="0.65" y2="0.85" layer="51"/>
+<rectangle x1="-0.15" y1="0.55" x2="0.15" y2="0.85" layer="51"/>
+<rectangle x1="-0.65" y1="0.55" x2="-0.35" y2="0.85" layer="51"/>
 </package>
 </packages>
 <packages3d>
@@ -12958,22 +12981,22 @@ ADC1</text>
 <gate name="BOTH2" symbol="CONN_01" x="-35.56" y="-40.64"/>
 <gate name="LOOP2" symbol="CONN_02" x="-35.56" y="-76.2"/>
 <gate name="SEL2" symbol="CONN_02" x="-35.56" y="-91.44"/>
-<gate name="DNSHP1" symbol="CONN_01" x="-55.88" y="-60.96"/>
-<gate name="UPSHP1" symbol="CONN_01" x="-55.88" y="-50.8"/>
-<gate name="UPSHP2" symbol="CONN_01" x="-35.56" y="-50.8"/>
-<gate name="DNSHP2" symbol="CONN_01" x="-35.56" y="-60.96"/>
+<gate name="NC1" symbol="CONN_01" x="-55.88" y="-60.96"/>
+<gate name="+12V1" symbol="CONN_01" x="-55.88" y="-50.8"/>
+<gate name="+12V2" symbol="CONN_01" x="-35.56" y="-50.8"/>
+<gate name="NC2" symbol="CONN_01" x="-35.56" y="-60.96"/>
 </gates>
 <devices>
 <device name="" package="TRANSIENTS">
 <connects>
 <connect gate="+10VREF" pin="1" pad="+10VR1 +10VR2"/>
+<connect gate="+12V1" pin="1" pad="+12V1"/>
+<connect gate="+12V2" pin="1" pad="+12V2"/>
 <connect gate="-10VREF" pin="1" pad="-10VR1 -10VR2"/>
 <connect gate="BOTH1" pin="1" pad="BOTH1"/>
 <connect gate="BOTH2" pin="1" pad="BOTH2"/>
 <connect gate="DNCV1" pin="1" pad="DNCV1"/>
 <connect gate="DNCV2" pin="1" pad="DNCV2"/>
-<connect gate="DNSHP1" pin="1" pad="DSHP1"/>
-<connect gate="DNSHP2" pin="1" pad="DSHP2"/>
 <connect gate="DPOT1" pin="1" pad="DPOT1"/>
 <connect gate="DPOT2" pin="1" pad="DPOT2"/>
 <connect gate="GND" pin="1" pad="GND1 GND2"/>
@@ -12983,6 +13006,8 @@ ADC1</text>
 <connect gate="LOOP1" pin="2" pad="LOOPB1"/>
 <connect gate="LOOP2" pin="1" pad="LOOPA2"/>
 <connect gate="LOOP2" pin="2" pad="LOOPB2"/>
+<connect gate="NC1" pin="1" pad="DSHP1"/>
+<connect gate="NC2" pin="1" pad="DSHP2"/>
 <connect gate="OUTPUT1" pin="1" pad="OUT1"/>
 <connect gate="OUTPUT2" pin="1" pad="OUT2"/>
 <connect gate="SEL1" pin="1" pad="SELGAT1"/>
@@ -12993,8 +13018,6 @@ ADC1</text>
 <connect gate="UPCV2" pin="1" pad="UPCV2"/>
 <connect gate="UPOT1" pin="1" pad="UPOT1"/>
 <connect gate="UPOT2" pin="1" pad="UPOT2"/>
-<connect gate="UPSHP1" pin="1" pad="USHP1"/>
-<connect gate="UPSHP2" pin="1" pad="USHP2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13033,6 +13056,27 @@ ADC1</text>
 <connect gate="G$1" pin="SW2_1" pad="SWB1"/>
 <connect gate="G$1" pin="SW2_2" pad="SWB0"/>
 <connect gate="G$1" pin="SW2_3" pad="SWB2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NST3906DXV6T5" prefix="Q">
+<gates>
+<gate name="A" symbol="PNP" x="-12.7" y="0"/>
+<gate name="B" symbol="PNP" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT563">
+<connects>
+<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="C" pad="6"/>
+<connect gate="A" pin="E" pad="1"/>
+<connect gate="B" pin="B" pad="5"/>
+<connect gate="B" pin="C" pad="3"/>
+<connect gate="B" pin="E" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

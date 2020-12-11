@@ -8975,7 +8975,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
-<part name="HP_OUT1" library="ElectricNoodleBox" deviceset="3XWIREPAD" device=""/>
+<part name="BAL_OUT" library="ElectricNoodleBox" deviceset="3XWIREPAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9160,8 +9160,8 @@ use 1 and 2 only for unbalanced</text>
 <attribute name="NAME" x="87.8586" y="54.61" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="83.058" y="54.61" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="HP_OUT1" gate="G$1" x="116.84" y="38.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="119.38" y="32.512" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="BAL_OUT" gate="G$1" x="119.38" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="121.92" y="32.512" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -9283,8 +9283,18 @@ use 1 and 2 only for unbalanced</text>
 <wire x1="66.04" y1="33.02" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="Z1" gate="G$1" pin="3"/>
-<wire x1="66.04" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="33.02" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
 <junction x="66.04" y="33.02"/>
+<pinref part="Z1" gate="G$1" pin="5"/>
+<pinref part="BAL_OUT" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="38.1" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="38.1" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
+<junction x="109.22" y="38.1"/>
+<wire x1="109.22" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="30.48" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
+<junction x="86.36" y="33.02"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -9492,15 +9502,8 @@ use 1 and 2 only for unbalanced</text>
 <pinref part="Z1" gate="G$1" pin="6"/>
 <wire x1="104.14" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="43.18" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="HP_OUT1" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="40.64" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="Z1" gate="G$1" pin="5"/>
-<pinref part="HP_OUT1" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="BAL_OUT" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -9508,8 +9511,8 @@ use 1 and 2 only for unbalanced</text>
 <pinref part="Z1" gate="G$1" pin="4"/>
 <wire x1="104.14" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="33.02" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="HP_OUT1" gate="G$1" pin="3"/>
-<wire x1="106.68" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="BAL_OUT" gate="G$1" pin="3"/>
+<wire x1="106.68" y1="35.56" x2="111.76" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
