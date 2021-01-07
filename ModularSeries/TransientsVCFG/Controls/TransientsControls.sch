@@ -7410,16 +7410,16 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="OUT1" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
-<part name="R1" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device=""/>
+<part name="R1" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B100K"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="P-2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V-" device=""/>
-<part name="R2" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device=""/>
+<part name="R2" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B100K"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="P-3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V-" device=""/>
-<part name="R3" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device=""/>
+<part name="R3" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B10K"/>
 <part name="UPCV1" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
-<part name="R4" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device=""/>
+<part name="R4" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B10K"/>
 <part name="DNCV1" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="BOTH1" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
@@ -7428,18 +7428,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="OUT2" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
-<part name="R5" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device=""/>
+<part name="R5" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B100K"/>
 <part name="P-4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V-" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
-<part name="R6" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device=""/>
+<part name="R6" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B100K"/>
 <part name="P-5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V-" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="SW1" library="ElectricNoodleBox" deviceset="PVA1_DPST" device=""/>
 <part name="SW2" library="ElectricNoodleBox" deviceset="PVA2_DPDT" device=""/>
-<part name="R7" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device=""/>
+<part name="R7" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B10K"/>
 <part name="UPCV2" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
-<part name="R8" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device=""/>
+<part name="R8" library="ElectricNoodleBox" deviceset="POTENTIOMETER" device="" value="B10K"/>
 <part name="DNCV2" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="BOTH2" library="ElectricNoodleBox" deviceset="COMBI-JACK" device="CINCHNANA"/>
@@ -7448,21 +7448,26 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SW4" library="ElectricNoodleBox" deviceset="PVA2_DPDT" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="Q1" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="2N3904" device="" package3d_urn="urn:adsk.eagle:package:28725/2"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
-<part name="D1" library="ElectricNoodleBox" deviceset="SCHOTTKY_DO35" device="" package3d_urn="urn:adsk.eagle:package:43339/2"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="red_5MM"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="D1" library="ElectricNoodleBox" deviceset="SCHOTTKY_DO35" device="" package3d_urn="urn:adsk.eagle:package:43339/2" value="BAT85"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="Q2" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="2N3904" device="" package3d_urn="urn:adsk.eagle:package:28725/2"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
-<part name="D2" library="ElectricNoodleBox" deviceset="SCHOTTKY_DO35" device="" package3d_urn="urn:adsk.eagle:package:43339/2"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="red_5MM"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="D2" library="ElectricNoodleBox" deviceset="SCHOTTKY_DO35" device="" package3d_urn="urn:adsk.eagle:package:43339/2" value="BAT85"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="7.62" y="-33.02" size="1.778" layer="91">Transients: Voltage Controlled Function Generator
+Control PCB
+
+ELECTRIC NOODLE BOX
+Aidan Taylor 2020</text>
 </plain>
 <instances>
 <instance part="B1" gate="+10VREF" x="12.7" y="93.98" smashed="yes">
@@ -7550,11 +7555,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="45.72" y="60.96" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R1" gate="PIN" x="55.88" y="45.72" smashed="yes" rot="MR0">
-<attribute name="NAME" x="58.42" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<attribute name="NAME" x="58.42" y="45.72" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="58.42" y="35.56" size="1.778" layer="95" rot="MR90"/>
 </instance>
 <instance part="R1" gate="LUG" x="12.7" y="60.96" smashed="yes">
-<attribute name="VALUE" x="10.16" y="56.134" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="66.548" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="P+2" gate="1" x="55.88" y="58.42" smashed="yes">
@@ -7564,7 +7568,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="53.34" y="33.02" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R2" gate="PIN" x="55.88" y="12.7" smashed="yes" rot="MR0">
-<attribute name="NAME" x="58.42" y="5.08" size="1.778" layer="95" rot="MR90"/>
+<attribute name="NAME" x="58.42" y="12.7" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="58.42" y="2.54" size="1.778" layer="95" rot="MR90"/>
 </instance>
 <instance part="P+3" gate="1" x="55.88" y="25.4" smashed="yes">
@@ -7574,7 +7578,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="53.34" y="0" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R3" gate="PIN" x="101.6" y="83.82" smashed="yes">
-<attribute name="NAME" x="99.06" y="76.2" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="99.06" y="83.82" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="99.06" y="73.66" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="UPCV1" gate="G$1" x="86.36" y="91.44" smashed="yes" rot="MR0">
@@ -7584,7 +7588,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="91.44" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R4" gate="PIN" x="101.6" y="50.8" smashed="yes">
-<attribute name="NAME" x="99.06" y="43.18" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="99.06" y="48.26" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="99.06" y="40.64" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="DNCV1" gate="G$1" x="86.36" y="58.42" smashed="yes" rot="MR0">
@@ -7600,15 +7604,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="91.44" y="12.7" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R2" gate="LUG" x="12.7" y="50.8" smashed="yes">
-<attribute name="VALUE" x="10.16" y="45.974" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="56.388" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="R3" gate="LUG" x="12.7" y="40.64" smashed="yes">
-<attribute name="VALUE" x="10.16" y="35.814" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="46.228" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="R4" gate="LUG" x="12.7" y="30.48" smashed="yes">
-<attribute name="VALUE" x="10.16" y="25.654" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="36.068" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="IN2" gate="G$1" x="157.48" y="91.44" smashed="yes">
@@ -7624,7 +7625,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="137.16" y="60.96" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R5" gate="PIN" x="147.32" y="45.72" smashed="yes" rot="MR0">
-<attribute name="NAME" x="149.86" y="38.1" size="1.778" layer="95" rot="MR90"/>
+<attribute name="NAME" x="149.86" y="45.72" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="149.86" y="35.56" size="1.778" layer="95" rot="MR90"/>
 </instance>
 <instance part="P-4" gate="1" x="147.32" y="33.02" smashed="yes">
@@ -7634,7 +7635,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="144.78" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R6" gate="PIN" x="147.32" y="12.7" smashed="yes" rot="MR0">
-<attribute name="NAME" x="149.86" y="5.08" size="1.778" layer="95" rot="MR90"/>
+<attribute name="NAME" x="149.86" y="12.7" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="149.86" y="2.54" size="1.778" layer="95" rot="MR90"/>
 </instance>
 <instance part="P-5" gate="1" x="147.32" y="0" smashed="yes">
@@ -7650,7 +7651,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="105.41" y="-9.398" size="1.778" layer="95" font="vector" align="bottom-center"/>
 </instance>
 <instance part="R7" gate="PIN" x="193.04" y="83.82" smashed="yes">
-<attribute name="NAME" x="190.5" y="76.2" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="190.5" y="83.82" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="190.5" y="73.66" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="UPCV2" gate="G$1" x="177.8" y="91.44" smashed="yes" rot="MR0">
@@ -7660,7 +7661,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="182.88" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R8" gate="PIN" x="193.04" y="50.8" smashed="yes">
-<attribute name="NAME" x="190.5" y="43.18" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="190.5" y="50.8" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="190.5" y="40.64" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="DNCV2" gate="G$1" x="177.8" y="58.42" smashed="yes" rot="MR0">
@@ -7682,19 +7683,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="194.31" y="-11.938" size="1.778" layer="95" font="vector" align="bottom-center"/>
 </instance>
 <instance part="R5" gate="LUG" x="12.7" y="20.32" smashed="yes">
-<attribute name="VALUE" x="10.16" y="15.494" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="25.908" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="R6" gate="LUG" x="12.7" y="10.16" smashed="yes">
-<attribute name="VALUE" x="10.16" y="5.334" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="15.748" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="R7" gate="LUG" x="12.7" y="0" smashed="yes">
-<attribute name="VALUE" x="10.16" y="-4.826" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="5.588" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="R8" gate="LUG" x="12.7" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="10.16" y="-14.986" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="-4.572" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="GND14" gate="1" x="25.4" y="-15.24" smashed="yes">
@@ -8344,6 +8341,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

@@ -3,7 +3,7 @@
 6,100K,0207/10,"R6, R11, R12, R13, R14, R15",RESISTOR 1/4W,Farnell,2329853
 3,100Ω,0207/10,"R3, R23, R24",RESISTOR 1/4W,Farnell,2329854
 3,10K,0207/10,"R1, R5, R21",RESISTOR 1/4W,Farnell,2329855
-1,1K,0207/10,"R10",RESISTOR 1/4W,Farnell,2329885
+1,1K,0207/10,R10,RESISTOR 1/4W,Farnell,2329885
 2,150K,0207/10,"R4, R25",RESISTOR 1/4W,Farnell,2329871
 1,1M,0207/10,R18,RESISTOR 1/4W,Farnell,2329894
 1,22K,0207/10,R2,RESISTOR 1/4W,Farnell,2329901
@@ -29,6 +29,7 @@
 ,,,,,,
 1,Power Header,,WP1,4 way MTA156 or 10 way IDC,Farnell,589068
 1,(Alt) Power Header,,WP1,10 way Shrouded IDC,Farnell,2843527
+2,Pin Header,Pin Header,,8way 1row 2.54mm Header Pin,Farnell,2856626
 ,,,,,,
 5,Banana Connector,,"CVINA, CVINB, SIN, SQR, TRI",Banana or Jack patch point (panel part),Farnell,1698951
 3,B100K,,"FREQ, FINE, DIST",Taiwan Alpha 16mm (panel part),Rapid,65-0756

@@ -28,6 +28,7 @@
 2,TL084,DIL14,"IC3, IC7",Quad Operational Amplifier,3117825,Farnell
 ,,,,,,
 1,COMBO_SUPPLY_HEADER,COMBINED_POWER,,10 way Shrouded IDC,2843527,Farnell
+4,Pin Header,Pin Header,,8way 1row 2.54mm Header Pin,2856626,Farnell
 ,,,,,,
 10,Banana Connector,,"BOTH1, BOTH2, INPUT1, INPUT2, OUT1, OUT2, DN_CV1, DN_CV2, UP_CV1, UP_CV2",PANEL WIRE ONLY Banana or Jack patch point,1698951,Farnell
 4,B10K,,"DN_CV1, DN_CV2, UP_CV1, UP_CV2",PANEL WIRE ONLY Taiwan Alpha 16mm,65-0753,Rapid

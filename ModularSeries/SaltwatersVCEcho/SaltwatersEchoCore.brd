@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -157,6 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjdlNGE0" projecturn="a.cGVyc29uYWw6dWUyYjdlNGE0IzIwMjAwNDA1MjgzMzA0MTgx" f3durn="urn:adsk.wipprod:dm.lineage:ALBxLM8FSLGiyH-Wd44oqg" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="546f434c-34c4-432b-946a-7654f913916c" lastsyncedrevisionid="546f434c-34c4-432b-946a-7654f913916c" lastboardhashguid="53e9d930-aeab-c7a9-fca4-e91a252a806a" lastpushedtime="2021-01-03T09:50:09Z" linktopcb3d="true"/>
 <plain>
 <wire x1="70.485" y1="64.77" x2="70.485" y2="59.69" width="0.254" layer="21"/>
 <text x="70.485" y="87.63" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">1</text>
@@ -171,11 +172,11 @@
 <text x="70.1675" y="13.97" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">2</text>
 <text x="70.1675" y="16.51" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center">3</text>
 <wire x1="69.215" y1="16.51" x2="69.215" y2="11.43" width="0.254" layer="21"/>
-<text x="1.27" y="83.185" size="1.4224" layer="21" font="vector" ratio="16">Aidan 
+<text x="4.1275" y="24.765" size="1.4224" layer="21" font="vector" ratio="16">Aidan 
 Taylor
 2020</text>
 <text x="0.9525" y="56.515" size="2.54" layer="21" font="vector" ratio="16" rot="R180" align="center-right">Saltwaters</text>
-<text x="3.175" y="59.3725" size="1.778" layer="21" font="vector" ratio="16" rot="R90" align="center-left">Voltage Controlled
+<text x="2.54" y="58.7375" size="1.6764" layer="21" font="vector" ratio="16" rot="R90" align="center-left">Voltage Controlled
 Echo Processor</text>
 <wire x1="0" y1="95" x2="0" y2="5" width="0" layer="20"/>
 <wire x1="0" y1="5" x2="5" y2="0" width="0" layer="20" curve="90"/>
@@ -4801,6 +4802,14 @@ design rules under a new name.</description>
 </element>
 <element name="U$1" library="ElectricNoodleBox" package="LOGO10X10" value="" x="28.2575" y="75.565" smashed="yes"/>
 <element name="U$2" library="ElectricNoodleBox" package="LOGO10X10" value="" x="38.4175" y="75.565" smashed="yes" rot="MR0"/>
+<element name="IN_TP" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="72.39" y="49.53" smashed="yes">
+<attribute name="NAME" x="70.358" y="49.53" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
+<attribute name="VALUE" x="71.12" y="48.006" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
+</element>
+<element name="DEL_TP" library="ElectricNoodleBox" package="1X01" value="1XWIREPAD" x="72.39" y="54.61" smashed="yes">
+<attribute name="NAME" x="70.358" y="54.61" size="0.8128" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
+<attribute name="VALUE" x="71.12" y="53.086" size="0.8128" layer="27" font="vector" ratio="20" align="top-left"/>
+</element>
 </elements>
 <signals>
 <signal name="+12V">
@@ -4840,11 +4849,6 @@ design rules under a new name.</description>
 <wire x1="69.85" y1="22.86" x2="69.85" y2="35.2425" width="0.508" layer="1" curve="-19.346012"/>
 <wire x1="69.85" y1="35.2425" x2="70.1675" y2="38.4175" width="0.508" layer="1" curve="7.924825"/>
 <wire x1="70.1675" y1="38.4175" x2="72.39" y2="43.18" width="0.508" layer="1" curve="-46.537406"/>
-<wire x1="72.39" y1="43.18" x2="72.0725" y2="44.45" width="0.508" layer="1"/>
-<wire x1="72.0725" y1="44.45" x2="69.5325" y2="57.4675" width="0.508" layer="1" curve="-5.990607"/>
-<wire x1="69.5325" y1="57.4675" x2="69.215" y2="66.04" width="0.508" layer="1" curve="-11.8491"/>
-<wire x1="69.215" y1="66.04" x2="69.5325" y2="69.5325" width="0.508" layer="1" curve="-2.781952"/>
-<wire x1="69.5325" y1="69.5325" x2="72.39" y2="72.39" width="0.508" layer="1" curve="-76.829198"/>
 <wire x1="72.39" y1="72.39" x2="71.12" y2="72.7075" width="0.508" layer="1"/>
 <wire x1="71.12" y1="72.7075" x2="69.215" y2="74.93" width="0.508" layer="1" curve="-70.724902"/>
 <wire x1="69.215" y1="74.93" x2="69.215" y2="79.375" width="0.508" layer="1" curve="-10.477717"/>
@@ -4887,6 +4891,12 @@ design rules under a new name.</description>
 <via x="29.21" y="77.1525" extent="1-16" drill="0.35"/>
 <wire x1="29.21" y1="77.1525" x2="33.02" y2="77.1525" width="0.508" layer="16"/>
 <wire x1="29.21" y1="86.36" x2="29.21" y2="77.1525" width="0.508" layer="1"/>
+<wire x1="72.39" y1="43.18" x2="71.755" y2="44.1325" width="0.508" layer="1"/>
+<wire x1="71.755" y1="44.1325" x2="69.85" y2="47.3075" width="0.508" layer="1" curve="-5.452622"/>
+<wire x1="69.85" y1="47.3075" x2="68.8975" y2="53.6575" width="0.508" layer="1" curve="-39.413422"/>
+<wire x1="68.8975" y1="53.6575" x2="68.8975" y2="60.325" width="0.508" layer="1" curve="22.351828"/>
+<wire x1="68.8975" y1="60.325" x2="69.215" y2="69.5325" width="0.508" layer="1" curve="-26.301696"/>
+<wire x1="69.215" y1="69.5325" x2="72.39" y2="72.39" width="0.508" layer="1" curve="-65.77402"/>
 </signal>
 <signal name="+5V">
 <contactref element="VREG1" pad="1"/>
@@ -5267,6 +5277,11 @@ design rules under a new name.</description>
 <wire x1="59.69" y1="40.64" x2="59.69" y2="43.18" width="0.508" layer="1"/>
 <wire x1="59.69" y1="43.18" x2="59.69" y2="44.45" width="0.508" layer="1"/>
 <wire x1="59.69" y1="44.45" x2="59.436" y2="49.53" width="0.508" layer="1" curve="5.72481"/>
+<contactref element="DEL_TP" pad="1"/>
+<wire x1="59.436" y1="49.53" x2="59.69" y2="51.1175" width="0.508" layer="1"/>
+<wire x1="59.69" y1="51.1175" x2="59.69" y2="54.61" width="0.508" layer="1" curve="18.180554"/>
+<via x="59.69" y="54.61" extent="1-16" drill="0.35"/>
+<wire x1="59.69" y1="54.61" x2="72.39" y2="54.61" width="0.508" layer="16"/>
 </signal>
 <signal name="N$32">
 <contactref element="IC2" pad="2"/>
@@ -5303,6 +5318,8 @@ design rules under a new name.</description>
 <wire x1="66.3575" y1="40.9575" x2="65.0875" y2="42.545" width="0.508" layer="1" curve="-65.810546"/>
 <wire x1="65.0875" y1="42.545" x2="65.7225" y2="45.72" width="0.508" layer="1" curve="-34.128954"/>
 <wire x1="65.7225" y1="45.72" x2="65.786" y2="49.53" width="0.508" layer="1" curve="54.839105"/>
+<contactref element="IN_TP" pad="1"/>
+<wire x1="65.786" y1="49.53" x2="72.39" y2="49.53" width="0.508" layer="16"/>
 </signal>
 <signal name="INPUT">
 <contactref element="SIG_IN" pad="1"/>
@@ -5696,14 +5713,14 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="2,20,b23d53fca2ebf7d9"/>
-<approved hash="2,20,a129aa36b49ef233"/>
-<approved hash="2,20,6f6dbe3c3e24f239"/>
-<approved hash="2,20,53d242fe19091e53"/>
-<approved hash="2,20,b93b00e2aedac317"/>
-<approved hash="2,20,fbef2e2c162d1cc0"/>
-<approved hash="2,20,4b726bccb9a577e8"/>
-<approved hash="2,20,be64922549d27221"/>
+<approved hash="2,20,88cfac02b11c7048"/>
+<approved hash="2,20,1ca52917f0f8a6e0"/>
+<approved hash="2,20,c260b8d0a4ac8da4"/>
+<approved hash="2,20,1ee3a26ffc1f9920"/>
+<approved hash="2,20,15913ac01be207ac"/>
+<approved hash="2,20,9d8d458f313e5028"/>
+<approved hash="2,20,34cfcf96cdc8ed8c"/>
+<approved hash="2,20,41609f43b00f3302"/>
 </errors>
 </board>
 </drawing>
@@ -5716,6 +5733,11 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -9417,10 +9417,64 @@ RFMicro Device TQFP / LQFP-32 see IPC-SQR.LBR SQFP 5x5-32</description>
 <wire x1="45.72" y1="81.28" x2="45.72" y2="76.2" width="0.127" layer="21"/>
 </package>
 <package name="SALTWATERS">
-<wire x1="0" y1="0" x2="74.75" y2="0" width="0.127" layer="49"/>
-<wire x1="74.75" y1="0" x2="74.75" y2="100" width="0.127" layer="49"/>
-<wire x1="74.75" y1="100" x2="0" y2="100" width="0.127" layer="49"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0.127" layer="49"/>
+<wire x1="69.75" y1="100" x2="5" y2="100" width="0.127" layer="49"/>
+<wire x1="5" y1="100" x2="0" y2="95" width="0.127" layer="49" curve="90"/>
+<wire x1="0" y1="95" x2="0" y2="5" width="0.127" layer="49"/>
+<wire x1="0" y1="5" x2="5" y2="0" width="0.127" layer="49" curve="90"/>
+<wire x1="5" y1="0" x2="69.75" y2="0" width="0.127" layer="49"/>
+<wire x1="69.75" y1="0" x2="74.75" y2="5" width="0.127" layer="49" curve="90"/>
+<wire x1="74.75" y1="5" x2="74.75" y2="95" width="0.127" layer="49"/>
+<wire x1="74.75" y1="95" x2="69.75" y2="100" width="0.127" layer="49" curve="90"/>
+<hole x="5" y="5" drill="4"/>
+<hole x="69.75" y="5" drill="4"/>
+<hole x="69.75" y="95" drill="4"/>
+<hole x="5" y="95" drill="4"/>
+<pad name="T-POT1" x="72.39" y="11.43" drill="1.016"/>
+<pad name="T-POT2" x="72.39" y="13.97" drill="1.016"/>
+<pad name="T-POT3" x="72.39" y="16.51" drill="1.016"/>
+<pad name="T_CV" x="72.39" y="19.05" drill="1.016"/>
+<pad name="MIX" x="72.39" y="21.59" drill="1.016"/>
+<pad name="WET" x="72.39" y="24.13" drill="1.016"/>
+<pad name="DRY" x="72.39" y="26.67" drill="1.016"/>
+<pad name="DELAY" x="72.39" y="29.21" drill="1.016"/>
+<pad name="GND" x="72.39" y="59.69" drill="1.016"/>
+<pad name="GND1" x="72.39" y="62.23" drill="1.016"/>
+<pad name="GND2" x="72.39" y="64.77" drill="1.016"/>
+<pad name="SIG_IN" x="72.39" y="67.31" drill="1.016"/>
+<pad name="FB_CV" x="72.39" y="69.85" drill="1.016"/>
+<pad name="FB_POT3" x="72.39" y="72.39" drill="1.016"/>
+<pad name="FB_POT2" x="72.39" y="74.93" drill="1.016"/>
+<pad name="FB_POT1" x="72.39" y="77.47" drill="1.016"/>
+<pad name="VCA_CV" x="72.39" y="80.01" drill="1.016"/>
+<pad name="VCA_POT3" x="72.39" y="82.55" drill="1.016"/>
+<pad name="VCA_POT2" x="72.39" y="85.09" drill="1.016"/>
+<pad name="VCA_POT1" x="72.39" y="87.63" drill="1.016"/>
+<text x="68.58" y="13.97" size="1.27" layer="21" font="vector" ratio="12" rot="R90" align="center">T-POT</text>
+<wire x1="69.85" y1="16.51" x2="69.85" y2="11.43" width="0.127" layer="21"/>
+<text x="71.12" y="19.05" size="1.27" layer="21" font="vector" ratio="12" align="center-right">T_CV</text>
+<text x="71.12" y="21.59" size="1.27" layer="21" font="vector" ratio="12" align="center-right">MIX</text>
+<text x="71.12" y="24.13" size="1.27" layer="21" font="vector" ratio="12" align="center-right">WET</text>
+<text x="71.12" y="26.67" size="1.27" layer="21" font="vector" ratio="12" align="center-right">DRY</text>
+<text x="71.12" y="29.21" size="1.27" layer="21" font="vector" ratio="12" align="center-right">DELAY</text>
+<text x="69.85" y="62.23" size="1.27" layer="21" font="vector" ratio="12" rot="R90" align="center">GND</text>
+<wire x1="71.12" y1="64.77" x2="71.12" y2="59.69" width="0.127" layer="21"/>
+<text x="71.12" y="67.31" size="1.27" layer="21" font="vector" ratio="12" align="center-right">SIG_IN</text>
+<text x="71.12" y="69.85" size="1.27" layer="21" font="vector" ratio="12" align="center-right">FB_CV</text>
+<text x="71.12" y="72.39" size="1.27" layer="21" font="vector" ratio="12" align="center-right">3</text>
+<text x="71.12" y="74.93" size="1.27" layer="21" font="vector" ratio="12" align="center-right">2</text>
+<text x="71.12" y="77.47" size="1.27" layer="21" font="vector" ratio="12" align="center-right">1</text>
+<text x="71.12" y="80.01" size="1.27" layer="21" font="vector" ratio="12" align="center-right">VCA_CV</text>
+<text x="71.12" y="82.55" size="1.27" layer="21" font="vector" ratio="12" align="center-right">3</text>
+<text x="71.12" y="85.09" size="1.27" layer="21" font="vector" ratio="12" align="center-right">2</text>
+<text x="71.12" y="87.63" size="1.27" layer="21" font="vector" ratio="12" align="center-right">1</text>
+<text x="71.12" y="87.63" size="1.27" layer="21" font="vector" ratio="12" align="center-right">1</text>
+<text x="68.58" y="74.93" size="1.27" layer="21" font="vector" ratio="12" rot="R90" align="center">FB_POT</text>
+<text x="68.58" y="85.09" size="1.27" layer="21" font="vector" ratio="12" rot="R90" align="center">VCA_POT</text>
+<wire x1="69.85" y1="87.63" x2="69.85" y2="82.55" width="0.127" layer="21"/>
+<wire x1="69.85" y1="77.47" x2="69.85" y2="72.39" width="0.127" layer="21"/>
+<text x="71.12" y="11.43" size="1.27" layer="21" font="vector" ratio="12" align="center-right">1</text>
+<text x="71.12" y="13.97" size="1.27" layer="21" font="vector" ratio="12" align="center-right">2</text>
+<text x="71.12" y="16.51" size="1.27" layer="21" font="vector" ratio="12" align="center-right">3</text>
 </package>
 </packages>
 <packages3d>
@@ -13327,6 +13381,51 @@ ADC1</text>
 <connect gate="OUT2" pin="1" pad="OUT2"/>
 <connect gate="SIG" pin="1" pad="SIG"/>
 <connect gate="SUMO" pin="1" pad="SUMO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SALTWATERS_LINK" prefix="BOARD">
+<gates>
+<gate name="T_POT" symbol="CONN_03" x="-35.56" y="38.1"/>
+<gate name="FB_POT" symbol="CONN_03" x="-35.56" y="22.86"/>
+<gate name="VCA_POT" symbol="CONN_03" x="-35.56" y="7.62"/>
+<gate name="T_CV" symbol="CONN_01" x="-2.54" y="40.64"/>
+<gate name="MIX" symbol="CONN_01" x="-2.54" y="30.48"/>
+<gate name="WET" symbol="CONN_01" x="-2.54" y="20.32"/>
+<gate name="DRY" symbol="CONN_01" x="-2.54" y="10.16"/>
+<gate name="DELAY" symbol="CONN_01" x="-2.54" y="0"/>
+<gate name="SIG_IN" symbol="CONN_01" x="-2.54" y="-10.16"/>
+<gate name="FB_CV" symbol="CONN_01" x="-2.54" y="-20.32"/>
+<gate name="VCA_CV" symbol="CONN_01" x="-2.54" y="-30.48"/>
+<gate name="GND" symbol="CONN_03" x="-35.56" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="SALTWATERS">
+<connects>
+<connect gate="DELAY" pin="1" pad="DELAY"/>
+<connect gate="DRY" pin="1" pad="DRY"/>
+<connect gate="FB_CV" pin="1" pad="FB_CV"/>
+<connect gate="FB_POT" pin="1" pad="FB_POT1"/>
+<connect gate="FB_POT" pin="2" pad="FB_POT2"/>
+<connect gate="FB_POT" pin="3" pad="FB_POT3"/>
+<connect gate="GND" pin="1" pad="GND"/>
+<connect gate="GND" pin="2" pad="GND1"/>
+<connect gate="GND" pin="3" pad="GND2"/>
+<connect gate="MIX" pin="1" pad="MIX"/>
+<connect gate="SIG_IN" pin="1" pad="SIG_IN"/>
+<connect gate="T_CV" pin="1" pad="T_CV"/>
+<connect gate="T_POT" pin="1" pad="T-POT1"/>
+<connect gate="T_POT" pin="2" pad="T-POT2"/>
+<connect gate="T_POT" pin="3" pad="T-POT3"/>
+<connect gate="VCA_CV" pin="1" pad="VCA_CV"/>
+<connect gate="VCA_POT" pin="1" pad="VCA_POT1"/>
+<connect gate="VCA_POT" pin="2" pad="VCA_POT2"/>
+<connect gate="VCA_POT" pin="3" pad="VCA_POT3"/>
+<connect gate="WET" pin="1" pad="WET"/>
 </connects>
 <technologies>
 <technology name=""/>

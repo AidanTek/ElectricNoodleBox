@@ -4,8 +4,7 @@
 2,BANANA_PANEL,BANANA_PANEL,"IN1, IN2",Cinch Orange Banana Socket,Mouser,530-108-0906-1
 2,BANANA_PANEL,BANANA_PANEL,"OUT1, OUT2",Cinch Blue Banana Socket,Mouser,530-108-0910-1
 2,SPDT_SWITCHDW1,MICRODPDT-DW1,"SW1, SW2",SPDT Dailywell Toggle Switch,Thonk,DW1
-3,Male Header,Male Header,,8way 1row 2.54mm Header Male,Farnell,2856626
-3,Female Header,Female Header,,8way 1row 2.54mm Header Female,Farnell,1668208
+3,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
 2,Large Knob,Large Knob,"R1, R2",SIFAM/SELCO Large Black,Thonk ,Large Black
 2,Small Knob,Small Knob,"R3, R5",SIFAM/SELCO Small Black,Thonk ,Small Black
 2,Small Red Cap,Small Red Cap,"R3, R5",SIFAM/SELCO Cap Red Small,Thonk ,Cap Small Red

@@ -20514,6 +20514,8 @@ R2 3 2 {val-val*var/100}
 <part name="AGND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="GND" library="ElectricNoodleBox" deviceset="3XWIREPAD" device=""/>
+<part name="IN_TP" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
+<part name="DEL_TP" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21107,6 +21109,12 @@ for Vbe</text>
 </instance>
 <instance part="GND" gate="G$1" x="55.88" y="127" smashed="yes">
 <attribute name="NAME" x="53.34" y="132.588" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="IN_TP" gate="G$1" x="58.42" y="114.3" smashed="yes" rot="R180">
+<attribute name="NAME" x="60.96" y="111.252" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="DEL_TP" gate="G$1" x="33.02" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.56" y="85.852" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -21784,7 +21792,11 @@ for Vbe</text>
 <pinref part="IC5" gate="A" pin="OUT"/>
 <wire x1="22.86" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <junction x="22.86" y="76.2"/>
-<wire x1="22.86" y1="76.2" x2="22.86" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="76.2" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="DEL_TP" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="88.9" x2="22.86" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
+<junction x="22.86" y="88.9"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -21820,6 +21832,9 @@ for Vbe</text>
 <junction x="43.18" y="114.3"/>
 <pinref part="C17" gate="G$1" pin="+"/>
 <wire x1="66.04" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="IN_TP" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<junction x="48.26" y="114.3"/>
 </segment>
 </net>
 <net name="INPUT" class="0">

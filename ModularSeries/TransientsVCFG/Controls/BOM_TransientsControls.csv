@@ -1,0 +1,24 @@
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+,,,,,,
+4,1K,0207/10,"R9, R10, R11, R12","RESISTOR, European symbol",Farnell,2329885
+,,,,,,
+2,BAT85,DO35-7,"D1, D2",BAT85 Schottky Diode,Farnell,2889133
+2,2N3904,TO92,"Q1, Q2",NPN TRANSISTOR,Farnell,1574370
+2,red_5MM,LED5MM,"LED1, LED2",LED,Farnell,1581137
+,,,,,,
+4,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R5, R6",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
+4,B10K,ALPHA_RV09_9MMPOT,"R3, R4, R7, R8",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B10K
+6,BANANA_PANEL,BANANA_PANEL,"BOTH1, BOTH2, DNCV1, DNCV2, UPCV1, UPCV2",Cinch Red Banana Socket,Mouser,530-108-0902-1
+2,BANANA_PANEL,BANANA_PANEL,"OUT1, OUT2",Cinch Blue Banana Socket,Mouser,530-108-0910-1
+2,BANANA_PANEL,BANANA_PANEL,"IN1, IN2",Cinch Orange Banana Socket,Mouser,530-108-0906-1
+2,PVA1_DPST,PVA1_PUSHBUTTON,"SW1, SW3",C&K Key Switch DPST,Mouser,611-PVA1EEH312NV2
+2,PVA2_DPDT,PVA2_PUSHBUTTON,"SW2, SW4",C&K Key Switch DPDT,Mouser,PVA2EEH31.7NV2
+,,,,,,
+4,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
+4,PCB Standoff,PCB Standoff,,PCB Spacer,Farnell,1466945
+4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
+,,,,,,
+8,Small Knob,Small Knob,"R1, R2, R3, R4, R5, R6, R7, R8",SIFAM/SELCO Small Black,Thonk,Small Black
+4,Small Red Cap,Small Red Cap,"R3, R4, R7, R8",SIFAM/SELCO Cap Red Small,Thonk,Cap Small Red
+4,Small Blue Cap,Small Blue Cap,"R1, R2, R5, R6",SIFAM/SELCO Cap Blue Small,Thonk,Cap Small Blue
+4,PV1 Switch Cap Black,PV1 Switch Cap Black,"SW1, SW2, SW3, SW4",C&K Key Switch Cap,Mouser,611-PVBK
