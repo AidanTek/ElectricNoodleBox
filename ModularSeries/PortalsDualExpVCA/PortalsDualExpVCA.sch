@@ -11258,8 +11258,6 @@ http://musicfromouterspace.com</text>
 <text x="73.66" y="17.78" size="1.778" layer="91">Unused LM13700 Darlingtons</text>
 <text x="177.8" y="22.86" size="1.778" layer="91">Ground terminals
 for jacks / pots</text>
-<text x="30.48" y="88.9" size="1.778" layer="91">Lower values for R14 and R31
-might be better for calibration</text>
 <text x="38.1" y="127" size="1.778" layer="91">This stage is possibly clipping out</text>
 <text x="5.08" y="68.58" size="1.778" layer="91">No longer used</text>
 <text x="157.48" y="68.58" size="1.778" layer="91">No longer used</text>

@@ -1,0 +1,25 @@
+﻿Qty,Value,Package,Parts,Description,RETAILER,CATALOGUE
+,,,,,,
+15,100K,0207/7,"R1, R4, R6, R7, R8, R9, R10, R11, R12, R16, R18, R21, R22, R24, R25","RESISTOR, 1/4W",Farnell,2329853
+3,100Ω,0207/7,"R26, R27, R28","RESISTOR, 1/4W",Farnell,2329854
+6,10K,0207/7,"R5, R15, R17, R19, R20, R36","RESISTOR, 1/4W",Farnell,2329855
+4,12K,0207/7,"R2, R3, R13, R14","RESISTOR, 1/4W",,
+1,15K,0207/7,R33,"RESISTOR, 1/4W",Farnell,2329873
+5,47K,0207/7,"R23, R37, R38, R39, R42","RESISTOR, 1/4W",Farnell,2329944
+2,5K7,0207/7,"R31, R32","RESISTOR, 1/4W",Farnell,2329958
+2,10K,RTRIM3296W,"R34, R35",Trimm resistor 3296W,Farnell,9353186
+,,,,,,
+6,100nF,C050-025X075,"C5, C6, C7, C8, C9, C10","Ceramic / Film CAPACITOR, 5mm",Farnell,2797801
+2,4.7µF,"E2,5-5","C1, C2",Electrolytic CAPACITOR,Farnell,2329863
+,,,,,,
+2,2N3904,TO92,"Q2, Q4",NPN Transistor,Farnell,1574370
+2,2N3906,TO92,"Q1, Q3",PNP Transistor,Farnell,1574372
+1,LM13700,DIL16,IC2,Dual Transconductance Amplifier with Darlington Buffer,Farnell,3118206
+2,TL084,DIL14,"IC1, IC3",Quad Operational Amplifier,Farnell,3005140
+,,,,,,
+1,COMBO_SUPPLY_HEADER,COMBINED_POWER,WP1,10 way Shrouded IDC,Farnell,2843527
+2,Pin Header,Pin Header,,8way 1row 2.54mm Header Pin,Farnell,2856626
+,,,,,,
+2,B10K Potentiometer,,,PANEL WIRE ONLY Taiwan Alpha 16mm,Rapid,65-0753
+1,B100K Potentiometer,,BIAS,PANEL WIRE ONLY Taiwan Alpha 16mm,Rapid,65-0756
+7,Banana Connector,,"CV, GND, OFFS, OUT1, OUT2, SIG, SUMO",PANEL WIRE ONLY Banana or Jack patch point,1698951,Farnell
