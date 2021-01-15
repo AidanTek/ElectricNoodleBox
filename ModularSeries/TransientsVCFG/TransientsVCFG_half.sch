@@ -20340,7 +20340,7 @@ R2 3 2 {val-val*var/100}
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100Ω"/>
 <part name="IC4" library="ElectricNoodleBox" deviceset="TL0X2" device="DIL" package3d_urn="urn:adsk.eagle:package:29519/2"/>
 <part name="AGND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47K"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
 <part name="Q1" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="2N3906" device="" package3d_urn="urn:adsk.eagle:package:29211/2"/>
 <part name="Q2" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="2N3906" device="" package3d_urn="urn:adsk.eagle:package:29211/2"/>
@@ -20356,7 +20356,7 @@ R2 3 2 {val-val*var/100}
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2K"/>
 <part name="AGND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47K"/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
 <part name="Q3" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="2N3906" device="" package3d_urn="urn:adsk.eagle:package:29211/2"/>
 <part name="Q4" library="transistor-pnp" library_urn="urn:adsk.eagle:library:399" deviceset="2N3906" device="" package3d_urn="urn:adsk.eagle:package:29211/2"/>
@@ -20427,6 +20427,8 @@ R2 3 2 {val-val*var/100}
 <part name="SEL1" library="ElectricNoodleBox" deviceset="2XWIREPAD" device=""/>
 <part name="GND2" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
 <part name="GND1" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="10nF"/>
+<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="30K"/>
 </parts>
 <sheets>
 <sheet>
@@ -20446,12 +20448,13 @@ loop mode</text>
 <text x="-38.1" y="-25.4" size="1.778" layer="91">Pot ears connect to
 +10VREF and -10VREF</text>
 <text x="0" y="104.14" size="1.778" layer="91">Unused</text>
-<text x="-96.52" y="109.22" size="2.54" layer="91">Transients 
+<text x="-106.68" y="-38.1" size="2.54" layer="91">Transients 
 Voltage Controlled Function Generator
 (1 half)
 
 Electric Noodle Box
 Aidan Taylor 2020</text>
+<text x="-83.82" y="104.14" size="1.778" layer="91">HPF = ~530Hz or ~2mS</text>
 </plain>
 <instances>
 <instance part="IC1" gate="B1" x="38.1" y="76.2" smashed="yes">
@@ -20683,12 +20686,12 @@ Aidan Taylor 2020</text>
 <attribute name="NAME" x="-52.07" y="69.6214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-57.15" y="69.342" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="INPUT1" gate="G$1" x="-93.98" y="96.52" smashed="yes">
-<attribute name="NAME" x="-96.52" y="99.568" size="1.778" layer="95" font="vector"/>
+<instance part="INPUT1" gate="G$1" x="-106.68" y="96.52" smashed="yes">
+<attribute name="NAME" x="-109.22" y="99.568" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="D5" gate="G$1" x="-68.58" y="81.28" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-66.04" y="81.28" size="1.778" layer="95" font="vector" rot="MR90" align="center"/>
-<attribute name="VALUE" x="-71.12" y="81.28" size="1.778" layer="96" font="vector" rot="MR90" align="center"/>
+<attribute name="NAME" x="-66.04" y="76.2" size="1.778" layer="95" font="vector" rot="MR90" align="center"/>
+<attribute name="VALUE" x="-66.04" y="83.82" size="1.778" layer="96" font="vector" rot="MR90" align="center"/>
 </instance>
 <instance part="D6" gate="G$1" x="0" y="45.72" smashed="yes" rot="MR90">
 <attribute name="NAME" x="2.54" y="45.72" size="1.778" layer="95" font="vector" rot="MR90" align="center"/>
@@ -20757,9 +20760,9 @@ Aidan Taylor 2020</text>
 <attribute name="NAME" x="-62.23" y="34.0614" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="-62.23" y="38.862" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R25" gate="G$1" x="-76.2" y="96.52" smashed="yes">
-<attribute name="NAME" x="-80.01" y="98.0186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-80.01" y="93.218" size="1.778" layer="96"/>
+<instance part="R25" gate="G$1" x="-91.44" y="96.52" smashed="yes">
+<attribute name="NAME" x="-95.25" y="98.0186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-95.25" y="93.218" size="1.778" layer="96"/>
 </instance>
 <instance part="H1" gate="G$1" x="116.84" y="30.48" smashed="yes">
 <attribute name="NAME" x="118.872" y="31.0642" size="1.778" layer="95"/>
@@ -20853,6 +20856,14 @@ Aidan Taylor 2020</text>
 </instance>
 <instance part="GND1" gate="G$1" x="86.36" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="86.36" y="78.232" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="C11" gate="G$1" x="-81.28" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="-75.184" y="96.139" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-75.184" y="101.219" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R26" gate="G$1" x="-73.66" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="-75.1586" y="74.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-75.438" y="82.55" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -20996,6 +21007,10 @@ Aidan Taylor 2020</text>
 <pinref part="IC2" gate="B" pin="CLK"/>
 <wire x1="-40.64" y1="76.2" x2="-63.5" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-63.5" y="76.2"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="-73.66" y1="76.2" x2="-73.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="71.12" x2="-68.58" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-68.58" y="71.12"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="S"/>
@@ -21585,18 +21600,7 @@ Aidan Taylor 2020</text>
 <segment>
 <pinref part="INPUT1" gate="G$1" pin="1"/>
 <pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="-86.36" y1="96.52" x2="-81.28" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="-71.12" y1="96.52" x2="-68.58" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="-68.58" y1="96.52" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
-<junction x="-68.58" y="96.52"/>
-<pinref part="IC1" gate="B2" pin="BUFF_IN"/>
-<wire x1="-68.58" y1="96.52" x2="-63.5" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="96.52" x2="-96.52" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IABC_P1" class="0">
@@ -21693,6 +21697,28 @@ Aidan Taylor 2020</text>
 <net name="N$42" class="0">
 <segment>
 <wire x1="88.9" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="-86.36" y1="96.52" x2="-83.82" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="-76.2" y1="96.52" x2="-73.66" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="-73.66" y1="96.52" x2="-73.66" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="-68.58" y1="96.52" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="B2" pin="BUFF_IN"/>
+<wire x1="-68.58" y1="96.52" x2="-63.5" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="96.52" x2="-68.58" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-73.66" y="96.52"/>
+<junction x="-68.58" y="96.52"/>
 </segment>
 </net>
 </nets>
