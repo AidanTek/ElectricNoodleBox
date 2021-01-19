@@ -1,5 +1,17 @@
-"Qty";"Value";"Device";"Package";"Parts";"Description";"";
-"4";"";"POTENTIOMETER";"ALPHA_RV09_9MMPOT";"R4, R5, R6, R7";"";"";
-"3";"100K";"POTENTIOMETER";"ALPHA_RV09_9MMPOT";"R1, R2, R3";"";"";
-"6";"COMBI-JACKCINCHNANA";"COMBI-JACKCINCHNANA";"NEWCOMBOJACK_PANEL";"DELAY, FB, INPUT, MIX, TIME, VCA";"";"";
-"1";"SALTWATERS_LINK";"SALTWATERS_LINK";"SALTWATERS";"BOARD1";"";"";
+﻿Qty,Value,Package,Parts,Description,Retailer,Catalogue
+4,B10K,ALPHA_RV09_9MMPOT,"R4, R5, R6, R7",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B10K
+3,B100K,ALPHA_RV09_9MMPOT,"R1, R2, R3",Taiwan Alpha 9mm Potentiometer,Thonk,D-shaft B100K
+3,BANANA_PANEL,BANANA_PANEL,"FB, TIME, VCA",Cinch Red Banana Socket,Mouser,530-108-0902-1
+2,BANANA_PANEL,BANANA_PANEL,"DELAY, MIX",Cinch Blue Banana Socket,Mouser,530-108-0910-1
+1,BANANA_PANEL,BANANA_PANEL,INPUT,Cinch Orange Banana Socket,Mouser,530-108-0906-1
+,,,,,,
+3,Socket Header,Socket Header,,8way 1row 2.54mm Header Socket,Farnell,1668208
+4,PCB Standoff,PCB Standoff,,PCB Spacer,Farnell,1466945
+4,M3 Screw,M3 Screw,,Stainless Steel M3,Farnell,1420032
+,,,,,,
+5,Small Knob,Small Knob,"R2, R3, R5, R6, R7",SIFAM/SELCO Small Black,Thonk,Small Black
+2,Large Knob,Large Knob,"R1, R4",SIFAM/SELCO Large Black,Thonk,Large Black
+2,Small Orange Cap,Small Orange Cap,"R3, R5",SIFAM/SELCO Cap Orange Small,Thonk,Cap Small Orange
+2,Small Red Cap,Small Red Cap,"R2, R6",SIFAM/SELCO Cap Red Small,Thonk,Cap Small Red
+1,Small Blue Cap,Small Blue Cap,R7,SIFAM/SELCO Cap Blue Small,Thonk,Cap Small Blue
+2,Large Blue Cap,Large Blue Cap,"R1, R4",SIFAM/SELCO Cap Blue Large,Thonk,Cap Large Blue
