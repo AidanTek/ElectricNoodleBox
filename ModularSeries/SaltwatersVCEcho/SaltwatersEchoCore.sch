@@ -20523,7 +20523,8 @@ R2 3 2 {val-val*var/100}
 <text x="-91.44" y="10.16" size="1.778" layer="91">Control Voltage
 Should typically be
 0-10V</text>
-<text x="-91.44" y="167.64" size="2.54" layer="91" align="top-left">Saltwaters Voltage Controlled Echo
+<text x="-88.9" y="167.64" size="2.54" layer="91" align="top-left">Saltwaters
+Voltage Controlled Echo
 
 ELECTRIC NOODLE BOX
 Aidan Taylor 2020</text>
