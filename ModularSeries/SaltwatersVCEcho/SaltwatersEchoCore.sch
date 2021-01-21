@@ -20401,7 +20401,7 @@ R2 3 2 {val-val*var/100}
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="10nF"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="4.7nF"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10K"/>
 <part name="AGND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="560pF"/>
@@ -20512,6 +20512,9 @@ R2 3 2 {val-val*var/100}
 <part name="IN_TP" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
 <part name="DEL_TP" library="ElectricNoodleBox" deviceset="1XWIREPAD" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="3296W" package3d_urn="urn:adsk.eagle:package:26033/1" value="47K"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="100nF"/>
+<part name="AGND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21108,6 +21111,17 @@ result in the feedback </text>
 <attribute name="NAME" x="77.47" y="90.551" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="77.47" y="97.79" size="1.778" layer="96"/>
 </instance>
+<instance part="R14" gate="G$1" x="-78.74" y="86.36" smashed="yes" rot="R180">
+<attribute name="NAME" x="-74.93" y="84.8614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-74.93" y="89.662" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C6" gate="G$1" x="-68.58" y="81.28" smashed="yes">
+<attribute name="NAME" x="-66.421" y="82.804" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-71.501" y="77.724" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="AGND22" gate="VR1" x="-68.58" y="71.12" smashed="yes">
+<attribute name="VALUE" x="-71.12" y="68.58" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21433,6 +21447,11 @@ result in the feedback </text>
 <pinref part="AGND16" gate="VR1" pin="AGND"/>
 <wire x1="-38.1" y1="127" x2="-38.1" y2="124.46" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="AGND22" gate="VR1" pin="AGND"/>
+<wire x1="-68.58" y1="76.2" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -21672,11 +21691,6 @@ result in the feedback </text>
 </net>
 <net name="DELAY_SIG" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="-58.42" y1="71.12" x2="-60.96" y2="71.12" width="0.1524" layer="91"/>
-<label x="-60.96" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R39" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="66.04" x2="215.9" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="66.04" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
@@ -21688,6 +21702,11 @@ result in the feedback </text>
 <wire x1="215.9" y1="66.04" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
 <junction x="215.9" y="66.04"/>
 <label x="218.44" y="66.04" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="-83.82" y1="86.36" x2="-86.36" y2="86.36" width="0.1524" layer="91"/>
+<label x="-86.36" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -22262,6 +22281,19 @@ result in the feedback </text>
 <wire x1="-35.56" y1="86.36" x2="-45.72" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="A"/>
 <wire x1="-45.72" y1="86.36" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="-73.66" y1="86.36" x2="-68.58" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="-68.58" y1="86.36" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="86.36" x2="-63.5" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-68.58" y="86.36"/>
+<wire x1="-63.5" y1="86.36" x2="-63.5" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="-63.5" y1="71.12" x2="-58.42" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
