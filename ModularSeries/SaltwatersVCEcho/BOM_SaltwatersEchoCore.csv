@@ -1,9 +1,8 @@
 ﻿Qty,Value,Package,Parts,Description,RETAILER,CATALOGUE
 ,,,,,,
-7,100K,0207/10,"R4, R5, R6, R27, R28, R32, R33","RESISTOR, European symbol",Farnell,2329853
+9,100K,0207/10,"R4, R5, R6, R27, R28, R32, R33, R43, R45","RESISTOR, European symbol",Farnell,2329853
 5,100Ω,0207/10,"R30, R34, R36, R37, R48","RESISTOR, European symbol",Farnell,2329854
 5,10K,0207/10,"R8, R9, R35, R38, R47","RESISTOR, European symbol",Farnell,2329855
-2,120K,0207/10,"R43, R45","RESISTOR, European symbol",Farnell,2329861
 2,150K,0207/10,"R19, R24","RESISTOR, European symbol",Farnell,2329871
 5,15K,0207/10,"R10, R12, R13, R14, R15","RESISTOR, European symbol",Farnell,2329873
 3,1K,0207/10,"R2, R16, R17","RESISTOR, European symbol",Farnell,2329885
